@@ -104,7 +104,7 @@ section:nth-child(2n + 1) {
 /* HEADER */
 
 .hero {
-	background-image: url(/res/hero-backg-desk.png);
+	background-image: url(res/hero-backg-desk.png);
 	background-color: #f5f4ef;
 	background-repeat: no-repeat;
 	background-position: right;
@@ -488,7 +488,7 @@ input {
 
 	.mob-headbar {
 		display: block;
-		background-image: url(/res/Logo.svg);
+		background-image: url(res/Logo.svg);
 		background-color: #f8f8f8;
 		background-repeat: no-repeat;
 		background-size: 34px;
@@ -497,7 +497,7 @@ input {
 	}
 
 	.heading {
-		background-image: url(/res/hero-backg-mob.png);
+		background-image: url(res/hero-backg-mob.png);
 		height: 214px;
 		display: flex;
 		flex-direction: column;
