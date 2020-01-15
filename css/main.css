@@ -104,7 +104,7 @@ section:nth-child(2n + 1) {
 /* HEADER */
 
 .hero {
-	background-image: url(../res/hero-backg-desk.png);
+	background-image: url(/Salud/res/hero-backg-desk.png);
 	background-color: #f5f4ef;
 	background-repeat: no-repeat;
 	background-position: right;
