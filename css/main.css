@@ -3,6 +3,11 @@ body {
 	color: #686460;
 }
 
+a:hover, button:hover, label:hover {
+	border-bottom: 2px solid #40bfc2;
+	font-weight: 500;
+}
+
 h1 {
 	font-weight: 700;
 	font-size: 2.625rem;
@@ -35,6 +40,8 @@ h5 {
 
 section {
 	padding: 4% 0;
+	min-height: 100vh;
+	display: flex;
 }
 
 section:nth-child(2n + 1) {
@@ -47,12 +54,10 @@ section:nth-child(2n + 1) {
 	width: 100%;
 	max-width: 1220px;
 	padding: 0 4%;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .demi-column {
@@ -68,7 +73,7 @@ section:nth-child(2n + 1) {
 	position: relative;
 }
 .faded-txt {
-	max-height: 35vw;
+	
 	overflow: hidden;
 }
 
@@ -140,11 +145,6 @@ section:nth-child(2n + 1) {
 	display: flex;
 	width: 30vw;
 	justify-content: space-between;
-}
-
-.menu-item:hover {
-	border-bottom: 2px solid #40bfc2;
-	font-weight: 500;
 }
 
 .mob-headbar {
@@ -242,12 +242,11 @@ section:nth-child(2n + 1) {
 .edu-list-holder {
 	text-align: end;
 	padding-right: 4%;
-	margin-top: auto;
+	align-self: center;
 }
 
 .edu-list {
 	position: relative;
-	margin-top: 20%;
 }
 
 .education .faded-txt::before {
@@ -266,7 +265,7 @@ section:nth-child(2n + 1) {
 .edu-img {
 	border-radius: 20px;
 	max-width: 350px;
-	margin: 50px auto 0;
+	margin: auto;
 	display: block;
 	width: 80%;
 }
@@ -292,6 +291,7 @@ section:nth-child(2n + 1) {
 /* SECTION CONTACTS */
 .contact {
 	background-color: #ebebeb;
+	padding: 4% 0 6%;
 }
 
 .contact-title {
@@ -309,7 +309,7 @@ section:nth-child(2n + 1) {
 
 .contact-right,
 .contact-left {
-	justify-content: flex-end;
+	margin-top: auto;
 }
 
 .contact-txt {
@@ -439,7 +439,7 @@ input {
 	}
 
 	.hero {
-		background-image: url(../res/hero-backg-tab.png);
+		background-image: url(/Salud/res/hero-backg-tab.png);
 		height: 510px;
 	}
 
@@ -488,7 +488,7 @@ input {
 
 	.mob-headbar {
 		display: block;
-		background-image: url(../res/Logo.svg);
+		background-image: url(/Salud/res/Logo.svg);
 		background-color: #f8f8f8;
 		background-repeat: no-repeat;
 		background-size: 34px;
@@ -497,7 +497,7 @@ input {
 	}
 
 	.heading {
-		background-image: url(../res/hero-backg-mob.png);
+		background-image: url(/Salud/res/hero-backg-mob.png);
 		height: 214px;
 		display: flex;
 		flex-direction: column;
