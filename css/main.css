@@ -439,7 +439,7 @@ input {
 	}
 
 	.hero {
-		background-image: url(.../res/hero-backg-tab.png);
+		background-image: url(../res/hero-backg-tab.png);
 		height: 510px;
 	}
 
@@ -488,7 +488,7 @@ input {
 
 	.mob-headbar {
 		display: block;
-		background-image: url(.../res/Logo.svg);
+		background-image: url(../res/Logo.svg);
 		background-color: #f8f8f8;
 		background-repeat: no-repeat;
 		background-size: 34px;
@@ -497,7 +497,7 @@ input {
 	}
 
 	.heading {
-		background-image: url(.../res/hero-backg-mob.png);
+		background-image: url(../res/hero-backg-mob.png);
 		height: 214px;
 		display: flex;
 		flex-direction: column;
