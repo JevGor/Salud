@@ -4,13 +4,12 @@ body {
 }
 
 a:hover, button:hover, label:hover {
-	border-bottom: 2px solid #40bfc2;
 	font-weight: 500;
 }
 
 h1 {
 	font-weight: 700;
-	font-size: 2.625rem;
+	font-size: 2rem;
 }
 
 h3 {
@@ -25,7 +24,7 @@ h4 {
 
 h5 {
 	font-weight: 500;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 }
 
 .wrapper {
@@ -35,7 +34,7 @@ h5 {
 }
 
 .d-none {
-	display: none;
+	display: none!important;
 }
 
 section {
@@ -73,7 +72,7 @@ section:nth-child(2n + 1) {
 	position: relative;
 }
 .faded-txt {
-	
+	max-height: 40vh;
 	overflow: hidden;
 }
 
@@ -109,11 +108,10 @@ section:nth-child(2n + 1) {
 /* HEADER */
 
 .hero {
-	background-image: url(/Salud/res/hero-backg-desk.png);
+	background-image: url(/Salud/res/hero-backg-desk.png), url(/res/hero-backg-desk.png);
 	background-color: #f5f4ef;
 	background-repeat: no-repeat;
 	background-position: right;
-	height: 600px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -151,14 +149,18 @@ section:nth-child(2n + 1) {
 	display: none;
 }
 
+.heading {
+	margin-top: 6%;
+}
+
 .heading-title {
-	max-width: 30%;
+	max-width: 40%;
 	border-bottom: 0.5px solid #686460;
 	color: #6a8c9c;
 }
 
 .heading-txt {
-	max-width: 40%;
+	max-width: 50%;
 }
 
 .socials {
@@ -214,6 +216,7 @@ section:nth-child(2n + 1) {
 .treatmets-title {
 	transform: translate(-52px);
 	background-color: #ebebeb;
+	margin-bottom: 6%;
 }
 
 .treatments .faded-txt::before {

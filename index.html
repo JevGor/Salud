@@ -1,248 +1,622 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/norm&fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Osteopath</title>
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="css/norm&fonts.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <title>Osteopath</title>
-</head>
-
-<body>
-  <section class="hero">
-    <header class="header">
-      <object class="logo" type="image/svg+xml" data="picture.svg">
-        <img class="logo-img" src="res/Logo.svg">
-      </object>
-      <ul class="menu">
-        <li class="menu-item"><a href="#">Home</a></li>
-        <li class="menu-item"><a href="#">About</a></li>
-        <li class="menu-item"><a href="#">Treatments</a></li>
-        <li class="menu-item"><a href="#">Contacts</a></li>
-      </ul>
-      <label for="select" class="select">
-        <input type="radio" name="list" value="not_changed" id="bg" checked />
-        <input type="radio" name="list" value="not_changed" id="select">
-        <label class="bg" for="bg"></label>
-        <div class="items">
-          <input type="radio" name="list" value="first_value" id="list[0]">
-          <label for="list[0]">English</label>
-          <input type="radio" name="list" value="second_value" id="list[1]">
-          <label for="list[1]">Russian</label>
-          <input type="radio" name="list" value="third_value" id="list[2]">
-          <label for="list[2]">Deutch</label>
-          <span id="text">Language</span>
+  <body>
+    <section class="hero">
+      <header class="header">
+        <object class="logo" type="image/svg+xml" data="picture.svg">
+          <img class="logo-img" src="res/Logo.svg" />
+        </object>
+        <ul class="menu lang-en">
+          <li class="menu-item"><a href="#">Home</a></li>
+          <li class="menu-item"><a href="#">About</a></li>
+          <li class="menu-item"><a href="#">Treatments</a></li>
+          <li class="menu-item"><a href="#">Contacts</a></li>
+        </ul>
+        <label for="select" class="select">
+          <input type="radio" name="list" value="not_changed" id="bg" checked />
+          <input type="radio" name="list" value="not_changed" id="select" />
+          <label class="bg" for="bg"></label>
+          <div class="items">
+            <input type="radio" name="list" value="lang-en" id="list[0]" />
+            <label for="list[0]">English</label>
+            <input type="radio" name="list" value="lang-ru" id="list[1]" />
+            <label for="list[1]">Russian</label>
+            <input type="radio" name="list" value="lang-de" id="list[2]" />
+            <label for="list[2]">Deutch</label>
+            <span id="text">Language</span>
+          </div>
+        </label>
+      </header>
+      <div class="mob-headbar"></div>
+      <div class="heading lang lang-en">
+        <h1 class="heading-title">
+          Book now your FREE 10 minute check-ups or a treatment. +41772121070
+        </h1>
+        <div class="heading-txt txt-l">
+          <p>
+            Direct spine, symmetry, absence of pain and freedom of movement with
+            a joy of life – this is something to strive for everyone. Health is
+            not the absence of disease – it is an opportunity to be able to do
+            whatever you want. In other words, health is our freedom !!!
+          </p>
+          <ul>
+            <li>Back pain, dorsalgia and lumbago</li>
+            <li>Spinal hernias and protrusions</li>
+            <li>Neck pain and headache</li>
+            <li>Rehabilitation and chronic pain</li>
+            <li>Straightening the spine, scoliosis, kyphosis</li>
+            <li>Neurological symptoms and sciatica</li>
+            <li>Natal preparation and recovery</li>
+            <li>Sports preparation and recovery</li>
+            <li>Abdominal pain and digestive problems</li>
+            <li>Stress and sleep problems</li>
+          </ul>
         </div>
-      </label>
-    </header>
-    <div class="mob-headbar">
+      </div>
+      <div class="heading lang lang-ru d-none">
+        <h1 class="heading-title">
+          Забронируйте сейчас БЕСПЛАТНУЮ 10-минутный осмотр или лечение.
+          +41772121070
+        </h1>
+        <div class="heading-txt txt-l">
+          <p>
+            Прямой позвоночник, симметрия, отсутствие боли, свобода в движения и
+            радостью жизни - это то, к чему нужно стремиться каждому. Здоровье -
+            это не отсутствие болезней - это возможность делать все, что угодно.
+            Другими словами, здоровье - это наша свобода!!!
+          </p>
+          <ul>
+            <li>Боли в спине, дорсолгия и люмбаго</li>
+            <li>Спинальные грыжи и протрузии</li>
+            <li>Боль в шее и головные боль</li>
+            <li>Реабилитация и хроническая боль</li>
+            <li>Выпрямление позвоночника, сколиоз, кифоз</li>
+            <li>Неврологические симптомы и ишиас</li>
+            <li>Натальная подготовка и восстановление</li>
+            <li>Спортивная подготовка и восстановление</li>
+            <li>Боли в животе и проблемы с пищеварением</li>
+            <li>Стресс и проблемы со сном</li>
+          </ul>
+        </div>
+      </div>
+      <div class="heading lang lang-de d-none">
+        <h1 class="heading-title">
+          Jetzt Buchen Sie Ihre GRATIS 10-minütige Untersuchung oder Behandlung.
+          +41772121070
+        </h1>
+        <div class="heading-txt txt-l">
+          <p>
+            Direkte Spin, Symmetrie, Abwesenheit von Schmerz und
+            Bewegungsfreiheit mit einer Lebensfreude – das ist für jeden etwas
+            zu streben. Gesundheit ist nicht die Abwesenheit von Krankheit – es
+            ist eine Möglichkeit, in der Lage zu sein, zu tun, was Sie wollen.
+            Mit anderen Worten, die Gesundheit ist unsere Freiheit !!!
+          </p>
+          <ul>
+            <li>Rückenschmerzen, Dorsalgie und Hexenschuss</li>
+            <li>Spinal hernias and protrusions</li>
+            <li>Nackenschmerzen und Kopfweh</li>
+            <li>Rehabilitation und Chronische schmerzen</li>
+            <li>Skoliose Kyphose Wirbelsäule begradigen</li>
+            <li>Neurologische Symptome und Ischias</li>
+            <li>Natal Vorbereitung und Genesung</li>
+            <li>Sportvorbereitung und Erholung</li>
+            <li>Bauchschmerzen und Verdauungsprobleme</li>
+            <li>Stress und Schlafsprobleme</li>
+          </ul>
+        </div>
+      </div>
 
-    </div>
-    <div class="heading">
-      <h1 class="heading-title">
-        We care about your health
-      </h1>
-      <div class="heading-txt txt-l">
-        Expert in corporate ergonomics and accupational health and wellbeing
-      </div>
-    </div>
+      <ul class="socials">
+        <li class="socials-item">
+          <a href="#">
+            <object type="image/svg+xml" data="picture.svg">
+              <img src="res/inst.svg" />
+            </object>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a href="#">
+            <object type="image/svg+xml" data="picture.svg">
+              <img src="res/twit.svg" />
+            </object>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a href="#">
+            <object type="image/svg+xml" data="picture.svg">
+              <img src="res/face.svg" />
+            </object>
+          </a>
+        </li>
+      </ul>
+    </section>
 
-    <ul class="socials">
-      <li class="socials-item">
-        <a href="#">
-          <object type="image/svg+xml" data="picture.svg">
-            <img src="res/inst.svg">
-          </object>
-        </a>
-      </li>
-      <li class="socials-item">
-        <a href="#">
-          <object type="image/svg+xml" data="picture.svg">
-            <img src="res/twit.svg">
-          </object>
-        </a>
-      </li>
-      <li class="socials-item">
-        <a href="#">
-          <object type="image/svg+xml" data="picture.svg">
-            <img src="res/face.svg">
-          </object>
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <section class="about">
-    <div class="container">
-      <div class="about-txt bordered demi-column">
-        <h3 class="about-title">About us</h3>
-        <p class="txt">
-          Direct spin, symmetry, absence of pain and freedom of movement with a joy of life — this is something to
-          strive for everyone. Health is not the absence of disease — it is an opportunity to be able to do whatever you
-          want. In other words, health is our freedom
-        </p>
-        <p class="txt">
-          People of all ages and backgrounds may need the help of a manual
-          therapist by weight of various reasons. The main factors influencing our health — it is the way we live, work,
-          and over the same posture habits that shape our lives.
-        </p>
+    <section class="about">
+      <div class="container">
+        <div class="about-txt bordered demi-column lang lang-en">
+          <h3 class="about-title">About us</h3>
+          <h4>EXPERIENCE</h4>
+          <p class="txt">
+            I have experience in traumatology and rehabilitation after accident
+            injuries. I was often present as an osteopath at various sporting
+            events (e.g. the London marathon) where I was able to demonstrate my
+            osteopathic skills even under stress. I accompany and advise some
+            professional athletes (martial artists and polo / golf players). I
+            also know a lot about building muscle, both for beginners and
+            professionals. I am happy to accompany people before and / or after
+            an operation to stimulate the body's self-healing. I am happy to
+            accompany both the mother and the baby before and during pregnancy,
+            as well as after birth. I am happy to do a free check-up for you and
+            your baby. I do baby check-ups from the second day of life.
+            Osteopathy can bring the body back into balance, enable faster
+            regeneration and make it easier for the body to deal with the
+            changes during or after pregnancy or surgery. Fascia treatments
+            particularly convince me. Fascia therapy can change old movement
+            patterns, which leads to more balance in the body. This type of
+            therapy brings very successful results, for me fascia therapy is the
+            "A" and "Z" in my treatments.
+          </p>
+          <h4>CHARACTER TRAITS</h4>
+          <p class="txt">
+            Curious, open and sociable, eye for detail and team player. My motto
+            is «Do it and get it right right away // Do it and do it right from
+            the first time».
+          </p>
+        </div>
+        <div class="about-txt bordered demi-column lang lang-ru d-none">
+          <h3 class="about-title">О нас</h3>
+          <h4>ОПЫТ</h4>
+          <p class="txt">
+            Имею опыт работы в травматологии и посттравматической реабилитации.
+            Я часто присутствовал в качестве остеопата на различных спортивных
+            мероприятиях (например, на Лондонском марафоне), где я мог
+            демонстрировать свои остеопатические навыки даже в состоянии
+            стресса. Я сопровождаю и советую некоторых профессиональных
+            спортсменов (мастера единоборств и поло / игроки в гольф). Я также
+            много знаю о наращивании мышечной массы, как для начинающих, так и
+            для профессионалов. Я рад сопровождать людей до и / или после
+            операции, чтобы стимулировать самоисцеление организма. Я с
+            удовольствием сопровождаю и маму, и ребенка до и во время
+            беременности, а также после родов. Я счастлив сделать бесплатную
+            проверку для вас и вашего ребенка. Я делаю детские осмотры со
+            второго дня жизни. Остеопатия может привести тело в равновесие,
+            ускорить регенерацию и помочь организму справиться с изменениями во
+            время или после беременности или операции. Лечение фасции особенно
+            убедить меня. Терапия фасции может изменить старые модели движения,
+            что приводит к большему балансу в организме. Этот тип терапии
+            приносит очень успешные результаты, для меня терапия фасции - это
+            «А» и «Я» в моем лечении.
+          </p>
+          <h4>ХАРАКТЕРНЫЕ СВОЙСТВА</h4>
+          <p class="txt">
+            Любопытный, открытый и общительный, внимательный к деталям и
+            командный игрок. Мой девиз: «Сделай это и сделай это прямо сейчас //
+            Сделай это и сделай это правильно с первого раза».
+          </p>
+        </div>
+        <div class="about-txt bordered demi-column lang lang-de d-none">
+          <h3 class="about-title">Über uns</h3>
+          <h4>ERFAHRUNG</h4>
+          <p class="txt">
+            Ich habe Erfahrung in der Traumatologie und Rehabilitation nach
+            Unfallverletzungen. Oft war ich als Osteopath bei verschiedenen
+            Sportveranstaltungen anwesend (z.B. London-Marathon) wo ich meine
+            osteopathischen Fähigkeiten auch unter Stress beweisen konnte. Ich
+            begleite und berate einige professionelle Sportler (Kampfsportler
+            und Polo-/Golfspieler). Ebenfalls kenne ich mich sehr gut aus wenn
+            es um Muskelaufbau geht, sowohl bei Anfängern wie auch bei Profi’s.
+            Gerne begleite ich Menschen vor und/oder nach einer Operation, um so
+            die Selbstheilung des Körpers zu stimulieren. Gerne begleite ich vor
+            und während der Schwangerschaft, ebenso nach der Geburt, sowohl die
+            Mutter wie auch das Baby. Gerne mache ich für Sie und Ihr Baby ein
+            Gratis Check-up. Baby Check-up’s mache ich ab dem 2. Lebenstag. Die
+            Osteopathie kann den Körper wieder ins Gleichgewicht bringen,
+            ermöglicht eine schnellere Regeneration und erleichtert dem Körper,
+            mit den Veränderungen während oder nach der Schwangerschaft oder
+            Operation umzugehen. Faszien Behandlungen überzeugen mich ganz
+            besonders. Durch eine Faszien-Therapie können sich alte
+            Bewegungsmuster ändern, was zu mehr Ausgewogenheit im Körper führt.
+            Diese Art von Therapie bringt sehr erfolgreiche Resultate, für mich
+            ist Faszien-Therapie das «A» und «O» in meinen Behandlungen.
+          </p>
+          <h4>CHARAKTEREIGENSCHAFTEN</h4>
+          <p class="txt">
+            Neugierig, offen und kontaktfreudig, Auge für’s Detail und
+            Teamplayer. Mein Motto ist «Mache es und mach es sofort richtig// Do
+            it and do it right from the first time».
+          </p>
+        </div>
+        <div class="summary demi-column">
+          <ul class="summary-list lang lang-en">
+            <li class="summary-item">
+              <span class="summary-value">7</span><br />YEARS OF EXPERIENCE
+            </li>
+            <li class="summary-item">
+              <span class="summary-value">8 000</span><br />EXPERIENCE HOURS
+            </li>
+            <li class="summary-item">
+              <span class="summary-value">5 000</span><br />PATIENTS SEEN
+            </li>
+          </ul>
+          <ul class="summary-list lang lang-ru d-none">
+            <li class="summary-item">
+              <span class="summary-value">7</span><br />ЛЕТ ОПЫТА
+            </li>
+            <li class="summary-item">
+              <span class="summary-value">8 000</span><br />ЧАСОВ ОПЫТА
+            </li>
+            <li class="summary-item">
+              <span class="summary-value">5 000</span><br />ПАЦИЕНТОВ
+            </li>
+          </ul>
+          <ul class="summary-list lang lang-de d-none">
+            <li class="summary-item">
+              <span class="summary-value">7</span><br />JAHRE ERFAHRUNG
+            </li>
+            <li class="summary-item">
+              <span class="summary-value">8 000</span><br />ERLEBNISSTUNDEN
+            </li>
+            <li class="summary-item">
+              <span class="summary-value">5 000</span><br />PATIENTEN GESEHEN
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="summary demi-column">
-        <ul class="summary-list">
-          <li class="summary-item"><span class="summary-value">7</span><br>YEARS OF EXPERIENCE</li>
-          <li class="summary-item"><span class="summary-value">8 000</span><br>EXPERIENCE HOURS</li>
-          <li class="summary-item"><span class="summary-value">5 000</span><br>PATIENTS SEEN</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="treatments">
-    <div class="container">
-      <div class="treatmets-slider demi-column">
-        <img class="treatmets-img" src="res/treatment.png" alt="">
-      </div>
-      <div class="treatmets-info bordered demi-column">
-        <h3 class="treatmets-title">Treatments</h3>
-        <ul class="treatments-list">
-          <li class="osteo">
-            <img src="" alt="" class="osteo-img" />
-            <h4 class="treatmets-subtitle">Accupunture</h4>
-            <div class="treatmets-txt txt faded-txt">
-              <p>— a trend in traditional Chinese medicine, in which the effect on the body is carried out with special
-                needles through specific points on the body by introducing them to these points and their manipulation.
-              </p>
-              <p>Unlike intramuscular manual therapy, acupuncture is based on the idea of “body meridians” or energy
-                flows, and works at the system level, affecting local and specified points. It is based on the use of
-                needles, their length, direction and stimulation.</p>
-              <p>ATTENTION!!! All the used needles are disposable and are used only once.</p>
-              <ul>
-                Effects of acupuncture:
-                <li>1. Deoxidation and strengthening the immune system</li>
-                <li>2. Relaxation of soft tissues</li>
-                <li>3. Improves metabolism and circulation of fluids</li>
-                <li>4. Relieves stress, swelling and tumors</li>
-                <li>5. Recovers the texture and functionality of muscles</li>
-              </ul>
+    </section>
+    <section class="treatments">
+      <div class="container">
+        <div class="treatmets-slider demi-column">
+          <img class="treatmets-img" src="res/treatment.png" alt="" />
+        </div>
+        <div class="treatmets-info bordered demi-column">
+          <h3 class="treatmets-title">Treatments</h3>
+          <div class="treatments-list">
+            <div class="osteo">
+              <h4 class="treatmets-subtitle">Osteopathy</h4>
+              <div class="treatmets-txt txt faded-txt">
+                <h5>Overview</h5>
+                <p>
+                  Osteopathy constitute a wide range of methods of “hand
+                  techniques” focused on stimulation of joints, internal organs,
+                  their surface and surrounding structures. The therapist
+                  conducts an accurate diagnosis and treats in accordance with
+                  specific symptoms of the patient. Knowledge of neuromuscular
+                  connections and their behavior helps specialist to make
+                  treatment as effective as possible.
+                </p>
+                <h5>Effect of osteopathiс treatment methods:</h5>
+                <ul>
+                  <li>1. Straightens spine</li>
+                  <li>
+                    2. Removes blocks and semiluxations in the spine and joints
+                  </li>
+                  <li>
+                    3. Creates a symmetrical distribution of load on the joints
+                  </li>
+                  <li>4. Returns straight posture</li>
+                  <li>5. Removes spasms and strengthens muscles</li>
+                  <li>6. Improves elasticity of muscles and ligaments</li>
+                  <li>7. Removes edemas and inflammations</li>
+                  <li>
+                    8. Relieves pain in back, neck, shoulders, between the
+                    shoulder blades
+                  </li>
+                  <li>9. Relieves neurologic sliding disease</li>
+                  <li>
+                    10. Improves local blood flow and circulation of fluids
+                  </li>
+                  <li>
+                    11. Elininates toxins from the tissues and improves
+                    metabolism
+                  </li>
+                </ul>
+                <h5>Indications for use of manipulative treatment methods:</h5>
+                <ul>
+                  <li>1. Aching joints and/or joint pain</li>
+                  <li>2. Pain in the spine</li>
+                  <li>3. Pain in the loin and between scapulas</li>
+                  <li>4. Posture disorder and/or curvature of the spine</li>
+                  <li>
+                    5. Nonhomologous symptoms: pricking, numbness, tingling,
+                    sharp pain
+                  </li>
+                  <li>
+                    6. Disorder and/or loss of functionality of the joints
+                    and/or internal organs
+                  </li>
+                  <li>7. Injuries and fractures</li>
+                  <li>8. Preparation for athletic competitions</li>
+                  <li>9. Preparation for childbirth</li>
+                  <li>10. Preparation for surgery</li>
+                  <li>11. Exhaustion</li>
+                </ul>
+                <h5>Types of osteopathic treatment methods:</h5>
+                <p>
+                  Osteopathy is an influence of the therapist on the patient
+                  through “hand techniques”. There are many different kinds,
+                  methods and directions. And each method has from a dozen to
+                  several hundred techniques. The main methods of manual therapy
+                  are classic, cranio-sacral, visceral and structural methods.
+                </p>
+                <ul>
+                  <li>
+                    – Structural method is a method of impact on the spine,
+                    peripheral bones and soft tissues. The method of influence
+                    is based on the rotational manipulations, often performed on
+                    the verge of a physiological joint barrier. Manipulations
+                    are carried out through a combination of fixed joint
+                    position together with the vector/angle of free movement in
+                    the direction of which the manipulation is carried out, by
+                    “short or long levers”. Manipulation ensures the release of
+                    a joint, and is often accompanied by a “pat sound”. As a
+                    result, the joint gets a new position and restart of
+                    neuromuscular signal of this joint is happening.
+                  </li>
+                  <li>
+                    – Cranio-sacral is a method of impact on the scull and
+                    sacral bone, and any relationship between these two
+                    important physiological centers (Cranium Latin).
+                    Cranio-sacral techniques or cranio-sacral therapy is a very
+                    soft and subtle techniques, based on the mobility of the
+                    cranial bones and sacral bone. It is a powerful method for
+                    headaches, fatigue and insomnia.
+                  </li>
+                  <li>
+                    – Visceral is a method directly influencing internal organs
+                    by direct penetration through the abdominal muscles and
+                    reflexive areas of the spinal column. The method is widely
+                    used in various diseases and damage of the gastrointestinal
+                    tract, and/or for acceleration of recovery and normalization
+                    of the internal organs functioning.
+                  </li>
+                  <li>
+                    – Classical the method, unfortunately, is almost forgotten
+                    by modern manual therapist. It is based on minimal impact on
+                    the patient’s body and the philosophy that the body only
+                    needs a little push to start normalizing its functionality.
+                    The technique widely used vibrating and oscillating movement
+                    without sharp axial manipulation of the joints.
+                  </li>
+                </ul>
+                <h5>
+                  Contraindications and side effects of manipulative treatment
+                  methods:
+                </h5>
+                <ul>
+                  <li>
+                    • Infectious diseases (influenza, virus, skin diseases)
+                  </li>
+                  <li>• Open cuts, burns</li>
+                  <li>• Fresh injury or fracture</li>
+                  <li>• Muscles or tendons ruptures</li>
+                  <li>• Recent injuries</li>
+                  <li>• Traumatic brain injury</li>
+                  <li>• Varicose veins</li>
+                  <li>• Aptitude to thrombosis or hemorrhage</li>
+                  <li>• Acute cardiac pathologies</li>
+                  <li>• Pregnancy (depending on gestational age)</li>
+                  <li>• Tumors (including cancers)</li>
+                  <li>
+                    • Certain diseases such as bursitis, uratic arthritis,
+                    myositis with ossification, rheumatoid arthritis,
+                    inflammation of the periosteum and others
+                  </li>
+                  <li>
+                    • Absolutely everything, what you can be unsure about!
+                  </li>
+                </ul>
+              </div>
+              <button class="read-more txt-l">READ MORE</button>
             </div>
-            <button class="read-more txt-l">READ MORE</button>
-          </li>
-          <li class="acupuncture d-none">
-            <img src="" alt="" class="acupuncture-img" />
-            <h4 class="treatmets-subtitle">Acupuncture</h4>
-            <div class="treatmets-txt txt faded-txt">
-              <p>— a trend in traditional Chinese medicine, in which the effect on the body is carried out with special
-                needles through specific points on the body by introducing them to these points and their manipulation.
-              </p>
-              <p>Unlike intramuscular manual therapy, acupuncture is based on the idea of “body meridians” or energy
-                flows, and works at the system level, affecting local and specified points. It is based on the use of
-                needles, their length, direction and stimulation.</p>
-              <p>ATTENTION!!! All the used needles are disposable and are used only once.</p>
-              <ul>
-                Effects of acupuncture:
-                <li>1. Deoxidation and strengthening the immune system</li>
-                <li>2. Relaxation of soft tissues</li>
-                <li>3. Improves metabolism and circulation of fluids</li>
-                <li>4. Relieves stress, swelling and tumors</li>
-                <li>5. Recovers the texture and functionality of muscles</li>
-              </ul>
-            </div>
-            <button class="read-more txt-l">READ MORE</button>
-          </li>
-          <li class="cupping d-none">
-            <img src="" alt="" class="cupping-img" />
-            <h4 class="treatmets-subtitle">Cupping</h4>
-            <div class="treatmets-txt txt faded-txt">
-              <p>— a trend in traditional Chinese medicine, in which the effect on the body is carried out with special
-                needles through specific points on the body by introducing them to these points and their manipulation.
-              </p>
-              <p>Unlike intramuscular manual therapy, acupuncture is based on the idea of “body meridians” or energy
-                flows, and works at the system level, affecting local and specified points. It is based on the use of
-                needles, their length, direction and stimulation.</p>
-              <p>ATTENTION!!! All the used needles are disposable and are used only once.</p>
-              <ul>
-                Effects of acupuncture:
-                <li>1. Deoxidation and strengthening the immune system</li>
-                <li>2. Relaxation of soft tissues</li>
-                <li>3. Improves metabolism and circulation of fluids</li>
-                <li>4. Relieves stress, swelling and tumors</li>
-                <li>5. Recovers the texture and functionality of muscles</li>
-              </ul>
-            </div>
-            <button href="#" class="read-more txt-l">READ MORE</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="education">
-    <div class="container">
-      <div class="edu-list-holder demi-column">
-        <ul class="edu-list txt-l faded-txt">
-          <li class="edu-list-item">
-            ICOM Master of Osteopathic Medicine (MOst) 2014-2018
-            <br>Member of General Osteopathic Council (GOsC) 2019
-          </li>
-          <li class="edu-list-item">
-            TCCM Two-year Chinese Acupuncture Diploma 2014-2016
-            <br>1 year Orthopaedic Acupuncture Diploma 2013-2014
-            <br>Member of The British Acupuncture Society 2014
-          </li>
-          <li class="edu-list-item">
-            SRM BTEC Level 5 Clinical Sport and Remedial Massage 2013-2014
-          </li>
-          <li class="edu-list-item">
-            ITEC Level 3 Sport Massage 2013
-          </li>
-          <li class="edu-list-item">
-            Gil Hindley Human dissection 10 day hands on workshop 2016
-          </li>
-          <li class="edu-list-item">TapeDock Two Practical KT Taping Course 2017</li>
-        </ul>
-        <button class="read-more txt-l">READ MORE</button>
-      </div>
-      <div class="edu-pic-holder bordered demi-column">
-        <h3 class="edu-title">Education</h3>
-        <img class="edu-img" src="res/educ.png" alt="education" />
-      </div>
-    </div>
-  </section>
-  <div class="price">
-    <div class="container">
-      <p class="price-text">Cost of treatment is 30 € session. A package of 6 for 5 is available.</p>
-    </div>
-  </div>
-  <footer class="contact">
-    <div class="container">
-      <div class="contact-left bordered demi-column">
-        <h3 class="contact-title">Contacts</h3>
-        <h4 class="contact-subtitle">
-          Book a therapy delivered to your home, hotel or wherever you are.
-        </h4>
-        <p class="contact-txt txt">
-          Expert and professional therapist to address your musculoskeletal
-          pains, stiffness or just a regular MOT check)
-        </p>
-        <p class="contact-txt txt">
-          Do not wait until it is too late act now.
-        </p>
-        <span class="contact-number">
-          Call now 07727 187 007, for a free consultation
-        </span>
-      </div>
-      <div class="contact-right demi-column">
-        <h5 class="schedule-title">Working hours</h5>
-        <ul class="schedule-list">
-          <li class="schedule-item txt">Monday - Friday : 08 AM - 05 PM</li>
-          <li class="schedule-item txt">Saturday : 09.30 AM - 05.30</li>
-          <li class="schedule-item txt">Sunday : 09.30 AM - 03 PM</li>
-        </ul>
-        <span class="emergency">For emergency cases: 077-27-187-007</span>
-      </div>
-    </div>
-  </footer>
+            <div class="acupuncture d-none">
+              <h4 class="treatmets-subtitle">Acupuncture</h4>
+              <div class="treatmets-txt txt faded-txt">
+                <h5>Overview</h5>
+                <p>
+                  Acupuncture originates from Traditional Chinese Medicine
+                  (TCM). This is the method of treatment whose history dates
+                  back more than 5000 years and which is still used today.
+                  Unlike intramuscular manual therapy, acupuncture is based on
+                  the idea of “body meridians” or energy flows, and works at the
+                  system level, affecting local and specified points. It is
+                  based on the use of needles, their length, direction and
+                  stimulation.<br />
+                  ATTENTION!!! All the used needles are disposable and are used
+                  only once.
+                </p>
+                <h5>Effects of acupuncture</h5>
+                <ul>
+                  <li>1. Deoxidation and strengthening the immune system</li>
+                  <li>2. Relaxation of soft tissues</li>
+                  <li>3. Removes edemas and inflammations</li>
+                  <li>4. Improves metabolism and circulation of fluids</li>
+                  <li>5. Relieves stress, swelling and tumors</li>
+                  <li>
+                    6. Recovers the texture and functionality of muscles and
+                    ligaments
+                  </li>
+                  <li>
+                    7. Relaxation of the nervous system and neuromuscular return
+                  </li>
+                </ul>
+                <h5>Indications for acupuncture</h5>
+                <ul>
+                  <li>
+                    1. Recent injury, the most recent the better! If to perform
+                    acupuncture within the first 2 minutes, it is possible to
+                    completely avoid soft tissue inflammation.
+                  </li>
+                  <li>
+                    2. Neurological symptoms – numbness, pricking, sharp pain
+                  </li>
+                  <li>3. Pain in the back and spine</li>
+                  <li>4. Loss of function and muscle spasm</li>
+                  <li>
+                    5. Preparation for athletic competition, surgeries,
+                    childbirth
+                  </li>
+                  <li>6. Exhaustion</li>
+                  <li>7. Headaches</li>
+                  <li>8. Ache and pains in muscles and joints</li>
+                </ul>
+                <h5>Types of medical acupuncture</h5>
+                Conventionally, the acupuncture can be divided into two main
+                directions, depending on the application site: Auricular (ear) –
+                in this case the needles are placed directly on external ear.
+                External ear is divided into areas is responsible for certain
+                body area or internal organ. This therapeutic technique is very
+                effective, but short. The best use of auricular acupuncture is
+                the pain and spasm relief. System acupuncture is the use of the
+                method throughout the body. It involves local points (near the
+                site of exposure), peripheral (reflex points of the affected
+                area), the interaction between the meridians and “irregular
+                points”. This type of acupuncture requires compilation of an
+                effective and reasonable formula to use and to achieve good
+                results. Practice has shown that system acupuncture is an
+                effective therapeutic technique with stable results. Thermal
+                acupuncture is warming-up using herbal cigarettes or infrared
+                lamp of needles and biologically active zones. This technique
+                enhances the therapeutic effect and activates internal corporal
+                strength for a speedy recovery. Also known as tzu therapy. For
+                added effect, the patient can receive activated beads or plates
+                fixed by tape. The patient may be suggested to walk with the
+                stickers from a few hours up to several days. This type of
+                therapy is sometimes called applieopresspuncture. It should be
+                noted that acupuncture and needle therapy – two at first sight
+                identical concepts – are in fact completely different!
+                Acupuncture is one of the main methods of TCM and it operates
+                under a principle of meridians scouring. On the other hand,
+                needle therapy is the type of therapeutic impact, adapted to
+                modern medicine, acting on the principle of local points and
+                neural signals.
 
-</body>
-<script src="js/main.js"></script>
-
+                <h5>Contraindications and side effects of acupuncture</h5>
+                <ul>
+                  <li>
+                    • Infectious diseases (influenza, virus, skin diseases)
+                  </li>
+                  <li>• Open cuts, burns</li>
+                  <li>• Complete rupture of muscles or tendons</li>
+                  <li>• Thromboses or bleeding disorder</li>
+                  <li>• Acute cardiac pathologies</li>
+                </ul>
+              </div>
+              <button class="read-more txt-l">READ MORE</button>
+            </div>
+            <div class="cupping d-none">
+              <h4 class="treatmets-subtitle">Cupping</h4>
+              <div class="treatmets-txt txt faded-txt">
+                <p>
+                  — a trend in traditional Chinese medicine, in which the effect
+                  on the body is carried out with special needles through
+                  specific points on the body by introducing them to these
+                  points and their manipulation.
+                </p>
+                <p>
+                  Unlike intramuscular manual therapy, acupuncture is based on
+                  the idea of “body meridians” or energy flows, and works at the
+                  system level, affecting local and specified points. It is
+                  based on the use of needles, their length, direction and
+                  stimulation.
+                </p>
+                <p>
+                  ATTENTION!!! All the used needles are disposable and are used
+                  only once.
+                </p>
+                <ul>
+                  Effects of acupuncture:
+                  <li>1. Deoxidation and strengthening the immune system</li>
+                  <li>2. Relaxation of soft tissues</li>
+                  <li>3. Improves metabolism and circulation of fluids</li>
+                  <li>4. Relieves stress, swelling and tumors</li>
+                  <li>5. Recovers the texture and functionality of muscles</li>
+                </ul>
+              </div>
+              <button href="#" class="read-more txt-l">READ MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="education">
+      <div class="container">
+        <div class="edu-list-holder demi-column">
+          <ul class="edu-list txt-l faded-txt">
+            <li class="edu-list-item">
+              ICOM Master of Osteopathic Medicine (MOst) 2014-2018
+              <br />Member of General Osteopathic Council (GOsC) 2019
+            </li>
+            <li class="edu-list-item">
+              TCCM Two-year Chinese Acupuncture Diploma 2014-2016
+              <br />1 year Orthopaedic Acupuncture Diploma 2013-2014
+              <br />Member of The British Acupuncture Society 2014
+            </li>
+            <li class="edu-list-item">
+              SRM BTEC Level 5 Clinical Sport and Remedial Massage 2013-2014
+            </li>
+            <li class="edu-list-item">
+              ITEC Level 3 Sport Massage 2013
+            </li>
+            <li class="edu-list-item">
+              Gil Hindley Human dissection 10 day hands on workshop 2016
+            </li>
+            <li class="edu-list-item">
+              TapeDock Two Practical KT Taping Course 2017
+            </li>
+          </ul>
+          <button class="read-more txt-l">READ MORE</button>
+        </div>
+        <div class="edu-pic-holder bordered demi-column">
+          <h3 class="edu-title">Education</h3>
+          <img class="edu-img" src="res/educ.png" alt="education" />
+        </div>
+      </div>
+    </section>
+    <div class="price">
+      <div class="container">
+        <p class="price-text">
+          Cost of treatment is 30 € session. A package of 6 for 5 is available.
+        </p>
+      </div>
+    </div>
+    <footer class="contact">
+      <div class="container">
+        <div class="contact-left bordered demi-column">
+          <h3 class="contact-title">Contacts</h3>
+          <h4 class="contact-subtitle">
+            Book a therapy delivered to your home, hotel or wherever you are.
+          </h4>
+          <p class="contact-txt txt">
+            Expert and professional therapist to address your musculoskeletal
+            pains, stiffness or just a regular MOT check)
+          </p>
+          <p class="contact-txt txt">
+            Do not wait until it is too late act now.
+          </p>
+          <span class="contact-number">
+            Call now 07727 187 007, for a free consultation
+          </span>
+        </div>
+        <div class="contact-right demi-column">
+          <h5 class="schedule-title">Working hours</h5>
+          <ul class="schedule-list">
+            <li class="schedule-item txt">Monday - Friday : 08 AM - 05 PM</li>
+            <li class="schedule-item txt">Saturday : 09.30 AM - 05.30</li>
+            <li class="schedule-item txt">Sunday : 09.30 AM - 03 PM</li>
+          </ul>
+          <span class="emergency">For emergency cases: 077-27-187-007</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/main.js"></script>
 </html>
