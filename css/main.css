@@ -44,9 +44,14 @@ section {
 	position: relative;
 }
 
-section:nth-child(2n + 1) {
+section:nth-child(2n) {
 	background-color: #ebebeb;
 }
+
+section:nth-child(2n + 1) {
+	background-color: #f8f8f8;
+}
+
 
 .container {
 	margin: 0 auto;
@@ -109,6 +114,23 @@ section:nth-child(2n + 1) {
 .anchor {
 	position: absolute;
 	top: 0;
+}
+
+.popup-wrapper {
+	overflow: hidden;
+}
+
+.popup {
+	position: fixed;
+    left: 12%;
+    top: 5%;
+    background-color: #ffffff;
+    width: 75%;
+    height: 80%;
+    padding: 4%;
+    z-index: 3;
+    filter: none;
+    overflow: auto;
 }
 
 /* HEADER */
@@ -182,10 +204,6 @@ section:nth-child(2n + 1) {
 }
 
 /* SECTION ABOUT */
-
-.about {
-	background-color: #f8f8f8;
-}
 
 .about-title {
 	transform: translate(-54px);
@@ -264,7 +282,7 @@ section:nth-child(2n + 1) {
 }
 
 .education .faded-txt::before {
-	background: linear-gradient(to bottom, transparent, #ffffff);
+	background: linear-gradient(to bottom, transparent, #f8f8f8);
 }
 
 .edu-list-item {
@@ -273,7 +291,7 @@ section:nth-child(2n + 1) {
 
 .edu-title {
 	transform: translate(-60px);
-	background-color: #ffffff;
+	background-color: #f8f8f8;
 }
 
 .edu-img {
