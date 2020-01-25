@@ -67,8 +67,10 @@ section:nth-child(2n + 1) {
 
 .demi-column {
 	width: 50%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
 .txt {
@@ -78,7 +80,7 @@ section:nth-child(2n + 1) {
 	position: relative;
 }
 .faded-txt {
-	max-height: 40vh;
+	max-height: 65vh;
 	overflow: hidden;
 }
 
@@ -221,7 +223,7 @@ section:nth-child(2n + 1) {
 	background-color: #40bfc2;
 	text-align: center;
 	padding: 4% 0;
-	margin: auto auto 0;
+	margin: auto 0 auto auto;
 	width: 85%;
 	max-width: 460px;
 	color: #ffffff;
@@ -248,6 +250,18 @@ section:nth-child(2n + 1) {
 	margin-bottom: 6%;
 }
 
+.treatments-list {
+	height: 100%;
+}
+
+.treatments-list-item {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
 .treatments .faded-txt::before {
 	background: linear-gradient(to bottom, transparent, #ebebeb);
 }
@@ -255,6 +269,10 @@ section:nth-child(2n + 1) {
 .treatmets-subtitle {
 	color: #6a8c9c;
 	margin-bottom: 4%;
+}
+
+.treatmets-txt {
+	flex-grow: 1;
 }
 
 .treatmets-txt > * {
@@ -274,19 +292,14 @@ section:nth-child(2n + 1) {
 .edu-list-holder {
 	text-align: end;
 	padding-right: 4%;
-	align-self: center;
 }
 
 .edu-list {
-	position: relative;
-}
-
-.education .faded-txt::before {
-	background: linear-gradient(to bottom, transparent, #f8f8f8);
+	margin: auto 0;
 }
 
 .edu-list-item {
-	margin-top: 7%;
+	margin-top: 4%;
 }
 
 .edu-title {
