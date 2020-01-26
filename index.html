@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Osteopath</title>
   </head>
-  <div class="popup d-none">
-    
-  </div>
+  <div class="popup d-none"></div>
   <body>
     <section class="hero">
       <header class="header">
@@ -34,20 +32,14 @@
           <li class="menu-item"><a href="#education">Bildungen</a></li>
           <li class="menu-item"><a href="#contacts">Kontakte</a></li>
         </ul>
-        <label for="select" class="select">
-          <input type="radio" name="list" value="not_changed" id="bg" checked />
-          <input type="radio" name="list" value="not_changed" id="select" />
-          <label class="bg" for="bg"></label>
-          <div class="items">
-            <input type="radio" name="list" value="lang-en" id="list[0]" />
-            <label for="list[0]">English</label>
-            <input type="radio" name="list" value="lang-ru" id="list[1]" />
-            <label for="list[1]">Russian</label>
-            <input type="radio" name="list" value="lang-de" id="list[2]" />
-            <label for="list[2]">Deutch</label>
-            <span id="text">Language</span>
-          </div>
-        </label>
+        <div id="lang-select" class="customselect">
+          <button class="title">Language</button>
+          <ul>
+            <li data-value="lang-en">English</li>
+            <li data-value="lang-ru">Russian</li>
+            <li data-value="lang-de">Deutch</li>
+          </ul>
+        </div>
       </header>
       <div class="mob-headbar"></div>
       <div class="heading lang lang-en">
@@ -62,19 +54,19 @@
             not the absence of disease – it is an opportunity to be able to do
             whatever you want. In other words, health is our freedom !!!
           </p>
-          <ul>
-            <li>Back pain, dorsalgia and lumbago</li>
-            <li>Spinal hernias and protrusions</li>
-            <li>Neck pain and headache</li>
-            <li>Rehabilitation and chronic pain</li>
-            <li>Straightening the spine, scoliosis, kyphosis</li>
-            <li>Neurological symptoms and sciatica</li>
-            <li>Natal preparation and recovery</li>
-            <li>Sports preparation and recovery</li>
-            <li>Abdominal pain and digestive problems</li>
-            <li>Stress and sleep problems</li>
-          </ul>
         </div>
+        <ul class="heading-symptoms">
+          <li>Back pain, dorsalgia and lumbago</li>
+          <li>Spinal hernias and protrusions</li>
+          <li>Neck pain and headache</li>
+          <li>Rehabilitation and chronic pain</li>
+          <li>Straightening the spine, scoliosis, kyphosis</li>
+          <li>Neurological symptoms and sciatica</li>
+          <li>Natal preparation and recovery</li>
+          <li>Sports preparation and recovery</li>
+          <li>Abdominal pain and digestive problems</li>
+          <li>Stress and sleep problems</li>
+        </ul>
       </div>
       <div class="heading lang lang-ru d-none">
         <h1 class="heading-title">
@@ -130,7 +122,6 @@
           </ul>
         </div>
       </div>
-
       <ul class="socials">
         <li class="socials-item">
           <a href="#">
@@ -203,22 +194,30 @@
             Я часто присутствовал в качестве остеопата на различных спортивных
             мероприятиях (например, на Лондонском марафоне), где я мог
             демонстрировать свои остеопатические навыки даже в состоянии
-            стресса. Я сопровождаю и советую некоторых профессиональных
-            спортсменов (мастера единоборств и поло / игроки в гольф). Я также
-            много знаю о наращивании мышечной массы, как для начинающих, так и
-            для профессионалов. Я рад сопровождать людей до и / или после
-            операции, чтобы стимулировать самоисцеление организма. Я с
-            удовольствием сопровождаю и маму, и ребенка до и во время
-            беременности, а также после родов. Я счастлив сделать бесплатную
-            проверку для вас и вашего ребенка. Я делаю детские осмотры со
-            второго дня жизни. Остеопатия может привести тело в равновесие,
-            ускорить регенерацию и помочь организму справиться с изменениями во
-            время или после беременности или операции. Лечение фасции особенно
-            убедить меня. Терапия фасции может изменить старые модели движения,
-            что приводит к большему балансу в организме. Этот тип терапии
-            приносит очень успешные результаты, для меня терапия фасции - это
-            «А» и «Я» в моем лечении.
+            стресса.
           </p>
+          <p class="txt">
+            Я сопровождаю и советую некоторых профессиональных спортсменов
+            (мастера единоборств и поло / игроки в гольф). Я также много знаю о
+            наращивании мышечной массы, как для начинающих, так и для
+            профессионалов. Я рад сопровождать людей до и / или после операции,
+            чтобы стимулировать самоисцеление организма. Я с удовольствием
+            сопровождаю и маму, и ребенка до и во время беременности, а также
+            после родов. Я счастлив сделать бесплатную проверку для вас и вашего
+            ребенка. Я делаю детские осмотры со второго дня жизни.
+          </p>
+          <p class="txt">
+            Остеопатия может привести тело в равновесие, ускорить регенерацию и
+            помочь организму справиться с изменениями во время или после
+            беременности или операции.
+          </p>
+          <p class="txt">
+            Лечение фасции особенно убедить меня. Терапия фасции может изменить
+            старые модели движения, что приводит к большему балансу в организме.
+            Этот тип терапии приносит очень успешные результаты, для меня
+            терапия фасции - это «А» и «Я» в моем лечении.
+          </p>
+
           <h4>ХАРАКТЕРНЫЕ СВОЙСТВА</h4>
           <p class="txt">
             Любопытный, открытый и общительный, внимательный к деталям и
@@ -233,23 +232,31 @@
             Ich habe Erfahrung in der Traumatologie und Rehabilitation nach
             Unfallverletzungen. Oft war ich als Osteopath bei verschiedenen
             Sportveranstaltungen anwesend (z.B. London-Marathon) wo ich meine
-            osteopathischen Fähigkeiten auch unter Stress beweisen konnte. Ich
-            begleite und berate einige professionelle Sportler (Kampfsportler
-            und Polo-/Golfspieler). Ebenfalls kenne ich mich sehr gut aus wenn
-            es um Muskelaufbau geht, sowohl bei Anfängern wie auch bei Profi’s.
-            Gerne begleite ich Menschen vor und/oder nach einer Operation, um so
-            die Selbstheilung des Körpers zu stimulieren. Gerne begleite ich vor
-            und während der Schwangerschaft, ebenso nach der Geburt, sowohl die
-            Mutter wie auch das Baby. Gerne mache ich für Sie und Ihr Baby ein
-            Gratis Check-up. Baby Check-up’s mache ich ab dem 2. Lebenstag. Die
-            Osteopathie kann den Körper wieder ins Gleichgewicht bringen,
+            osteopathischen Fähigkeiten auch unter Stress beweisen konnte.
+          </p>
+          <p class="txt">
+            Ich begleite und berate einige professionelle Sportler
+            (Kampfsportler und Polo-/Golfspieler). Ebenfalls kenne ich mich sehr
+            gut aus wenn es um Muskelaufbau geht, sowohl bei Anfängern wie auch
+            bei Profi’s. Gerne begleite ich Menschen vor und/oder nach einer
+            Operation, um so die Selbstheilung des Körpers zu stimulieren. Gerne
+            begleite ich vor und während der Schwangerschaft, ebenso nach der
+            Geburt, sowohl die Mutter wie auch das Baby. Gerne mache ich für Sie
+            und Ihr Baby ein Gratis Check-up. Baby Check-up’s mache ich ab dem
+            2. Lebenstag.
+          </p>
+          <p class="txt">
+            Die Osteopathie kann den Körper wieder ins Gleichgewicht bringen,
             ermöglicht eine schnellere Regeneration und erleichtert dem Körper,
             mit den Veränderungen während oder nach der Schwangerschaft oder
-            Operation umzugehen. Faszien Behandlungen überzeugen mich ganz
-            besonders. Durch eine Faszien-Therapie können sich alte
-            Bewegungsmuster ändern, was zu mehr Ausgewogenheit im Körper führt.
-            Diese Art von Therapie bringt sehr erfolgreiche Resultate, für mich
-            ist Faszien-Therapie das «A» und «O» in meinen Behandlungen.
+            Operation umzugehen.
+          </p>
+          <p class="txt">
+            Faszien Behandlungen überzeugen mich ganz besonders. Durch eine
+            Faszien-Therapie können sich alte Bewegungsmuster ändern, was zu
+            mehr Ausgewogenheit im Körper führt. Diese Art von Therapie bringt
+            sehr erfolgreiche Resultate, für mich ist Faszien-Therapie das «A»
+            und «O» in meinen Behandlungen.
           </p>
           <h4>CHARAKTEREIGENSCHAFTEN</h4>
           <p class="txt">
@@ -1580,14 +1587,16 @@
             Бронируйте сейчас, не ждите, когда будет слишком поздно
           </h4>
           <p class="contact-txt txt">
-            Опытный и профессиональный терапевт, чтобы решить ваши нервно-мышечные боли, скованность или просто регулярное обследование ТО)
+            Опытный и профессиональный терапевт, чтобы решить ваши
+            нервно-мышечные боли, скованность или просто регулярное обследование
+            ТО)
           </p>
           <p class="contact-txt txt">
             Рабочие часы: <br />
             Понедельник - Воскресенье: с 07:00 до 20:00.
           </p>
           <p class="contact-number">
-            Звоните сейчас  для бесплатной консультации  <br />
+            Звоните сейчас для бесплатной консультации <br />
             (В экстренных случаях звоните в любое время): <br />
             +41772121070
           </p>
@@ -1598,7 +1607,9 @@
             Buchen Sie jetzt, warten Sie nicht, wenn es zu spät ist
           </h4>
           <p class="contact-txt txt">
-            Kompetenter und professioneller Therapeut, um Ihre neuromuskuloskeletalen Schmerzen, Steifheit oder nur einen regelmäßigen MOT-Check zu behandeln)
+            Kompetenter und professioneller Therapeut, um Ihre
+            neuromuskuloskeletalen Schmerzen, Steifheit oder nur einen
+            regelmäßigen MOT-Check zu behandeln)
           </p>
           <p class="contact-txt txt">
             Arbeitszeit: <br />
@@ -1610,12 +1621,20 @@
             +41772121070
           </p>
         </div>
-        
+
         <div class="contact-right demi-column">
-         
+          <iframe
+            class="contact-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.377695745593!2d8.52265041562215!3d47.36554637916941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479009f6552b0ad5%3A0x6ce64332aeeb16ba!2sGoogle!5e0!3m2!1sen!2sua!4v1580053642854!5m2!1sen!2sua"
+            width="500"
+            height="400"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+          ></iframe>
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
-  <script src="js/main.js"></script>
 </html>
