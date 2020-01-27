@@ -157,18 +157,11 @@ section:nth-child(2n + 1) {
 /* HEADER */
 
 .hero {
-   background-image: url(/Salud/res/hero-backg-desk.png),
-    url(/res/hero-backg-desk.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-position-x: 135%;
-	background-size: 70vw; 
   padding-left: 4%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-
 }
 
 .logo {
@@ -192,7 +185,7 @@ section:nth-child(2n + 1) {
 
 .menu {
   display: flex;
-  width: 30vw;
+  width: 50vw;
   justify-content: space-between;
 }
 
@@ -206,6 +199,11 @@ section:nth-child(2n + 1) {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: url(/Salud/res/hero-backg-desk1.png),
+    url(/res/hero-backg-desk1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+	background-size: contain;
 }
 
 .heading>* {
@@ -226,7 +224,8 @@ section:nth-child(2n + 1) {
 	max-width: 60%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+  justify-content: space-between;
+  padding-left: 20px;
 }
 
 .heading-symptoms>li {
