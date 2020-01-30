@@ -8,38 +8,39 @@
   <link rel="stylesheet" href="css/main.css" />
   <title>Osteopath</title>
 </head>
-<div class="popup d-none"></div>
-
 <body>
+  <div class="popup"></div>
   <section class="hero">
     <header class="header">
       <object class="logo" type="image/svg+xml" data="picture.svg">
         <img class="logo-img" src="res/Logo.svg" />
       </object>
-      <ul class="menu lang lang-en">
-        <li class="menu-item"><a href="#about">About</a></li>
-        <li class="menu-item"><a href="#treatments">Treatments</a></li>
-        <li class="menu-item"><a href="#education">Education</a></li>
-        <li class="menu-item"><a href="#contacts">Contacts</a></li>
-      </ul>
-      <ul class="menu lang lang-ru d-none">
-        <li class="menu-item"><a href="#about">О нас</a></li>
-        <li class="menu-item"><a href="#treatments">Лечение</a></li>
-        <li class="menu-item"><a href="#education">Образование</a></li>
-        <li class="menu-item"><a href="#contacts">Контакты</a></li>
-      </ul>
-      <ul class="menu lang lang-de d-none">
-        <li class="menu-item"><a href="#about">Über uns</a></li>
-        <li class="menu-item"><a href="#treatments">Behandlungen</a></li>
-        <li class="menu-item"><a href="#education">Bildungen</a></li>
-        <li class="menu-item"><a href="#contacts">Kontakte</a></li>
-      </ul>
+      <nav>
+        <ul class="menu lang lang-en">
+          <li class="menu-item"><a href="#about">About</a></li>
+          <li class="menu-item"><a href="#treatments">Treatments</a></li>
+          <li class="menu-item"><a href="#education">Education</a></li>
+          <li class="menu-item"><a href="#contacts">Contacts</a></li>
+        </ul>
+        <ul class="menu lang lang-ru d-none">
+          <li class="menu-item"><a href="#about">О нас</a></li>
+          <li class="menu-item"><a href="#treatments">Лечение</a></li>
+          <li class="menu-item"><a href="#education">Образование</a></li>
+          <li class="menu-item"><a href="#contacts">Контакты</a></li>
+        </ul>
+        <ul class="menu lang lang-de d-none">
+          <li class="menu-item"><a href="#about">Über uns</a></li>
+          <li class="menu-item"><a href="#treatments">Behandlungen</a></li>
+          <li class="menu-item"><a href="#education">Bildungen</a></li>
+          <li class="menu-item"><a href="#contacts">Kontakte</a></li>
+        </ul>
+      </nav>
       <div id="lang-select" class="customselect">
         <a class="title">Language</a>
-        <ul>
-          <li data-value="lang-en">English</li>
-          <li data-value="lang-ru">Russian</li>
-          <li data-value="lang-de">Deutch</li>
+        <ul class="lang-list">
+          <li class="lang-item" data-value="lang-en">English</li>
+          <li class="lang-item" data-value="lang-ru">Russian</li>
+          <li class="lang-item" data-value="lang-de">Deutch</li>
         </ul>
       </div>
     </header>
@@ -1565,12 +1566,12 @@
     </div>
   </section>
   <div class="offer">
-      <div class="container">
-        <p class="offer-txt">
-          Book now your FREE 10 minute check-ups or a treatment. +41772121070
-        </p>
-      </div>
+    <div class="container">
+      <p class="offer-txt">
+        Book now your FREE 10 minute check-ups or a treatment. +41772121070
+      </p>
     </div>
+  </div>
   <footer class="contact">
     <a name="contacts" class="anchor"></a>
     <div class="container">
@@ -1641,6 +1642,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/popup.js"></script>
   <script src="js/main.js"></script>
 </body>
 

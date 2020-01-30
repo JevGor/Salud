@@ -1,100 +1,75 @@
-/* POPUP*/
-const popup = document.querySelector(".popup");
-
-const initPopup = event => {
-  if (event.target.classList.contains("read-more")) {
-    event.preventDefault;
-    popup.classList.remove("d-none");
-    popup.innerHTML = event.target.previousElementSibling.innerHTML;
-
-    document.body.classList.add("popup-wrapper");
-    Array.from(document.body.children).forEach(element => {
-      if (element !== popup) {
-        element.classList.add("blur");
-      }
-    });
-  }
-  document.body.addEventListener("click", closePopup, { once: true });
-};
-
-const closePopup = event => {
-  if (event.target.closest("div") != popup) {
-    popup.classList.add("d-none");
-    document.body.classList.remove("popup-wrapper");
-  }
-  Array.from(document.body.children).forEach(element => {
-      element.classList.remove("blur");
-  });
-};
-
-document.body.addEventListener("click", initPopup);
-
-/* ------------------ */
-
-function CustomSelect(options) {
-	const elem = options.elem;
-  
-	elem.onclick = function(event) {
-	  if (event.target.className == 'title') {
-		toggle();
-	  } else if (event.target.tagName == 'LI') {
-		setValue(event.target.innerHTML, event.target.dataset.value);
-		close();
-	  }
+class Popup {
+	constructor(element) {
+		this.elem = document.querySelector(element);
+		this.isOpen = false;
+		this.onDocumentClick = this.onDocumentClick.bind(this);
 	}
-  
-	const isOpen = false;
-  
-	function onDocumentClick(event) {
-	  if (!elem.contains(event.target)) close();
-	}
-  
-	function setValue(title, value) {
-	  elem.querySelector('.title').innerHTML = title;
-  
-	  const widgetEvent = new CustomEvent('select', {
-		bubbles: true,
-		detail: {
-		  title: title,
-		  value: value
-		}
-	  });
-  
-	  elem.dispatchEvent(widgetEvent);
-  
-	}
-  
-	function toggle() {
-	  if (isOpen) close()
-	  else open();
-	}
-  
-	function open() {
-	  elem.classList.add('open');
-	  document.addEventListener('click', onDocumentClick);
-	  isOpen = true;
-	}
-  
-	function close() {
-	  elem.classList.remove('open');
-	  document.removeEventListener('click', onDocumentClick);
-	  isOpen = false;
-	}
-  
-  }
 
-  const langSelect = new CustomSelect({
-	elem: document.getElementById("lang-select")
-  });
+	openPopup() {
+		this.elem.classList.add("open");
+		// document.addEventListener("click", this.onDocumentClick);
+		this.isOpen = true;
+	}
 
-  const langTxt = document.querySelectorAll(".lang");
+	closePopup() {
+		this.elem.classList.remove("open");
+		// document.removeEventListener("click", this.onDocumentClick);
+		this.isOpen = false;
+	}
 
-  document.addEventListener("select", function(event) {
-	langTxt.forEach(element => {
-		if (element.classList.contains(`${event.detail.value}`)) {
-		  element.classList.remove("d-none");
-		} else {
-		  element.classList.add("d-none");
-		}
-	  });
-  });
+	onDocumentClick(event) {
+		if (!this.elem.contains(event.target)) this.closePopup();
+	}
+
+	togglePopup() {
+		if (this.isOpen) this.closePopup();
+		else this.openPopup();
+	}
+
+	setValue(title, value) {
+		this.elem.querySelector(".title").innerHTML = title;
+	}
+}
+
+/* Language select */
+const langPopup = new Popup('.lang-list');
+const langSelect = document.querySelector('.lang-list');
+const langTxt = document.querySelectorAll('.lang');
+
+document.addEventListener('click', onSelectClick);
+
+function onSelectClick() {
+	if (event.target.className == 'title') {
+		langPopup.togglePopup();
+	} else if (event.target.className == 'lang-item') {
+		document.querySelector('.title').innerHTML = event.target.innerHTML;
+		langTxt.forEach((element) => {
+			if (element.classList.contains(`${event.target.dataset.value}`)) {
+				element.classList.remove('d-none');
+			} else {
+				element.classList.add('d-none');
+			}
+		});
+		langPopup.closePopup();
+	} else if (!langPopup.elem.contains(event.target)) {
+		langPopup.closePopup();
+	}
+}
+
+/* Article Popup */
+const articlePopup = new Popup('.popup');
+const popupContainer = document.querySelector('.popup');
+
+document.addEventListener('click', onReadMoreClick);
+
+function onReadMoreClick() {
+	if (event.target.classList.contains('read-more')) {
+		popupContainer.innerHTML = event.target.previousElementSibling.innerHTML;
+		articlePopup.openPopup();
+		document.body.classList.add('popup-wrapper')
+	} else if (!articlePopup.elem.contains(event.target)) {
+		articlePopup.closePopup()
+		document.body.classList.remove('popup-wrapper')
+	}
+
+}

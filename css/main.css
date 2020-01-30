@@ -131,6 +131,7 @@ section:nth-child(2n + 1) {
 
 .popup {
   position: fixed;
+  display: none;
   left: 25%;
   top: 5%;
   background-color: #f8f8f8;
@@ -440,6 +441,7 @@ section:nth-child(2n + 1) {
 .customselect {
   width: 100px;
   margin-right: 4%;
+  text-align: center;
 }
 
 .customselect .title {
@@ -460,7 +462,7 @@ section:nth-child(2n + 1) {
 	font-weight: 500;
   }
 
-.customselect ul {
+.lang-list {
   padding: 10px 0;
   display: none;
   position: absolute;
@@ -473,8 +475,8 @@ section:nth-child(2n + 1) {
   animation-name: fadeInDown;
 }
 
-.customselect.open ul {
-  display: block;
+.open {
+  display: block !important;
 }
 
 /* ADAPTIVE */
