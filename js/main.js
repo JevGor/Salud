@@ -36,40 +36,53 @@ const langPopup = new Popup('.lang-list');
 const langSelect = document.querySelector('.lang-list');
 const langTxt = document.querySelectorAll('.lang');
 
-document.addEventListener('click', onSelectClick);
+const selectLang = () => {
+	document.querySelector('.title').innerHTML = event.target.innerHTML;
+	langTxt.forEach((element) => {
+		if (element.classList.contains(`${event.target.dataset.value}`)) {
+			element.classList.remove('d-none');
+		} else {
+			element.classList.add('d-none');
+		}
+	});
+}
 
-function onSelectClick() {
+const onSelectLangClick = () => {
 	if (event.target.className == 'title') {
 		langPopup.togglePopup();
 	} else if (event.target.className == 'lang-item') {
-		document.querySelector('.title').innerHTML = event.target.innerHTML;
-		langTxt.forEach((element) => {
-			if (element.classList.contains(`${event.target.dataset.value}`)) {
-				element.classList.remove('d-none');
-			} else {
-				element.classList.add('d-none');
-			}
-		});
+		selectLang();
 		langPopup.closePopup();
 	} else if (!langPopup.elem.contains(event.target)) {
 		langPopup.closePopup();
 	}
 }
 
+document.addEventListener('click', onSelectLangClick);
+
 /* Article Popup */
-const articlePopup = new Popup('.popup');
+const textPopup = new Popup('.popup');
 const popupContainer = document.querySelector('.popup');
+
+const openTextPopup = () => {
+	popupContainer.innerHTML = event.target.previousElementSibling.innerHTML;
+	textPopup.openPopup();
+	document.body.classList.add('popup-wrapper')
+}
+
+const closeTextPopup = () => {
+	textPopup.closePopup()
+	document.body.classList.remove('popup-wrapper')
+}
+
+const onReadMoreClick = () => {
+	if (event.target.classList.contains('read-more')) {
+		openTextPopup();
+	} else if (!textPopup.elem.contains(event.target)) {
+		closeTextPopup();
+	}
+}
 
 document.addEventListener('click', onReadMoreClick);
 
-function onReadMoreClick() {
-	if (event.target.classList.contains('read-more')) {
-		popupContainer.innerHTML = event.target.previousElementSibling.innerHTML;
-		articlePopup.openPopup();
-		document.body.classList.add('popup-wrapper')
-	} else if (!articlePopup.elem.contains(event.target)) {
-		articlePopup.closePopup()
-		document.body.classList.remove('popup-wrapper')
-	}
 
-}
