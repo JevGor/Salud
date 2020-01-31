@@ -83,6 +83,7 @@ document.addEventListener('click', onReadMoreClick);
 const mobMenuBtn = document.querySelector('.mob-menu-btn');
 
 const onMobMenuBtnClick = () => {
+	console.log(event.target)
 	if (event.target.classList.contains('mob-menu-btn')) {
 		mobMenuBtn.classList.add('open')
 	}
