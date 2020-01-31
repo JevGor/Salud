@@ -102,6 +102,12 @@ p, a, button {
 	font: inherit
 }
 
+button {
+	background-color: inherit;
+	border: none;
+}
+
 button:focus {
 	background-color: inherit;
+	outline: none;
 }

@@ -2,23 +2,16 @@ class Popup {
 	constructor(element) {
 		this.elem = document.querySelector(element);
 		this.isOpen = false;
-		this.onDocumentClick = this.onDocumentClick.bind(this);
 	}
 
 	openPopup() {
-		this.elem.classList.add("open");
-		// document.addEventListener("click", this.onDocumentClick);
+		this.elem.classList.add('open');
 		this.isOpen = true;
 	}
 
 	closePopup() {
-		this.elem.classList.remove("open");
-		// document.removeEventListener("click", this.onDocumentClick);
+		this.elem.classList.remove('open');
 		this.isOpen = false;
-	}
-
-	onDocumentClick(event) {
-		if (!this.elem.contains(event.target)) this.closePopup();
 	}
 
 	togglePopup() {
@@ -27,7 +20,7 @@ class Popup {
 	}
 
 	setValue(title, value) {
-		this.elem.querySelector(".title").innerHTML = title;
+		this.elem.querySelector('.title').innerHTML = title;
 	}
 }
 
@@ -45,7 +38,7 @@ const selectLang = () => {
 			element.classList.add('d-none');
 		}
 	});
-}
+};
 
 const onSelectLangClick = () => {
 	if (event.target.className == 'title') {
@@ -56,7 +49,7 @@ const onSelectLangClick = () => {
 	} else if (!langPopup.elem.contains(event.target)) {
 		langPopup.closePopup();
 	}
-}
+};
 
 document.addEventListener('click', onSelectLangClick);
 
@@ -67,13 +60,13 @@ const popupContainer = document.querySelector('.popup');
 const openTextPopup = () => {
 	popupContainer.innerHTML = event.target.previousElementSibling.innerHTML;
 	textPopup.openPopup();
-	document.body.classList.add('popup-wrapper')
-}
+	document.body.classList.add('popup-wrapper');
+};
 
 const closeTextPopup = () => {
-	textPopup.closePopup()
-	document.body.classList.remove('popup-wrapper')
-}
+	textPopup.closePopup();
+	document.body.classList.remove('popup-wrapper');
+};
 
 const onReadMoreClick = () => {
 	if (event.target.classList.contains('read-more')) {
@@ -81,8 +74,18 @@ const onReadMoreClick = () => {
 	} else if (!textPopup.elem.contains(event.target)) {
 		closeTextPopup();
 	}
-}
+};
 
 document.addEventListener('click', onReadMoreClick);
 
+/* Mobile Menu */
+// const mobMenu = new Popup('.mob-menu');
+const mobMenuBtn = document.querySelector('.mob-menu-btn');
 
+const onMobMenuBtnClick = () => {
+	if (event.target.classList.contains('mob-menu-btn')) {
+		mobMenuBtn.classList.add('open')
+	}
+}
+
+document.addEventListener('click', onMobMenuBtnClick)

@@ -4,8 +4,7 @@ body {
 }
 
 a:hover,
-button:hover,
-label:hover {
+button:hover {
   font-weight: 500;
 }
 
@@ -91,7 +90,7 @@ section:nth-child(2n + 1) {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, transparent, #f8f8f8);
+  background: linear-gradient(hsla(0,0%,100%,0),#fff 68.7%);
   position: absolute;
   top: 0;
   left: 0;
@@ -202,11 +201,11 @@ section:nth-child(2n + 1) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(/Salud/res/hero-backg-mob.png),
-    url(/res/hero-backg-mob.png);
+  background-image: url(/Salud/res/hero-backg-desk1.png),
+    url(/res/hero-backg-desk1.png);
   background-repeat: no-repeat;
   background-position: right;
-	background-size: cover;
+	background-size: contain;
 }
 
 .heading>* {
@@ -214,17 +213,17 @@ section:nth-child(2n + 1) {
 }
 
 .heading-title {
-  max-width: 40%;
+  max-width: 30%;
   border-bottom: 0.5px solid #686460;
   color: #6a8c9c;
 }
 
 .heading-txt {
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .heading-symptoms {
-	max-width: 60%;
+	max-width: 40%;
 	display: flex;
 	flex-wrap: wrap;
   justify-content: space-between;
@@ -380,26 +379,18 @@ section:nth-child(2n + 1) {
 }
 
 /* OFFER */
-
-
 .offer { 
   min-height: 5vh;
   margin: 15px 0;
   box-shadow: 0px 0px 20px #40bfc2;
-}
-
-.offer .container {
-  height: 100%;
-  justify-content: center;
+  display: flex;
 }
 
 .offer-txt{
   width: 100%;
   text-align: center; 
-  font-family: "Dancing Script";
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
-
 
 /* SECTION CONTACTS */
 .contact {
@@ -498,7 +489,7 @@ section:nth-child(2n + 1) {
   }
 
 .heading {
-  background-image: url(/res/hero-backg-tab.png);
+  background-image: url(/Salud/res/hero-backg-tab.png), url(/res/hero-backg-tab.png);
 }
 
   .summary-value {
@@ -551,22 +542,84 @@ section:nth-child(2n + 1) {
 
   .mob-headbar {
     display: block;
-    background-image: url(/Salud/res/Logo.svg);
-    background-color: #f8f8f8;
+    background-image: url(/Salud/res/Logo.svg), url(/res/Logo.svg);
     background-repeat: no-repeat;
     background-size: 34px;
     background-position: 5%;
     height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .mob-menu-btn {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    text-indent: -9999px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    box-shadow: none;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+  }
+
+  .mob-menu-btn span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    right: 18px;
+    height: 2px;
+    background: #686460;
+  }
+  .mob-menu-btn span::before, .mob-menu-btn span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #686460;
+    content: "";
+  }
+  .mob-menu-btn span::before {
+    top: -5px;
+    transition-property: top, transform;
+  }
+  .mob-menu-btn span::after {
+    bottom: -5px;
+    transition-property: bottom, transform;
+  }
+  
+  /* when menu open: */
+  .mob-menu-btn.open span {
+    background: none;
+  }
+
+  .mob-menu-btn.open span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .mob-menu-btn.open span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
   }
 
   .heading {
-    background-image: url(/Salud/res/hero-backg-mob.png);
-    height: 214px;
+    background-image: url(/Salud/res/hero-backg-mob.png), url(/res/hero-backg-mob.png);;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     justify-content: space-around;
   }
 
