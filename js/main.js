@@ -82,11 +82,6 @@ document.addEventListener('click', onReadMoreClick);
 // const mobMenu = new Popup('.mob-menu');
 const mobMenuBtn = document.querySelector('.mob-menu-btn');
 
-const onMobMenuBtnClick = () => {
-	console.log(event.target)
-	if (event.target.classList.contains('mob-menu-btn')) {
-		mobMenuBtn.classList.add('open')
-	}
-}
-
-document.addEventListener('click', onMobMenuBtnClick)
+mobMenuBtn.addEventListener('click', () => {
+    mobMenuBtn.classList.toggle("open");
+  });
