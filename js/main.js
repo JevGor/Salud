@@ -79,7 +79,6 @@ const onReadMoreClick = () => {
 document.addEventListener('click', onReadMoreClick);
 
 /* Mobile Menu */
-// const mobMenu = new Popup('.mob-menu');
 const mobMenuBtn = document.querySelector('.mob-menu-btn');
 
 mobMenuBtn.addEventListener('click', () => {

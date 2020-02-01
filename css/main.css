@@ -495,6 +495,10 @@ section:nth-child(2n + 1) {
 		font-size: 12px;
 	}
 
+	section {
+		min-height: auto;
+	}
+
 	.container {
 		flex-direction: column;
 		padding: 0 20px;
@@ -563,7 +567,6 @@ section:nth-child(2n + 1) {
 		background-color: #686460;
 		position: absolute;
 		border-radius: 1px;
-		transition: .3s cubic-bezier(.8, .5, .2, 1.4);
 		width: 100%;
 		height: 2px;
 		transition-duration: 500ms;
@@ -651,6 +654,10 @@ section:nth-child(2n + 1) {
 
 	.edu-list {
 		margin-top: 0;
+	}
+
+	.edu-list-holder {
+		text-align: start;
 	}
 
 	.edu-img {
