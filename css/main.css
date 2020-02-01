@@ -522,6 +522,11 @@ section:nth-child(2n + 1) {
 		max-height: 40vh;
 	}
 
+	.popup {
+		width: 70%;
+		left: 15%;
+	}
+
 	.header,
 	.socials {
 		display: none;
@@ -578,18 +583,6 @@ section:nth-child(2n + 1) {
 	.mob-menu-btn span:nth-child(3) {
 		bottom: 0px;
 		left: 0px;
-	}
-
-	.mob-menu-btn:not(.open):hover span:nth-child(1) {
-		transform: rotate(-3deg) scaleY(1.1);
-	}
-
-	.mob-menu-btn:not(.open):hover span:nth-child(2) {
-		transform: rotate(3deg) scaleY(1.1);
-	}
-
-	.mob-menu-btn:not(.open):hover span:nth-child(3) {
-		transform: rotate(-4deg) scaleY(1.1);
 	}
 
 	.mob-menu-btn.open span:nth-child(1) {
