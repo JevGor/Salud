@@ -104,7 +104,6 @@ const onMobMenuBtnClick = () => {
   console.log(!!event.target.closest(".mob-menu-btn"));
   if (!!event.target.closest(".mob-menu-btn")) {
 	openMobMenu();
-	document.addEventListener('touchmove', closeMobMenu)
   } else if (
     !mobMenuPopup.elem.contains(event.target) ||
     event.target.classList.contains("mob-nav-link") ||

@@ -46,11 +46,11 @@ section {
 	position: relative;
 }
 
-section:nth-child(2n) {
+section:nth-child(odd) {
 	background-color: #ebebeb;
 }
 
-section:nth-child(2n + 1) {
+section:nth-child(even) {
 	background-color: #f8f8f8;
 }
 
