@@ -689,9 +689,18 @@ section:nth-child(even) {
 		flex-direction: column;
 		justify-content: space-between;
 		z-index: 3;
-		height: 100vh;
+		height: 80vh;
 		width: 70%;
 		background-color: #ebebeb;
+		box-shadow: -20px 0px 50px #777;
+		-webkit-animation-duration: 0.7s;
+	        animation-duration: 0.7s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+	-webkit-animation-name: fadeInDown;
+			animation-name: fadeInDown;
+			
+			
 	}
 
 	.mob-lang-list {

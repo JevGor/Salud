@@ -101,9 +101,8 @@ const closeMobMenu = () => {
 };
 
 const onMobMenuBtnClick = () => {
-  console.log(!!event.target.closest(".mob-menu-btn"));
   if (!!event.target.closest(".mob-menu-btn")) {
-	openMobMenu();
+    openMobMenu();
   } else if (
     !mobMenuPopup.elem.contains(event.target) ||
     event.target.classList.contains("mob-nav-link") ||
@@ -111,6 +110,7 @@ const onMobMenuBtnClick = () => {
     !!event.target.closest(".socials-link") ||
     !!event.target.closest(".mob-menu-btn")
   ) {
+    console.log(mobMenuBtn.classList.contains("open"));
     closeMobMenu();
   }
 };
