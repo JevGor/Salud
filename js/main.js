@@ -90,9 +90,9 @@ const mobMenuPopup = new Popup(".mob-menu");
 const mobMenuBtn = document.querySelector(".mob-menu-btn");
 const heroBlock = document.querySelector(".hero");
 
-const openMobMenu = () => {
-  mobMenuBtn.classList.add("open");
-  mobMenuPopup.openPopup();
+const toggleMobMenu = () => {
+  mobMenuBtn.classList.toggle("open");
+  mobMenuPopup.togglePopup();
 };
 
 const closeMobMenu = () => {
@@ -102,7 +102,7 @@ const closeMobMenu = () => {
 
 const onMobMenuBtnClick = () => {
   if (!!event.target.closest(".mob-menu-btn")) {
-    openMobMenu();
+    toggleMobMenu();
   } else if (
     !mobMenuPopup.elem.contains(event.target) ||
     event.target.classList.contains("mob-nav-link") ||
@@ -110,7 +110,6 @@ const onMobMenuBtnClick = () => {
     !!event.target.closest(".socials-link") ||
     !!event.target.closest(".mob-menu-btn")
   ) {
-    console.log(mobMenuBtn.classList.contains("open"));
     closeMobMenu();
   }
 };
