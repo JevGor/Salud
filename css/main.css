@@ -123,11 +123,6 @@ section:nth-child(even) {
   margin-top: 20px;
 }
 
-.anchor {
-  position: absolute;
-  top: 0;
-}
-
 .popup-wrapper {
   overflow: hidden;
 }
@@ -155,6 +150,10 @@ section:nth-child(even) {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   box-shadow: 50px 50px 50px #777;
+}
+
+.popup>h5 {
+  margin: 4% 0 2%;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -186,7 +185,7 @@ section:nth-child(even) {
 /* HEADER */
 
 .hero {
-  padding-left: 4%;
+  padding: 4% 0 4% 4%;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -197,11 +196,7 @@ section:nth-child(even) {
   position: relative;
 }
 
-.logo {
-  position: absolute;
-  left: 4%;
-  top: 4%;
-}
+
 
 .logo-img {
   width: 8vw;
@@ -209,7 +204,6 @@ section:nth-child(even) {
 }
 
 .header {
-  width: 85%;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -217,7 +211,7 @@ section:nth-child(even) {
   flex-direction: row;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  margin-left: auto;
+  align-items: center;
 }
 
 .nav {
@@ -247,10 +241,10 @@ section:nth-child(even) {
   flex-direction: column;
   -webkit-box-pack: center;
   justify-content: center;
-  /* background-image: url(/Salud/res/hero-backg-desk1.png), url(/res/hero-backg-desk1.png);
+  background-image: url(/Salud/res/hero-backg-desk1.png), url(/res/hero-backg-desk1.png);
 	background-repeat: no-repeat;
 	background-position: right;
-	background-size: contain; */
+	background-size: contain;
 }
 
 .heading > * {
@@ -334,6 +328,8 @@ section:nth-child(even) {
 
 .summary-item {
   letter-spacing: 0.2em;
+  display: flex;
+  flex-direction: column;
 }
 
 .summary-item:not(:first-child) {
@@ -526,6 +522,13 @@ section:nth-child(even) {
 }
 
 /* ADAPTIVE */
+@media screen and (max-width: 1199px) {
+  .heading {
+    background-image: url(/Salud/res/hero-backg-tab.png),
+      url(/res/hero-backg-tab.png);
+  }
+}
+
 @media screen and (max-width: 1023px) {
   :root {
     font-size: 14px;
@@ -543,10 +546,7 @@ section:nth-child(even) {
     font-size: 1.2rem;
   }
 
-  .heading {
-    /* background-image: url(/Salud/res/hero-backg-tab.png),
-      url(/res/hero-backg-tab.png); */
-  }
+  
 
   .summary-value {
     font-size: 1.5rem;
@@ -611,10 +611,10 @@ section:nth-child(even) {
   }
 
   .mob-headbar {
-    /* background-image: url(/Salud/res/Logo.svg), url(/res/Logo.svg);
+    background-image: url(/Salud/res/Logo.svg), url(/res/Logo.svg);
     background-repeat: no-repeat;
     background-size: 34px;
-    background-position: 5%; */
+    background-position: 5%;
     height: 60px;
     display: -webkit-box;
     display: flex;
@@ -735,11 +735,10 @@ section:nth-child(even) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    /* background-image: url(/Salud/res/hero-backg-mob.png),
-      url(/res/hero-backg-mob.png);
+    background-image: url(/Salud/res/hero-backg-mob.png), url(/res/hero-backg-mob.png);
     background-repeat: no-repeat;
-    background-size: contain; */
-    justify-content: space-around;
+    background-size: contain; 
+    justify-content: center;
   }
 
   .heading > * {
@@ -752,6 +751,7 @@ section:nth-child(even) {
   }
 
   .summary-list {
+    padding: 0;
     background: transparent;
     display: -webkit-box;
     display: flex;
@@ -769,6 +769,10 @@ section:nth-child(even) {
 
   .summary-item:not(:first-child) {
     margin-top: 0;
+  }
+
+  .summary-txt {
+    font-size: 0.875rem;
   }
 
   .treatmets-img {
