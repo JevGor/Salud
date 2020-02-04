@@ -101,7 +101,6 @@ const closeMobMenu = () => {
 };
 
 const onMobMenuBtnClick = () => {
-  console.log(!!event.target.closest(".mob-menu-btn"))
   if (!!event.target.closest(".mob-menu-btn")) {
     toggleMobMenu();
   } else if (
