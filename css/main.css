@@ -50,7 +50,7 @@ section:nth-child(even) {
   margin: 0 auto;
   width: 100%;
   max-width: 1220px;
-  padding: 0 6%;
+  padding: 2% 6%;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -127,11 +127,6 @@ section:nth-child(even) {
   overflow: hidden;
 }
 
-.blur {
-  -webkit-filter: blur(10px);
-  filter: blur(10px);
-}
-
 .popup {
   position: fixed;
   display: none;
@@ -196,8 +191,6 @@ section:nth-child(even) {
   position: relative;
 }
 
-
-
 .logo-img {
   width: 8vw;
   max-width: 125px;
@@ -230,8 +223,20 @@ section:nth-child(even) {
   display: none;
 }
 
-.heading {
+.heading-container {
+  background-image: url(/Salud/res/hero-backg-desk1.png), url(/res/hero-backg-desk1.png);
+	background-repeat: no-repeat;
+	background-position: right;
+  background-size: contain;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  flex-grow: 1;
   padding-bottom: 1%;
+}
+
+.heading {
   -webkit-box-flex: 1;
   flex-grow: 1;
   display: -webkit-box;
@@ -239,11 +244,7 @@ section:nth-child(even) {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  justify-content: space-around;
-  background-image: url(/Salud/res/hero-backg-desk1.png), url(/res/hero-backg-desk1.png);
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: contain;
+  justify-content: center;
 }
 
 .heading > * {
@@ -440,7 +441,7 @@ section:nth-child(even) {
 /* SECTION CONTACTS */
 .contact {
   background-color: #ebebeb;
-  padding: 4% 0 6%;
+  padding-bottom: 4%;
   position: relative;
 }
 
@@ -522,7 +523,7 @@ section:nth-child(even) {
 
 /* ADAPTIVE */
 @media screen and (max-width: 1199px) {
-  .heading {
+  .heading-container {
     background-image: url(/Salud/res/hero-backg-tab.png),
       url(/res/hero-backg-tab.png);
   }
@@ -556,10 +557,6 @@ section:nth-child(even) {
   :root {
     font-size: 12px;
   }
-
-  /* section {
-		min-height: auto;
-	} */
 
   .container {
     -webkit-box-orient: vertical;
@@ -627,7 +624,7 @@ section:nth-child(even) {
     z-index: 4;
     width: 18px;
     height: 12px;
-    margin: 10px 10px;
+    margin: 5%;
     position: relative;
     cursor: pointer;
     display: inline-block;
@@ -728,6 +725,11 @@ section:nth-child(even) {
     margin-bottom: 7%;
   }
 
+  .heading-container {
+    background: none;
+    padding: 0;
+  }
+
   .heading {
     display: -webkit-box;
     display: flex;
@@ -735,14 +737,18 @@ section:nth-child(even) {
     -webkit-box-direction: normal;
     flex-direction: column;
     background-image: url(/Salud/res/hero-backg-mob.png), url(/res/hero-backg-mob.png);
-    background-repeat: no-repeat;
-    background-size: contain; 
-    justify-content: center;
+    background-size: cover; 
+    justify-content: space-around;
+    text-align: center;
   }
 
-  .heading > * {
-    max-width: 80%;
+  .heading>* {
+    max-width: 90%;
     margin: 0 auto;
+  }
+
+  .heading-symptoms {
+    display: flex;
   }
 
   .about-txt > * {
