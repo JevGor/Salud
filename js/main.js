@@ -115,3 +115,4 @@ const onMobMenuBtnClick = () => {
 };
 
 document.addEventListener("click", onMobMenuBtnClick);
+
