@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 class Popup {
   constructor(element) {
@@ -7,12 +7,12 @@ class Popup {
   }
 
   openPopup() {
-    this.elem.classList.add("open");
+    this.elem.classList.add('open');
     this.isOpen = true;
   }
 
   closePopup() {
-    this.elem.classList.remove("open");
+    this.elem.classList.remove('open');
     this.isOpen = false;
   }
 
@@ -22,45 +22,44 @@ class Popup {
   }
 
   setValue(title, value) {
-    this.elem.querySelector(".title").innerHTML = title;
+    this.elem.querySelector('.title').innerHTML = title;
   }
 }
 
 /* Language select */
-const langPopup = new Popup(".lang-list");
-const langSelect = document.querySelector(".lang-list");
-const langTxt = document.querySelectorAll(".lang");
-const langSelectItems = document.querySelectorAll(".lang-item");
+const langPopup = new Popup('.lang-list');
+const langTxt = document.querySelectorAll('.lang');
+const langSelectItems = document.querySelectorAll('.lang-item');
 
 const setLang = () => {
-  langTxt.forEach(element => {
+  langTxt.forEach((element) => {
     if (element.classList.contains(`${event.target.dataset.value}`)) {
-      element.classList.remove("d-none");
+      element.classList.remove('d-none');
     } else {
-      element.classList.add("d-none");
+      element.classList.add('d-none');
     }
   });
 };
 
 const setMobLangBtnActive = () => {
-  langSelectItems.forEach(element => {
+  langSelectItems.forEach((element) => {
     if (element.dataset.value === event.target.dataset.value) {
-      element.classList.add("lang-active");
+      element.classList.add('lang-active');
     } else {
-      element.classList.remove("lang-active");
+      element.classList.remove('lang-active');
     }
   });
 };
 
 const selectLang = () => {
-  document.querySelector(".title").innerHTML = event.target.innerHTML;
+  document.querySelector('.title').innerHTML = event.target.innerHTML;
   setLang();
 };
 
 const onSelectLangClick = () => {
-  if (event.target.className == "title") {
+  if (event.target.className === 'title') {
     langPopup.togglePopup();
-  } else if (event.target.classList.contains("lang-item")) {
+  } else if (event.target.classList.contains('lang-item')) {
     selectLang();
     setMobLangBtnActive();
     langPopup.closePopup();
@@ -69,61 +68,59 @@ const onSelectLangClick = () => {
   }
 };
 
-document.addEventListener("click", onSelectLangClick);
+document.addEventListener('click', onSelectLangClick);
 
 /* Article Popup */
-const textPopup = new Popup(".popup");
-const popupContainer = document.querySelector(".popup");
-const treatmentsBlock = document.querySelector(".treatments");
+const textPopup = new Popup('.popup');
+const popupContainer = document.querySelector('.popup');
 
 const openTextPopup = () => {
   popupContainer.innerHTML = event.target.previousElementSibling.innerHTML;
   textPopup.openPopup();
-  document.body.classList.add("popup-wrapper");
+  document.body.classList.add('popup-wrapper');
 };
 
 const closeTextPopup = () => {
   textPopup.closePopup();
-  document.body.classList.remove("popup-wrapper");
+  document.body.classList.remove('popup-wrapper');
 };
 
 const onReadMoreClick = () => {
-  if (event.target.classList.contains("read-more")) {
+  if (event.target.classList.contains('read-more')) {
     openTextPopup();
   } else if (!textPopup.elem.contains(event.target)) {
     closeTextPopup();
   }
 };
 
-document.addEventListener("click", onReadMoreClick);
+document.addEventListener('click', onReadMoreClick);
 
 /* Mobile Menu */
-const mobMenuPopup = new Popup(".mob-menu");
-const mobMenuBtn = document.querySelector(".mob-menu-btn");
-const heroBlock = document.querySelector(".hero");
+const mobMenuPopup = new Popup('.mob-menu');
+const mobMenuBtn = document.querySelector('.mob-menu-btn');
 
 const toggleMobMenu = () => {
-  mobMenuBtn.classList.toggle("open");
+  mobMenuBtn.classList.toggle('open');
   mobMenuPopup.togglePopup();
 };
 
 const closeMobMenu = () => {
-  mobMenuBtn.classList.remove("open");
+  mobMenuBtn.classList.remove('open');
   mobMenuPopup.closePopup();
 };
 
 const onMobMenuBtnClick = () => {
-  if (!!event.target.closest(".mob-menu-btn")) {
+  if (event.target.closest('.mob-menu-btn')) {
     toggleMobMenu();
   } else if (
     !mobMenuPopup.elem.contains(event.target) ||
-    event.target.classList.contains("mob-nav-link") ||
-    event.target.classList.contains("lang-item") ||
-    !!event.target.closest(".socials-link") ||
-    !!event.target.closest(".mob-menu-btn")
+    event.target.classList.contains('mob-nav-link') ||
+    event.target.classList.contains('lang-item') ||
+    !!event.target.closest('.socials-link') ||
+    !!event.target.closest('.mob-menu-btn')
   ) {
     closeMobMenu();
   }
 };
 
-document.addEventListener("click", onMobMenuBtnClick);
+document.addEventListener('click', onMobMenuBtnClick);
