@@ -725,6 +725,10 @@ section:nth-child(even) {
 		width: 100%;
 	}
 
+	.lang-active {
+		color: #6a8c9c;
+	}
+
 	.mob-nav-list {
 		min-height: 40vh;
 		display: flex;

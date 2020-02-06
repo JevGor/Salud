@@ -30,6 +30,7 @@ class Popup {
 const langPopup = new Popup(".lang-list");
 const langSelect = document.querySelector(".lang-list");
 const langTxt = document.querySelectorAll(".lang");
+const langSelectItems = document.querySelectorAll(".lang-item");
 
 const setLang = () => {
   langTxt.forEach(element => {
@@ -37,6 +38,16 @@ const setLang = () => {
       element.classList.remove("d-none");
     } else {
       element.classList.add("d-none");
+    }
+  });
+};
+
+const setMobLangBtnActive = () => {
+  langSelectItems.forEach(element => {
+    if (element.dataset.value === event.target.dataset.value) {
+      element.classList.add("lang-active");
+    } else {
+      element.classList.remove("lang-active");
     }
   });
 };
@@ -49,8 +60,9 @@ const selectLang = () => {
 const onSelectLangClick = () => {
   if (event.target.className == "title") {
     langPopup.togglePopup();
-  } else if (event.target.className == "lang-item") {
+  } else if (event.target.classList.contains("lang-item")) {
     selectLang();
+    setMobLangBtnActive();
     langPopup.closePopup();
   } else if (!langPopup.elem.contains(event.target)) {
     langPopup.closePopup();
@@ -115,4 +127,3 @@ const onMobMenuBtnClick = () => {
 };
 
 document.addEventListener("click", onMobMenuBtnClick);
-
