@@ -271,7 +271,6 @@ section:nth-child(even) {
 	flex-wrap: wrap;
 	-webkit-box-pack: justify;
 	justify-content: space-between;
-	
 }
 
 .heading-symptoms > li {
@@ -590,11 +589,11 @@ section:nth-child(even) {
 	.popup {
 		width: 70%;
 		left: 15%;
-  }
-  
-  .popup .heading-symptoms {
-    display: block;
-  }
+	}
+
+	.popup .heading-symptoms {
+		display: block;
+	}
 
 	.header,
 	.socials {
@@ -630,6 +629,7 @@ section:nth-child(even) {
 		position: relative;
 		cursor: pointer;
 		display: inline-block;
+		transition: transform .8s ease;
 	}
 
 	.mob-menu-btn::before {
@@ -639,11 +639,12 @@ section:nth-child(even) {
 		right: -15px;
 		bottom: -15px;
 		left: -15px;
-	}	
+	}
 
 	.mob-menu-btn.open {
-		transform: translateX(-84vw);
-		transition-duration: 700ms;
+		transform: translateX(-90vw);
+		position: fixed;
+		top: 1%;
 	}
 
 	.mob-menu-btn span {
@@ -653,7 +654,7 @@ section:nth-child(even) {
 		width: 100%;
 		height: 2px;
 		-webkit-transition-duration: 500ms;
-		transition-duration: 500ms;
+		transition-duration: 700ms;
 	}
 
 	.mob-menu-btn span:nth-child(1) {
@@ -689,7 +690,8 @@ section:nth-child(even) {
 	}
 
 	.mob-menu {
-		position: absolute;
+		position: fixed;
+		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
@@ -697,17 +699,12 @@ section:nth-child(even) {
 		height: 100vh;
 		width: 100vw;
 		background-color: #ebebeb;
-		/* -webkit-animation-duration: 0.7s;
-		animation-duration: 0.7s;
-		-webkit-animation-fill-mode: both;
-		animation-fill-mode: both;
-		-webkit-animation-name: fadeInLeft;
-		animation-name: fadeInLeft; */
-		/* right: 100%;
-		transform: translateX(100%);
-		transition: transformX .6s ease; */
-		transform: translate3d(100%, 0px, 0px);
-		right: 100%;
+		right: -100%;
+		transition: transform .8s ease;
+	}
+
+	.mob-menu.open {
+		transform: translateX(-100%);
 	}
 
 	/* @keyframes fadeInLeft {
@@ -791,15 +788,15 @@ section:nth-child(even) {
 	}
 
 	.heading-symptoms {
-    display: none;
-    max-width: 100%;
-  }
-  
-  .heading-symptoms > li {
-    width: 100%;
-    padding-right: 0;
-    list-style: outside;
-  }
+		display: none;
+		max-width: 100%;
+	}
+
+	.heading-symptoms > li {
+		width: 100%;
+		padding-right: 0;
+		list-style: outside;
+	}
 
 	.about-txt > * {
 		margin-bottom: 2%;
