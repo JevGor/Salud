@@ -202,7 +202,8 @@ section:nth-child(even) {
 	flex-direction: row;
 	-webkit-box-pack: justify;
 	justify-content: space-between;
-	align-items: center;
+	-webkit-box-align: center;
+	        align-items: center;
 }
 
 .nav {
@@ -227,11 +228,13 @@ section:nth-child(even) {
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: contain;
+	display: -webkit-box;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	flex-direction: column;
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	        flex-grow: 1;
 	padding-bottom: 1%;
 }
 
@@ -243,7 +246,8 @@ section:nth-child(even) {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	flex-direction: column;
-	justify-content: center;
+	-webkit-box-pack: center;
+	        justify-content: center;
 }
 
 .heading > * {
@@ -331,8 +335,11 @@ section:nth-child(even) {
 
 .summary-item {
 	letter-spacing: 0.2em;
+	display: -webkit-box;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
 }
 
 .summary-item:not(:first-child) {
@@ -519,8 +526,11 @@ section:nth-child(even) {
 }
 
 .open {
+	display: -webkit-box !important;
 	display: flex !important;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
 }
 
 /* ADAPTIVE */
@@ -593,6 +603,7 @@ section:nth-child(even) {
 	}
 
 	.popup .heading-symptoms {
+		display: -webkit-box;
 		display: flex;
 	}
 
@@ -630,7 +641,10 @@ section:nth-child(even) {
 		position: relative;
 		cursor: pointer;
 		display: inline-block;
+		-webkit-transition: -webkit-transform .8s ease;
+		transition: -webkit-transform .8s ease;
 		transition: transform .8s ease;
+		transition: transform .8s ease, -webkit-transform .8s ease;
 	}
 
 	.mob-menu-btn::before {
@@ -643,7 +657,8 @@ section:nth-child(even) {
 	}
 
 	.mob-menu-btn.open {
-		transform: translateX(-90vw);
+		-webkit-transform: translateX(-90vw);
+		        transform: translateX(-90vw);
 		position: fixed;
 		top: 1%;
 	}
@@ -692,27 +707,38 @@ section:nth-child(even) {
 
 	.mob-menu {
 		position: fixed;
+		display: -webkit-box;
 		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+		-webkit-box-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		        align-items: center;
 		z-index: 3;
 		height: 100vh;
 		width: 100vw;
 		background-color: #ebebeb;
 		right: -100%;
+		-webkit-transition: -webkit-transform .8s ease;
+		transition: -webkit-transform .8s ease;
 		transition: transform .8s ease;
+		transition: transform .8s ease, -webkit-transform .8s ease;
 	}
 
 	.mob-menu.open {
-		transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
 	}
 
 	.mob-lang-list {
 		min-height: 15vh;
+		display: -webkit-box;
 		display: flex;
 		justify-content: space-around;
-		align-items: flex-end;
+		-webkit-box-align: end;
+		        align-items: flex-end;
 		width: 100%;
 	}
 
@@ -722,17 +748,23 @@ section:nth-child(even) {
 
 	.mob-nav-list {
 		min-height: 40vh;
+		display: -webkit-box;
 		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+		-webkit-box-pack: justify;
+		        justify-content: space-between;
 		text-align: center;
 		font-size: 1.5rem;
 	}
 
 	.mob-socials {
+		display: -webkit-box;
 		display: flex;
 		width: 50%;
-		justify-content: space-between;
+		-webkit-box-pack: justify;
+		        justify-content: space-between;
 		margin-bottom: 7%;
 	}
 
@@ -771,7 +803,9 @@ section:nth-child(even) {
 
 	.heading-symptoms {
 		display: none;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
 		justify-content: space-around;
 		height: 100%;
 		max-width: 100%;
@@ -822,7 +856,8 @@ section:nth-child(even) {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: reverse;
 		flex-direction: column-reverse;
-		justify-content: center;
+		-webkit-box-pack: center;
+		        justify-content: center;
 	}
 
 	.education .demi-column {
