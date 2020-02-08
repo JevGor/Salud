@@ -775,6 +775,8 @@ section:nth-child(even) {
 		justify-content: space-around;
 		height: 100%;
 		max-width: 100%;
+		text-align: center;
+		font-size: 1.125rem;
 	}
 
 	.heading-symptoms > li {
