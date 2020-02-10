@@ -422,12 +422,17 @@ section:nth-child(even) {
 	background-color: #f8f8f8;
 }
 
+.edu-pic-holder {
+	max-height: 80vh;
+	height: 100%;
+}
+
 .edu-img {
 	border-radius: 20px;
 	max-width: 350px;
 	margin: auto;
 	display: block;
-	width: 80%;
+	width: 90%;
 }
 
 .education .read-more {
