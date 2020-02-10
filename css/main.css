@@ -272,13 +272,11 @@ section:nth-child(even) {
 	flex-wrap: wrap;
 	-webkit-box-pack: justify;
 	justify-content: space-between;
-	padding-left: 2%;
 }
 
 .heading-symptoms > li {
 	width: 50%;
-	padding-right: 8%;
-	list-style: outside;
+	padding-right: 6%;
 }
 
 .socials {
