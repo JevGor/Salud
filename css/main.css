@@ -76,10 +76,8 @@ section:nth-child(even) {
 }
 
 .txt {
-	position: relative;
 	font-family: "Lato", Arial, Helvetica, sans-serif;
 	font-size: 0.875rem;
-	position: relative;
 }
 
 .txt-l {
@@ -89,6 +87,7 @@ section:nth-child(even) {
 .faded-txt {
 	max-height: 65vh;
 	overflow: hidden;
+	position: relative;
 }
 
 .faded-txt::before {
@@ -362,6 +361,12 @@ section:nth-child(even) {
 
 .treatments-list {
 	height: 100%;
+	position: relative;
+}
+
+.treatments-list > .read-more {
+	position: absolute;
+	bottom: 0;
 }
 
 .treatments-list-item {
@@ -831,7 +836,7 @@ section:nth-child(even) {
 		-webkit-box-pack: justify;
 		justify-content: space-between;
 		text-align: center;
-		margin: auto;
+		margin: 6% auto;
 		width: 100%;
 	}
 
