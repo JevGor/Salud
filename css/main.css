@@ -64,8 +64,6 @@ section:nth-child(even) {
 
 .demi-column {
 	width: 50%;
-	height: 100%;
-	max-height: 800px;
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-orient: vertical;
@@ -310,6 +308,10 @@ section:nth-child(even) {
 
 /* SECTION ABOUT */
 
+.about-txt > h5 {
+	margin: 4% 0 2%;
+}
+
 .about-title {
 	-webkit-transform: translate(-54px);
 	transform: translate(-54px);
@@ -361,12 +363,6 @@ section:nth-child(even) {
 
 .treatments-list {
 	height: 100%;
-	position: relative;
-}
-
-.treatments-list > .read-more {
-	position: absolute;
-	bottom: 0;
 }
 
 .treatments-list-item {
