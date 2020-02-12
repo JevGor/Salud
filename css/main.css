@@ -1,6 +1,7 @@
 /* COMMON */
 body {
 	color: #686460;
+	overflow-x: hidden;
 }
 
 a:hover,
