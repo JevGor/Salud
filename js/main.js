@@ -71,7 +71,7 @@ const onSelectLangClick = () => {
 
 document.addEventListener('click', onSelectLangClick)
 
-/* Article Popup */
+/* Text Popup */
 const textPopup = new Popup('.popup')
 const popupContainer = document.querySelector('.popup')
 
