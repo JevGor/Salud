@@ -351,7 +351,7 @@ section:nth-child(even) {
 
 /* SECTION TREATMENTS */
 
-.treatmets-title {
+.treatments-title {
 	-webkit-transform: translate(-52px);
 	transform: translate(-52px);
 	background-color: #ebebeb;
@@ -375,34 +375,42 @@ section:nth-child(even) {
 	align-items: flex-start;
 }
 
-.treatmets-subtitle {
+.treatments-subtitle {
 	color: #6a8c9c;
 	margin-bottom: 4%;
 }
 
-.treatmets-txt {
+.treatments-txt {
 	-webkit-box-flex: 1;
 	flex-grow: 1;
 }
 
-.treatmets-txt > * {
+.treatments-txt > * {
 	margin-bottom: 2%;
 }
 
-.treatmets-txt.faded-txt::before {
+.treatments-txt.faded-txt::before {
 	background: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0)), to(#ebebeb));
 	background: linear-gradient(hsla(0, 0%, 100%, 0), #ebebeb 100%);
 }
 
-.treatmets-slider {
+.treatments-slider {
 	-webkit-box-pack: center;
 	justify-content: center;
 }
 
-.treatmets-img {
-	width: 90%;
-	max-width: 540px;
+.treatments-img {
+	max-width: 240px;
+	border-radius: 20px;
 }
+
+.treatments-img.is-selected{
+	max-width: 350px;
+}
+
+.flickity-button {
+	display: none;
+  }
 
 /* SECTION EDUCATION */
 .edu-list-holder {
@@ -591,7 +599,7 @@ section:nth-child(even) {
 	}
 
 	.about-title,
-	.treatmets-title,
+	.treatments-title,
 	.edu-title,
 	.contact-title {
 		-webkit-transform: none;
@@ -856,11 +864,11 @@ section:nth-child(even) {
 		font-size: 0.875rem;
 	}
 
-	.treatmets-img {
+	.treatments-img {
 		width: 100%;
 	}
 
-	.treatmets-txt.faded-txt {
+	.treatments-txt.faded-txt {
 		max-height: 40vh;
 	}
 

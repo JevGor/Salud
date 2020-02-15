@@ -115,9 +115,9 @@ const onMobMenuBtnClick = () => {
     toggleMobMenu()
   } else if (
     event.target.classList.contains('mob-nav-link') ||
-		event.target.classList.contains('lang-item') ||
-		event.target.closest('.socials-link') ||
-		event.target.closest('.mob-menu-btn')
+    event.target.classList.contains('lang-item') ||
+    event.target.closest('.socials-link') ||
+    event.target.closest('.mob-menu-btn')
   ) {
     closeMobMenu()
   }
