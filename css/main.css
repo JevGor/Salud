@@ -397,21 +397,108 @@ section:nth-child(even) {
 .treatments-slider {
 	-webkit-box-pack: center;
 	justify-content: center;
+	display: flex;
+	align-items: center;
 }
 
 .treatments-img {
 	max-width: 240px;
+	max-height: 290px;
 	border-radius: 20px;
 }
 
-.treatments-img.is-selected{
-	max-width: 350px;
-}
-
-.flickity-button {
-	display: none;
+.slider-container {
+	align-items: center;
+	display: flex;
+	height: 400px;
+	max-width: 1000px;
+	position: relative;
   }
-
+  
+  .slider-item {
+	height: 150px;
+	opacity: .4;
+	position: absolute;
+	transition: all 0.3s ease-in-out;
+	width: 150px;
+	z-index: 0;
+  }
+  
+  .slider-item.slider-item-selected {
+	height: 300px;
+	opacity: 1;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 300px;
+	z-index: 2;
+  }
+  
+  .slider-item.slider-item-previous,
+  .slider-item.slider-item-next {
+	height: 200px;
+	opacity: 1;
+	width: 200px;
+	z-index: 1;
+  }
+  
+  .slider-item.slider-item-previous {
+	left: 30%;
+	transform: translateX(-50%);
+  }
+  
+  .slider-item.slider-item-next {
+	left: 70%;
+	transform: translateX(-50%);
+  }
+  
+  .slider-controls {
+	display: flex;
+	justify-content: space-around;
+  }
+  
+  .slider-controls button {
+	border: 0;
+	cursor: pointer;
+  }
+  
+  .slider-controls button:focus {
+	outline: none;
+  }
+  
+  .slider-controls-previous {
+	position: relative;
+  }
+  
+  .slider-controls-previous::before {
+	border: solid #8f8f8f;
+	border-width: 0 2px 2px 0;
+	content: '';
+	display: inline-block;
+	height: 15px;
+	left: -10px;
+	padding: 2px;
+	position: absolute;
+	transform: rotate(135deg);
+	width: 15px;
+  }
+  
+  .slider-controls-next {
+	position: relative;
+  }
+  
+  .slider-controls-next::before {
+	border: solid #8f8f8f;
+	border-width: 0 2px 2px 0;
+	content: '';
+	display: inline-block;
+	height: 15px;
+	padding: 2px;
+	position: absolute;
+	right: -10px;
+	transform: rotate(-45deg);
+	width: 15px;
+  }
+  
 /* SECTION EDUCATION */
 .edu-list-holder {
 	text-align: end;
@@ -866,6 +953,10 @@ section:nth-child(even) {
 
 	.treatments-img {
 		width: 100%;
+	}
+
+	.treatments-info {
+		margin-top: 15%;
 	}
 
 	.treatments-txt.faded-txt {
