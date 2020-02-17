@@ -219,7 +219,7 @@ section:nth-child(even) {
 }
 
 .heading-container {
-	background-image: url(res/hero-backg-desk1.png);
+	background-image: url(../res/hero-backg-desk1.png);
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: contain;
@@ -642,7 +642,7 @@ section:nth-child(even) {
 /* ADAPTIVE */
 @media screen and (max-width: 1199px) {
 	.heading-container {
-		background-image: url(res/hero-backg-tab.png);
+		background-image: url(../res/hero-backg-tab.png);
 	}
 }
 
@@ -722,7 +722,7 @@ section:nth-child(even) {
 	}
 
 	.mob-headbar {
-		background-image: url(res/Logo.svg);
+		background-image: url(../res/Logo.svg);
 		background-repeat: no-repeat;
 		background-size: 34px;
 		background-position: 5%;
