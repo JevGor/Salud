@@ -366,12 +366,8 @@ section:nth-child(even) {
 	height: 100%;
 	display: -webkit-box;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
 	flex-direction: column;
-	-webkit-box-pack: justify;
 	justify-content: space-between;
-	-webkit-box-align: start;
 	align-items: flex-start;
 }
 
@@ -394,7 +390,7 @@ section:nth-child(even) {
 	background: linear-gradient(hsla(0, 0%, 100%, 0), #ebebeb 100%);
 }
 
-.treatments-slider {
+/* .treatments-slider {
 	-webkit-box-pack: center;
 	justify-content: center;
 	display: flex;
@@ -405,39 +401,43 @@ section:nth-child(even) {
 	max-width: 240px;
 	max-height: 290px;
 	border-radius: 20px;
+} */
+
+.slider {
+	height: 100%;
+	justify-content: center;
 }
 
 .slider-container {
 	align-items: center;
 	display: flex;
-	height: 400px;
-	max-width: 1000px;
 	position: relative;
+	max-height: 415px;
+    height: 100%;
   }
   
   .slider-item {
-	height: 150px;
+	/* height: 150px; */
 	opacity: .4;
 	position: absolute;
 	transition: all 0.3s ease-in-out;
-	width: 150px;
+	/* width: 150px; */
 	z-index: 0;
+	border-radius: 20px;
+	width: 46%;
+	border: 1px solid #5C5C5C;
   }
   
   .slider-item.slider-item-selected {
-	height: 300px;
 	opacity: 1;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 300px;
 	z-index: 2;
+	width: 66%;
   }
   
   .slider-item.slider-item-previous,
   .slider-item.slider-item-next {
-	height: 200px;
-	
-	width: 200px;
 	z-index: 1;
   }
   
@@ -454,6 +454,7 @@ section:nth-child(even) {
   .slider-controls {
 	display: flex;
 	justify-content: space-around;
+	margin-top: 5%;
   }
   
   .slider-controls button {
@@ -508,7 +509,6 @@ section:nth-child(even) {
 }
 
 .edu-list.faded-txt::before {
-	background: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0)), to(#f8f8f8));
 	background: linear-gradient(hsla(0, 0%, 100%, 0), #f8f8f8 100%);
 }
 
@@ -947,9 +947,13 @@ section:nth-child(even) {
 		font-size: 0.875rem;
 	}
 
-	.treatments-img {
-		width: 100%;
+	.slider {
+		height: 50vh;
 	}
+
+	.slider-controls {
+		margin-top: 0;
+	  }
 
 	.treatments-info {
 		margin-top: 15%;

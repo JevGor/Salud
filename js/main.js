@@ -27,6 +27,7 @@ class Popup {
 }
 
 /* Language select */
+
 const langPopup = new Popup(".lang-list");
 const langTxt = document.querySelectorAll(".lang");
 const langSelectItems = document.querySelectorAll(".lang-item");
@@ -71,6 +72,7 @@ const onSelectLangClick = () => {
 document.addEventListener("click", onSelectLangClick);
 
 /* Text Popup */
+
 const textPopup = new Popup(".popup");
 const popupContainer = document.querySelector(".popup");
 
@@ -96,6 +98,7 @@ const onReadMoreClick = () => {
 document.addEventListener("click", onReadMoreClick);
 
 /* Mobile Menu */
+
 const mobMenuPopup = new Popup(".mob-menu");
 const mobMenuBtn = document.querySelector(".mob-menu-btn");
 
@@ -124,7 +127,7 @@ const onMobMenuBtnClick = () => {
 
 document.body.addEventListener("click", onMobMenuBtnClick);
 
-/*slider*/
+/*Slider*/
 
 const sliderContainer = document.querySelector(".slider-container");
 const sliderControlsContainer = document.querySelector(".slider-controls");
