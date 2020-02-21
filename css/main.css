@@ -731,9 +731,7 @@ section:nth-child(even) {
 		cursor: pointer;
 		display: inline-block;
 		-webkit-transition: -webkit-transform .8s ease;
-		transition: -webkit-transform .8s ease;
 		transition: transform .8s ease;
-		transition: transform .8s ease, -webkit-transform .8s ease;
 	}
 
 	.mob-menu-btn::before {
@@ -743,13 +741,6 @@ section:nth-child(even) {
 		right: -15px;
 		bottom: -15px;
 		left: -15px;
-	}
-
-	.mob-menu-btn.open {
-		-webkit-transform: translateX(-90vw);
-		        transform: translateX(-90vw);
-		position: fixed;
-		top: 1%;
 	}
 
 	.mob-menu-btn span {
