@@ -21,7 +21,7 @@ class Popup {
     else this.openPopup();
   }
 
-  setValue(title, value) {
+  setValue(title) {
     this.elem.querySelector(".title").innerHTML = title;
   }
 }
