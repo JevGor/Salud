@@ -670,6 +670,10 @@ section:nth-child(even) {
 		justify-content: center;
 	}
 
+	.txt {
+		font-size: 1rem;
+	}
+
 	.demi-column {
 		width: 100%;
 	}
