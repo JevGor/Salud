@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="icon" href="res/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="res/favicon.png" type="image/x-icon">
+  <title>Osteopath</title>
+<link href="./style.css" rel="stylesheet"></head>
+
+<body>
+  <section class="hero">
+    <header class="header">
+      <img class="logo-img" src="res/Logo.svg" />
+      <nav>
+        <ul class="nav lang lang-en">
+          <li><a href="#about">About</a></li>
+          <li><a href="#treatments">Treatments</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+        <ul class="nav lang lang-ru d-none">
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#treatments">Лечение</a></li>
+          <li><a href="#education">Образование</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <ul class="nav lang lang-de d-none">
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#treatments">Behandlungen</a></li>
+          <li><a href="#education">Bildungen</a></li>
+          <li><a href="#contact">Kontakte</a></li>
+        </ul>
+      </nav>
+      <div id="lang-select" class="customselect">
+        <a class="title">English</a>
+        <ul class="lang-list">
+          <li class="lang-item" data-value="lang-en">English</li>
+          <li class="lang-item" data-value="lang-ru">Русский</li>
+          <li class="lang-item" data-value="lang-de">Deutsch</li>
+        </ul>
+      </div>
+    </header>
+    <div class="mob-menu">
+      <ul class="mob-lang-list">
+        <li class="lang-item lang-active" data-value="lang-en">ENG</li>
+        <li class="lang-item" data-value="lang-ru">RU</li>
+        <li class="lang-item" data-value="lang-de">DE</li>
+      </ul>
+      <nav class="mob-nav">
+        <ul class="mob-nav-list lang lang-en">
+          <li><a class="mob-nav-link" href="#about">About</a></li>
+          <li><a class="mob-nav-link" href="#treatments">Treatments</a></li>
+          <li><a class="mob-nav-link" href="#education">Education</a></li>
+          <li><a class="mob-nav-link" href="#contact">Contacts</a></li>
+        </ul>
+        <ul class="mob-nav-list lang lang-ru d-none">
+          <li><a class="mob-nav-link" href="#about">О нас</a></li>
+          <li><a class="mob-nav-link" href="#treatments">Лечение</a></li>
+          <li><a class="mob-nav-link" href="#education">Образование</a></li>
+          <li><a class="mob-nav-link" href="#contact">Контакты</a></li>
+        </ul>
+        <ul class="mob-nav-list lang lang-de d-none">
+          <li><a class="mob-nav-link" href="#about">Über uns</a></li>
+          <li><a class="mob-nav-link" href="#treatments">Behandlungen</a></li>
+          <li><a class="mob-nav-link" href="#education">Bildungen</a></li>
+          <li><a class="mob-nav-link" href="#contact">Kontakte</a></li>
+        </ul>
+      </nav>
+      <ul class="mob-socials">
+        <li class="socials-item">
+          <a class="socials-link" href="#">
+            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path id="instagram"
+                  d="M9.00398 5.50781C6.44862 5.50781 4.38746 7.51172 4.38746 9.99609C4.38746 12.4805 6.44862 14.4844 9.00398 14.4844C11.5593 14.4844 13.6205 12.4805 13.6205 9.99609C13.6205 7.51172 11.5593 5.50781 9.00398 5.50781ZM9.00398 12.9141C7.35264 12.9141 6.00264 11.6055 6.00264 9.99609C6.00264 8.38672 7.34862 7.07812 9.00398 7.07812C10.6593 7.07812 12.0053 8.38672 12.0053 9.99609C12.0053 11.6055 10.6553 12.9141 9.00398 12.9141ZM14.8861 5.32422C14.8861 5.90625 14.404 6.37109 13.8093 6.37109C13.2107 6.37109 12.7326 5.90234 12.7326 5.32422C12.7326 4.74609 13.2147 4.27734 13.8093 4.27734C14.404 4.27734 14.8861 4.74609 14.8861 5.32422ZM17.9437 6.38672C17.8754 4.98438 17.5459 3.74219 16.4892 2.71875C15.4366 1.69531 14.1589 1.375 12.7165 1.30469C11.2299 1.22266 6.77407 1.22266 5.28746 1.30469C3.84907 1.37109 2.57139 1.69141 1.51469 2.71484C0.457997 3.73828 0.132551 4.98047 0.0602295 6.38281C-0.0241455 7.82812 -0.0241455 12.1602 0.0602295 13.6055C0.128533 15.0078 0.457997 16.25 1.51469 17.2734C2.57139 18.2969 3.84505 18.6172 5.28746 18.6875C6.77407 18.7695 11.2299 18.7695 12.7165 18.6875C14.1589 18.6211 15.4366 18.3008 16.4892 17.2734C17.5419 16.25 17.8714 15.0078 17.9437 13.6055C18.0281 12.1602 18.0281 7.83203 17.9437 6.38672ZM16.0232 15.1562C15.7098 15.9219 15.1031 16.5117 14.3116 16.8203C13.1263 17.2773 10.3138 17.1719 9.00398 17.1719C7.69416 17.1719 4.87764 17.2734 3.69639 16.8203C2.90889 16.5156 2.30219 15.9258 1.98478 15.1562C1.51469 14.0039 1.62318 11.2695 1.62318 9.99609C1.62318 8.72266 1.51871 5.98438 1.98478 4.83594C2.29818 4.07031 2.90487 3.48047 3.69639 3.17187C4.88166 2.71484 7.69416 2.82031 9.00398 2.82031C10.3138 2.82031 13.1303 2.71875 14.3116 3.17187C15.0991 3.47656 15.7058 4.06641 16.0232 4.83594C16.4933 5.98828 16.3848 8.72266 16.3848 9.99609C16.3848 11.2695 16.4933 14.0078 16.0232 15.1562Z"
+                  fill="#BEBAB1" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="18" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href="#">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="twitter"
+                d="M17.9441 3.98749C17.9568 4.16248 17.9568 4.33751 17.9568 4.5125C17.9568 9.84997 13.8325 16 6.29441 16C3.97207 16 1.81473 15.3375 0 14.1875C0.329961 14.225 0.647187 14.2375 0.989844 14.2375C2.90605 14.2375 4.67004 13.6 6.07867 12.5125C4.27664 12.475 2.76648 11.3125 2.24617 9.7125C2.5 9.74997 2.75379 9.77498 3.02031 9.77498C3.38832 9.77498 3.75637 9.72496 4.09898 9.63751C2.22082 9.26248 0.812148 7.63749 0.812148 5.67499V5.62501C1.35781 5.92501 1.99238 6.11251 2.66492 6.13748C1.56086 5.41247 0.837539 4.17498 0.837539 2.77497C0.837539 2.02499 1.04055 1.33749 1.3959 0.737481C3.41367 3.18748 6.44668 4.78745 9.84766 4.96248C9.78422 4.66248 9.74613 4.35001 9.74613 4.03751C9.74613 1.81248 11.5736 0 13.8451 0C15.0253 0 16.0913 0.487499 16.84 1.275C17.7664 1.10001 18.6547 0.762491 19.4416 0.300002C19.137 1.23752 18.4898 2.02502 17.6395 2.52499C18.4644 2.43753 19.2639 2.21248 19.9999 1.90001C19.4416 2.69998 18.7436 3.41245 17.9441 3.98749Z"
+                fill="#BEBAB1" />
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href="#">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="facebook"
+                d="M16 0.882143V15.1143C16 15.6036 15.6036 15.9964 15.1179 15.9964H11.0393V9.80357H13.1179L13.4286 7.38929H11.0357V5.84643C11.0357 5.14643 11.2286 4.67143 12.2321 4.67143H13.5107V2.51071C13.2893 2.48214 12.5321 2.41429 11.6464 2.41429C9.80357 2.41429 8.53929 3.53929 8.53929 5.60714V7.38929H6.45357V9.80357H8.53929V16H0.882143C0.396429 16 0 15.6036 0 15.1179V0.882143C0 0.396429 0.396429 0 0.882143 0H15.1143C15.6036 0 16 0.396429 16 0.882143Z"
+                fill="#BEBAB1" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mob-headbar">
+      <img class="logo-img" src="res/Logo.svg" />
+      <div class="mob-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="mob-head-img-holder">
+      <img class="mob-head-img" src="res/hero-backg-mob.png" alt="Osteopath">
+    </div>
+    <div class="heading-container">
+      <div class="heading lang lang-en">
+        <h1 class="heading-title">
+          Book now your FREE 10 minute check-ups or a treatment.
+          <br />+41772121070
+        </h1>
+        <div class="heading-txt txt-l">
+          <p>
+            Direct spine, symmetry, absence of pain and freedom of movement with
+            a joy of life – this is something to strive for everyone. Health is
+            not the absence of disease – it is an opportunity to be able to do
+            whatever you want. In other words, health is our freedom!!!
+          </p>
+        </div>
+        <div class="heading-symptoms-container">
+          <ul class="heading-symptoms">
+            <li>Back pain, dorsalgia and lumbago</li>
+            <li>Spinal hernias and protrusions</li>
+            <li>Neck pain and headache</li>
+            <li>Rehabilitation and chronic pain</li>
+            <li>Straightening the spine, scoliosis, kyphosis</li>
+            <li>Neurological symptoms and sciatica</li>
+            <li>Natal preparation and recovery</li>
+            <li>Sports preparation and recovery</li>
+            <li>Abdominal pain and digestive problems</li>
+            <li>Stress and sleep problems</li>
+          </ul>
+        </div>
+        <button class="read-more txt-l">SYMPTOMS</button>
+      </div>
+      <div class="heading lang lang-ru d-none">
+        <h1 class="heading-title">
+          Забронируйте сейчас БЕСПЛАТНУЮ 10-минутный осмотр или лечение.
+          <br />
+          +41772121070
+        </h1>
+        <div class="heading-txt txt-l">
+          <p>
+            Прямой позвоночник, симметрия, отсутствие боли, свобода в движения и
+            радостью жизни - это то, к чему нужно стремиться каждому. Здоровье -
+            это не отсутствие болезней - это возможность делать все, что угодно.
+            Другими словами, здоровье - это наша свобода!!!
+          </p>
+        </div>
+        <div class="heading-symptoms-container">
+          <ul class="heading-symptoms">
+            <li>Боли в спине, дорсолгия и люмбаго</li>
+            <li>Спинальные грыжи и протрузии</li>
+            <li>Боль в шее и головные боль</li>
+            <li>Реабилитация и хроническая боль</li>
+            <li>Выпрямление позвоночника, сколиоз, кифоз</li>
+            <li>Неврологические симптомы и ишиас</li>
+            <li>Натальная подготовка и восстановление</li>
+            <li>Спортивная подготовка и восстановление</li>
+            <li>Боли в животе и проблемы с пищеварением</li>
+            <li>Стресс и проблемы со сном</li>
+          </ul>
+        </div>
+        <button class="read-more txt-l">СИМПТОМЫ</button>
+      </div>
+      <div class="heading lang lang-de d-none">
+        <h1 class="heading-title">
+          Jetzt Buchen Sie Ihre GRATIS 10-minütige Untersuchung oder Behandlung.
+          <br />+41772121070
+        </h1>
+        <div class="heading-txt txt-l">
+          <p>
+            Direkte Spin, Symmetrie, Abwesenheit von Schmerz und
+            Bewegungsfreiheit mit einer Lebensfreude – das ist für jeden etwas
+            zu streben. Gesundheit ist nicht die Abwesenheit von Krankheit – es
+            ist eine Möglichkeit, in der Lage zu sein, zu tun, was Sie wollen.
+            Mit anderen Worten, die Gesundheit ist unsere Freiheit!!!
+          </p>
+        </div>
+        <div class="heading-symptoms-container">
+          <ul class="heading-symptoms">
+            <li>Rückenschmerzen, Dorsalgie und Hexenschuss</li>
+            <li>Spinal hernias and protrusions</li>
+            <li>Nackenschmerzen und Kopfweh</li>
+            <li>Rehabilitation und Chronische schmerzen</li>
+            <li>Skoliose Kyphose Wirbelsäule begradigen</li>
+            <li>Neurologische Symptome und Ischias</li>
+            <li>Natal Vorbereitung und Genesung</li>
+            <li>Sportvorbereitung und Erholung</li>
+            <li>Bauchschmerzen und Verdauungsprobleme</li>
+            <li>Stress und Schlafsprobleme</li>
+          </ul>
+        </div>
+        <button class="read-more txt-l">SYMPTOME</button>
+      </div>
+      <ul class="socials">
+        <li class="socials-item">
+          <a href="#">
+            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path id="instagram"
+                  d="M9.00398 5.50781C6.44862 5.50781 4.38746 7.51172 4.38746 9.99609C4.38746 12.4805 6.44862 14.4844 9.00398 14.4844C11.5593 14.4844 13.6205 12.4805 13.6205 9.99609C13.6205 7.51172 11.5593 5.50781 9.00398 5.50781ZM9.00398 12.9141C7.35264 12.9141 6.00264 11.6055 6.00264 9.99609C6.00264 8.38672 7.34862 7.07812 9.00398 7.07812C10.6593 7.07812 12.0053 8.38672 12.0053 9.99609C12.0053 11.6055 10.6553 12.9141 9.00398 12.9141ZM14.8861 5.32422C14.8861 5.90625 14.404 6.37109 13.8093 6.37109C13.2107 6.37109 12.7326 5.90234 12.7326 5.32422C12.7326 4.74609 13.2147 4.27734 13.8093 4.27734C14.404 4.27734 14.8861 4.74609 14.8861 5.32422ZM17.9437 6.38672C17.8754 4.98438 17.5459 3.74219 16.4892 2.71875C15.4366 1.69531 14.1589 1.375 12.7165 1.30469C11.2299 1.22266 6.77407 1.22266 5.28746 1.30469C3.84907 1.37109 2.57139 1.69141 1.51469 2.71484C0.457997 3.73828 0.132551 4.98047 0.0602295 6.38281C-0.0241455 7.82812 -0.0241455 12.1602 0.0602295 13.6055C0.128533 15.0078 0.457997 16.25 1.51469 17.2734C2.57139 18.2969 3.84505 18.6172 5.28746 18.6875C6.77407 18.7695 11.2299 18.7695 12.7165 18.6875C14.1589 18.6211 15.4366 18.3008 16.4892 17.2734C17.5419 16.25 17.8714 15.0078 17.9437 13.6055C18.0281 12.1602 18.0281 7.83203 17.9437 6.38672ZM16.0232 15.1562C15.7098 15.9219 15.1031 16.5117 14.3116 16.8203C13.1263 17.2773 10.3138 17.1719 9.00398 17.1719C7.69416 17.1719 4.87764 17.2734 3.69639 16.8203C2.90889 16.5156 2.30219 15.9258 1.98478 15.1562C1.51469 14.0039 1.62318 11.2695 1.62318 9.99609C1.62318 8.72266 1.51871 5.98438 1.98478 4.83594C2.29818 4.07031 2.90487 3.48047 3.69639 3.17187C4.88166 2.71484 7.69416 2.82031 9.00398 2.82031C10.3138 2.82031 13.1303 2.71875 14.3116 3.17187C15.0991 3.47656 15.7058 4.06641 16.0232 4.83594C16.4933 5.98828 16.3848 8.72266 16.3848 9.99609C16.3848 11.2695 16.4933 14.0078 16.0232 15.1562Z"
+                  fill="#BEBAB1" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="18" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a href="#">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="twitter"
+                d="M17.9441 3.98749C17.9568 4.16248 17.9568 4.33751 17.9568 4.5125C17.9568 9.84997 13.8325 16 6.29441 16C3.97207 16 1.81473 15.3375 0 14.1875C0.329961 14.225 0.647187 14.2375 0.989844 14.2375C2.90605 14.2375 4.67004 13.6 6.07867 12.5125C4.27664 12.475 2.76648 11.3125 2.24617 9.7125C2.5 9.74997 2.75379 9.77498 3.02031 9.77498C3.38832 9.77498 3.75637 9.72496 4.09898 9.63751C2.22082 9.26248 0.812148 7.63749 0.812148 5.67499V5.62501C1.35781 5.92501 1.99238 6.11251 2.66492 6.13748C1.56086 5.41247 0.837539 4.17498 0.837539 2.77497C0.837539 2.02499 1.04055 1.33749 1.3959 0.737481C3.41367 3.18748 6.44668 4.78745 9.84766 4.96248C9.78422 4.66248 9.74613 4.35001 9.74613 4.03751C9.74613 1.81248 11.5736 0 13.8451 0C15.0253 0 16.0913 0.487499 16.84 1.275C17.7664 1.10001 18.6547 0.762491 19.4416 0.300002C19.137 1.23752 18.4898 2.02502 17.6395 2.52499C18.4644 2.43753 19.2639 2.21248 19.9999 1.90001C19.4416 2.69998 18.7436 3.41245 17.9441 3.98749Z"
+                fill="#BEBAB1" />
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a href="#">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="facebook"
+                d="M16 0.882143V15.1143C16 15.6036 15.6036 15.9964 15.1179 15.9964H11.0393V9.80357H13.1179L13.4286 7.38929H11.0357V5.84643C11.0357 5.14643 11.2286 4.67143 12.2321 4.67143H13.5107V2.51071C13.2893 2.48214 12.5321 2.41429 11.6464 2.41429C9.80357 2.41429 8.53929 3.53929 8.53929 5.60714V7.38929H6.45357V9.80357H8.53929V16H0.882143C0.396429 16 0 15.6036 0 15.1179V0.882143C0 0.396429 0.396429 0 0.882143 0H15.1143C15.6036 0 16 0.396429 16 0.882143Z"
+                fill="#BEBAB1" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container" data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="200">
+      <div class="about-txt bordered demi-column lang lang-en">
+        <h3 class="about-title">About us</h3>
+        <h5 class="about-subtitle">EXPERIENCE</h5>
+        <p class="txt">
+          I have experience in traumatology and rehabilitation after accident
+          injuries. I was often present as an osteopath at various sporting
+          events (e.g. the London marathon) where I was able to demonstrate my
+          osteopathic skills even under stress.
+        </p>
+        <p class="txt">
+          I accompany and advise some professional athletes (martial artists
+          and polo / golf players). I also know a lot about building muscle,
+          both for beginners and professionals. I am happy to accompany people
+          before and / or after an operation to stimulate the body's
+          self-healing. I am happy to accompany both the mother and the baby
+          before and during pregnancy, as well as after birth. I am happy to
+          do a free check-up for you and your baby. I do baby check-ups from
+          the second day of life.
+        </p>
+        <p class="txt">
+          Osteopathy can bring the body back into balance, enable faster
+          regeneration and make it easier for the body to deal with the
+          changes during or after pregnancy or surgery.
+        </p>
+        <p class="txt">
+          Fascia treatments particularly convince me. Fascia therapy can
+          change old movement patterns, which leads to more balance in the
+          body. This type of therapy brings very successful results, for me
+          fascia therapy is the "A" and "Z" in my treatments.
+        </p>
+        <h5 class="about-subtitle">CHARACTER TRAITS</h5>
+        <p class="txt">
+          Curious, open and sociable, eye for detail and team player. My motto
+          is «Do it and get it right right away // Do it and do it right from
+          the first time».
+        </p>
+      </div>
+      <div class="about-txt bordered demi-column lang lang-ru d-none">
+        <h3 class="about-title">О нас</h3>
+        <h5 class="about-subtitle">ОПЫТ</h5>
+        <p class="txt">
+          Имею опыт работы в травматологии и посттравматической реабилитации.
+          Я часто присутствовал в качестве остеопата на различных спортивных
+          мероприятиях (например, на Лондонском марафоне), где я мог
+          демонстрировать свои остеопатические навыки даже в состоянии
+          стресса.
+        </p>
+        <p class="txt">
+          Я сопровождаю и советую некоторых профессиональных спортсменов
+          (мастера единоборств и поло / игроки в гольф). Я также много знаю о
+          наращивании мышечной массы, как для начинающих, так и для
+          профессионалов. Я рад сопровождать людей до и / или после операции,
+          чтобы стимулировать самоисцеление организма. Я с удовольствием
+          сопровождаю и маму, и ребенка до и во время беременности, а также
+          после родов. Я счастлив сделать бесплатную проверку для вас и вашего
+          ребенка. Я делаю детские осмотры со второго дня жизни.
+        </p>
+        <p class="txt">
+          Остеопатия может привести тело в равновесие, ускорить регенерацию и
+          помочь организму справиться с изменениями во время или после
+          беременности или операции.
+        </p>
+        <p class="txt">
+          Лечение фасции особенно убедить меня. Терапия фасции может изменить
+          старые модели движения, что приводит к большему балансу в организме.
+          Этот тип терапии приносит очень успешные результаты, для меня
+          терапия фасции - это «А» и «Я» в моем лечении.
+        </p>
+
+        <h5 class="about-subtitle">ХАРАКТЕРНЫЕ СВОЙСТВА</h5>
+        <p class="txt">
+          Любопытный, открытый и общительный, внимательный к деталям и
+          командный игрок. Мой девиз: «Сделай это и сделай это прямо сейчас //
+          Сделай это и сделай это правильно с первого раза».
+        </p>
+      </div>
+      <div class="about-txt bordered demi-column lang lang-de d-none">
+        <h3 class="about-title">Über uns</h3>
+        <h5 class="about-subtitle">ERFAHRUNG</h5>
+        <p class="txt">
+          Ich habe Erfahrung in der Traumatologie und Rehabilitation nach
+          Unfallverletzungen. Oft war ich als Osteopath bei verschiedenen
+          Sportveranstaltungen anwesend (z.B. London-Marathon) wo ich meine
+          osteopathischen Fähigkeiten auch unter Stress beweisen konnte.
+        </p>
+        <p class="txt">
+          Ich begleite und berate einige professionelle Sportler
+          (Kampfsportler und Polo-/Golfspieler). Ebenfalls kenne ich mich sehr
+          gut aus wenn es um Muskelaufbau geht, sowohl bei Anfängern wie auch
+          bei Profi’s. Gerne begleite ich Menschen vor und/oder nach einer
+          Operation, um so die Selbstheilung des Körpers zu stimulieren. Gerne
+          begleite ich vor und während der Schwangerschaft, ebenso nach der
+          Geburt, sowohl die Mutter wie auch das Baby. Gerne mache ich für Sie
+          und Ihr Baby ein Gratis Check-up. Baby Check-up’s mache ich ab dem
+          2. Lebenstag.
+        </p>
+        <p class="txt">
+          Die Osteopathie kann den Körper wieder ins Gleichgewicht bringen,
+          ermöglicht eine schnellere Regeneration und erleichtert dem Körper,
+          mit den Veränderungen während oder nach der Schwangerschaft oder
+          Operation umzugehen.
+        </p>
+        <p class="txt">
+          Faszien Behandlungen überzeugen mich ganz besonders. Durch eine
+          Faszien-Therapie können sich alte Bewegungsmuster ändern, was zu
+          mehr Ausgewogenheit im Körper führt. Diese Art von Therapie bringt
+          sehr erfolgreiche Resultate, für mich ist Faszien-Therapie das «A»
+          und «O» in meinen Behandlungen.
+        </p>
+        <h5 class="about-subtitle">CHARAKTEREIGENSCHAFTEN</h5>
+        <p class="txt">
+          Neugierig, offen und kontaktfreudig, Auge für’s Detail und
+          Teamplayer. Mein Motto ist «Mache es und mach es sofort richtig// Do
+          it and do it right from the first time».
+        </p>
+      </div>
+      <div class="summary demi-column">
+        <ul class="summary-list lang lang-en">
+          <li class="summary-item">
+            <span class="summary-value">7</span>
+            <span class="summary-txt">YEARS OF EXPERIENCE</span>
+          </li>
+          <li class="summary-item">
+            <span class="summary-value">8 000</span>
+            <span class="summary-txt">EXPERIENCE HOURS</span>
+          </li>
+          <li class="summary-item">
+            <span class="summary-value">5 000</span>
+            <span class="summary-txt">PATIENTS SEEN</span>
+          </li>
+        </ul>
+        <ul class="summary-list lang lang-ru d-none">
+          <li class="summary-item">
+            <span class="summary-value">7</span>
+            <span class="summary-txt">ЛЕТ ОПЫТА</span>
+          </li>
+          <li class="summary-item">
+            <span class="summary-value">8 000</span>
+            <span class="summary-txt">ЧАСОВ ОПЫТА</span>
+          </li>
+          <li class="summary-item">
+            <span class="summary-value">5 000</span>
+            <span class="summary-txt">ПАЦИЕНТОВ</span>
+          </li>
+        </ul>
+        <ul class="summary-list lang lang-de d-none">
+          <li class="summary-item">
+            <span class="summary-value">7</span>
+            <span class="summary-txt">JAHRE ERFAHRUNG</span>
+          </li>
+          <li class="summary-item">
+            <span class="summary-value">8 000</span>
+            <span class="summary-txt">STUNDEN ERFAHRUNG</span>
+          </li>
+          <li class="summary-item">
+            <span class="summary-value">5 000</span>
+            <span class="summary-txt">PATIENTEN GESEHEN</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="treatments" id="treatments">
+    <div class="popup"></div>
+    <div class="container" data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="200">
+      <div class="demi-column slider">
+        <div class="slider-container">
+          <img class="slider-item" data-about="cupping" src="res/vac.png" alt="" />
+          <img class="slider-item" data-about="osteo" src="res/ost.png" alt="" />
+          <img class="slider-item" data-about="acupuncture" src="res/acc.png" alt="" />
+        </div>
+        <div class="slider-controls"></div>
+      </div>
+      <div class="treatments-info bordered demi-column lang lang-en">
+        <h3 class="treatments-title">Treatments</h3>
+        <div class="treatments-list">
+          <div class="treatments-list-item osteo" data-about="osteo">
+            <h4 class="treatments-subtitle">Osteopathy</h4>
+            <div class="treatments-txt txt faded-txt">
+              <h5>Overview</h5>
+              <p>
+                Osteopathy constitute a wide range of methods of “hand
+                techniques” focused on stimulation of joints, internal organs,
+                their surface and surrounding structures. The therapist
+                conducts an accurate diagnosis and treats in accordance with
+                specific symptoms of the patient. Knowledge of neuromuscular
+                connections and their behavior helps specialist to make
+                treatment as effective as possible.
+              </p>
+              <h5>Effect of osteopathiс treatment methods:</h5>
+              <ul>
+                <li>1. Straightens spine</li>
+                <li>
+                  2. Removes blocks and semiluxations in the spine and joints
+                </li>
+                <li>
+                  3. Creates a symmetrical distribution of load on the joints
+                </li>
+                <li>4. Returns straight posture</li>
+                <li>5. Removes spasms and strengthens muscles</li>
+                <li>6. Improves elasticity of muscles and ligaments</li>
+                <li>7. Removes edemas and inflammations</li>
+                <li>
+                  8. Relieves pain in back, neck, shoulders, between the
+                  shoulder blades
+                </li>
+                <li>9. Relieves neurologic sliding disease</li>
+                <li>
+                  10. Improves local blood flow and circulation of fluids
+                </li>
+                <li>
+                  11. Elininates toxins from the tissues and improves
+                  metabolism
+                </li>
+              </ul>
+              <h5>Indications for use of manipulative treatment methods:</h5>
+              <ul>
+                <li>1. Aching joints and/or joint pain</li>
+                <li>2. Pain in the spine</li>
+                <li>3. Pain in the loin and between scapulas</li>
+                <li>4. Posture disorder and/or curvature of the spine</li>
+                <li>
+                  5. Nonhomologous symptoms: pricking, numbness, tingling,
+                  sharp pain
+                </li>
+                <li>
+                  6. Disorder and/or loss of functionality of the joints
+                  and/or internal organs
+                </li>
+                <li>7. Injuries and fractures</li>
+                <li>8. Preparation for athletic competitions</li>
+                <li>9. Preparation for childbirth</li>
+                <li>10. Preparation for surgery</li>
+                <li>11. Exhaustion</li>
+              </ul>
+              <h5>Types of osteopathic treatment methods:</h5>
+              <p>
+                Osteopathy is an influence of the therapist on the patient
+                through “hand techniques”. There are many different kinds,
+                methods and directions. And each method has from a dozen to
+                several hundred techniques. The main methods of manual therapy
+                are classic, cranio-sacral, visceral and structural methods.
+              </p>
+              <ul>
+                <li>
+                  – Structural method is a method of impact on the spine,
+                  peripheral bones and soft tissues. The method of influence
+                  is based on the rotational manipulations, often performed on
+                  the verge of a physiological joint barrier. Manipulations
+                  are carried out through a combination of fixed joint
+                  position together with the vector/angle of free movement in
+                  the direction of which the manipulation is carried out, by
+                  “short or long levers”. Manipulation ensures the release of
+                  a joint, and is often accompanied by a “pat sound”. As a
+                  result, the joint gets a new position and restart of
+                  neuromuscular signal of this joint is happening.
+                </li>
+                <li>
+                  – Cranio-sacral is a method of impact on the scull and
+                  sacral bone, and any relationship between these two
+                  important physiological centers (Cranium Latin).
+                  Cranio-sacral techniques or cranio-sacral therapy is a very
+                  soft and subtle techniques, based on the mobility of the
+                  cranial bones and sacral bone. It is a powerful method for
+                  headaches, fatigue and insomnia.
+                </li>
+                <li>
+                  – Visceral is a method directly influencing internal organs
+                  by direct penetration through the abdominal muscles and
+                  reflexive areas of the spinal column. The method is widely
+                  used in various diseases and damage of the gastrointestinal
+                  tract, and/or for acceleration of recovery and normalization
+                  of the internal organs functioning.
+                </li>
+                <li>
+                  – Classical the method, unfortunately, is almost forgotten
+                  by modern manual therapist. It is based on minimal impact on
+                  the patient’s body and the philosophy that the body only
+                  needs a little push to start normalizing its functionality.
+                  The technique widely used vibrating and oscillating movement
+                  without sharp axial manipulation of the joints.
+                </li>
+              </ul>
+              <h5>
+                Contraindications and side effects of manipulative treatment
+                methods:
+              </h5>
+              <ul>
+                <li>
+                  • Infectious diseases (influenza, virus, skin diseases)
+                </li>
+                <li>• Open cuts, burns</li>
+                <li>• Fresh injury or fracture</li>
+                <li>• Muscles or tendons ruptures</li>
+                <li>• Recent injuries</li>
+                <li>• Traumatic brain injury</li>
+                <li>• Varicose veins</li>
+                <li>• Aptitude to thrombosis or hemorrhage</li>
+                <li>• Acute cardiac pathologies</li>
+                <li>• Pregnancy (depending on gestational age)</li>
+                <li>• Tumors (including cancers)</li>
+                <li>
+                  • Certain diseases such as bursitis, uratic arthritis,
+                  myositis with ossification, rheumatoid arthritis,
+                  inflammation of the periosteum and others
+                </li>
+                <li>
+                  • Absolutely everything, what you can be unsure about!
+                </li>
+              </ul>
+            </div>
+            <button class="read-more txt-l">READ MORE</button>
+          </div>
+          <div class="treatments-list-item acupuncture d-none" data-about="acupuncture">
+            <h4 class="treatments-subtitle">Acupuncture</h4>
+            <div class="treatments-txt txt faded-txt">
+              <h5>Overview</h5>
+              <p>
+                Acupuncture originates from Traditional Chinese Medicine
+                (TCM). This is the method of treatment whose history dates
+                back more than 5000 years and which is still used today.
+                Unlike intramuscular manual therapy, acupuncture is based on
+                the idea of “body meridians” or energy flows, and works at the
+                system level, affecting local and specified points. It is
+                based on the use of needles, their length, direction and
+                stimulation.<br />
+                ATTENTION!!! All the used needles are disposable and are used
+                only once.
+              </p>
+              <h5>Effects of acupuncture</h5>
+              <ul>
+                <li>1. Deoxidation and strengthening the immune system</li>
+                <li>2. Relaxation of soft tissues</li>
+                <li>3. Removes edemas and inflammations</li>
+                <li>4. Improves metabolism and circulation of fluids</li>
+                <li>5. Relieves stress, swelling and tumors</li>
+                <li>
+                  6. Recovers the texture and functionality of muscles and
+                  ligaments
+                </li>
+                <li>
+                  7. Relaxation of the nervous system and neuromuscular return
+                </li>
+              </ul>
+              <h5>Indications for acupuncture</h5>
+              <ul>
+                <li>
+                  1. Recent injury, the most recent the better! If to perform
+                  acupuncture within the first 2 minutes, it is possible to
+                  completely avoid soft tissue inflammation.
+                </li>
+                <li>
+                  2. Neurological symptoms – numbness, pricking, sharp pain
+                </li>
+                <li>3. Pain in the back and spine</li>
+                <li>4. Loss of function and muscle spasm</li>
+                <li>
+                  5. Preparation for athletic competition, surgeries,
+                  childbirth
+                </li>
+                <li>6. Exhaustion</li>
+                <li>7. Headaches</li>
+                <li>8. Ache and pains in muscles and joints</li>
+              </ul>
+              <h5>Types of medical acupuncture</h5>
+              <p>
+                Conventionally, the acupuncture can be divided into two main
+                directions, depending on the application site: Auricular (ear)
+                – in this case the needles are placed directly on external
+                ear. External ear is divided into areas is responsible for
+                certain body area or internal organ. This therapeutic
+                technique is very effective, but short. The best use of
+                auricular acupuncture is the pain and spasm relief.
+              </p>
+              <p>
+                System acupuncture is the use of the method throughout the
+                body. It involves local points (near the site of exposure),
+                peripheral (reflex points of the affected area), the
+                interaction between the meridians and “irregular points”. This
+                type of acupuncture requires compilation of an effective and
+                reasonable formula to use and to achieve good results.
+                Practice has shown that system acupuncture is an effective
+                therapeutic technique with stable results.
+              </p>
+              <p>
+                Thermal acupuncture is warming-up using herbal cigarettes or
+                infrared lamp of needles and biologically active zones. This
+                technique enhances the therapeutic effect and activates
+                internal corporal strength for a speedy recovery. Also known
+                as tzu therapy.
+              </p>
+              <p>
+                For added effect, the patient can receive activated beads or
+                plates fixed by tape. The patient may be suggested to walk
+                with the stickers from a few hours up to several days. This
+                type of therapy is sometimes called applieopresspuncture. It
+                should be noted that acupuncture and needle therapy – two at
+                first sight identical concepts – are in fact completely
+                different! Acupuncture is one of the main methods of TCM and
+                it operates under a principle of meridians scouring. On the
+                other hand, needle therapy is the type of therapeutic impact,
+                adapted to modern medicine, acting on the principle of local
+                points and neural signals.
+              </p>
+              <h5>Contraindications and side effects of acupuncture</h5>
+              <ul>
+                <li>
+                  • Infectious diseases (influenza, virus, skin diseases)
+                </li>
+                <li>• Open cuts, burns</li>
+                <li>• Complete rupture of muscles or tendons</li>
+                <li>• Thromboses or bleeding disorder</li>
+                <li>• Acute cardiac pathologies</li>
+              </ul>
+            </div>
+            <button class="read-more txt-l">READ MORE</button>
+          </div>
+          <div class="treatments-list-item cupping d-none" data-about="cupping">
+            <h4 class="treatments-subtitle">Vacuum cupping</h4>
+            <div class="treatments-txt txt faded-txt">
+              <h5>Overview</h5>
+              <p>
+                Cupping therapy is based on the vacuum effect caused by the
+                local use of suction cups. The vacuum is created in the cup
+                either by the air suction using a pump, or by burning sticks
+                that are applied to this field for about 20 minutes. Many
+                professional sportsmen use this technique for its ability to
+                increase strength and endurance or tissues or during
+                deoxidation program. Furthermore, it is a treatment of choice
+                for cellulite
+              </p>
+              <p>
+                Significant therapeutic effect is achieved by the fact that
+                with the help of the cup the fascial sheets in the tissues are
+                moved, releasing the stagnated toxins and imposing movements
+                of fluid and giving the tissue the healthy state. Summary
+                cupping is a treatment of choice for stagnated muscles and
+                cellulite for it detoxicating effects.
+              </p>
+              <p>
+                ATTENTION!!! After the therapy, local bruise may appear when
+                treating bucked muscles for a first time
+              </p>
+              <h5>Effect of vacuum cupping therapy</h5>
+              <ul>
+                <li>1. Deoxidation and strengthening of immunity</li>
+                <li>2. Increase of the endurance of soft tissues</li>
+                <li>
+                  3. Improvement of the metabolism and circulation of fluids
+                </li>
+                <li>4. Elimination of deep congestions</li>
+                <li>
+                  5. Release of clogged sebaceous and perspiratory glands
+                </li>
+                <li>
+                  6. Recovery of the texture and functionality of muscles and
+                  ligaments
+                </li>
+                <li>7. Removes edemas and inflammations</li>
+              </ul>
+              <h5>Indications for vacuum cupping therapy</h5>
+              <ul>
+                <li>1. Deep, aching muscle pain</li>
+                <li>2. Local blood circulation disorder (congestions)</li>
+                <li>3. Requirements of increased muscle tone</li>
+                <li>4. Posttraumatic and postoperative recovery</li>
+                <li>5. Cold and mild inertial disease</li>
+                <li>6. Muscle atrophy</li>
+              </ul>
+              <h5>Types of vacuum cupping therapy</h5>
+              <p>
+                Types of vacuum cupping therapy may be “dry” and with a
+                withdrawal of blood
+              </p>
+              <p>
+                “Dry” method of therapy is the use of the cups on the warmed
+                skin of the patient. Procedure is completed, when the cup is
+                removed from the patient’s skin. “Dry” method us more suitable
+                for the removal of deep muscle congestions.
+              </p>
+              <p>
+                Method with a withdrawal of blood is applied in two stages:
+                first as a “dry” method, however, after the initial removal of
+                the cup the therapist makes microscopic cuts and returns the
+                cup into place. Thus, the upper blood congestion leaves the
+                human body. Blood withdrawal method is more suitable for
+                deoxidation.
+              </p>
+              <p>
+                Another model of division is the position of the cup: static
+                and dynamic. Meanwhile, static position can be both “dry”, and
+                with a withdrawal of blood. Dynamic position is carried out in
+                a passive form, when the massage is performed by the
+                therapist, or in active form, when patients carry out a series
+                of movements by themselves, thereby involving muscles under
+                the cups. Static method is most often accompanied by blood
+                withdrawal and is used for deoxidation. Passive dynamic method
+                is used to work with affected soft tissues to return their
+                functionality. Active dynamic method is suitable for work with
+                healthy soft tissues to improve their functionality.
+              </p>
+              <p>
+                The choice of location of cups placing may depend on the
+                condition of the tissue or bioactive reflex zones, and may
+                vary depending on the case.
+              </p>
+              <h5>
+                Contraindications and side effects of vacuum cupping therapy
+              </h5>
+              <ul>
+                <li>• Recent injury</li>
+                <li>• Edemas and tumors (including cancer)</li>
+                <li>• Pathologies of the lymphatic system</li>
+                <li>• Hormonal imbalance</li>
+                <li>• Weakening of internal organs</li>
+                <li>
+                  • Infectious diseases (influenza, virus, skin diseases)
+                </li>
+                <li>• Open cuts, burns</li>
+                <li>• Complete rupture of muscles or tendons</li>
+                <li>• Thromboses or bleeding disorder</li>
+                <li>• Acute cardiac pathologies</li>
+                <li>• Pregnancy (depending on gestational age)</li>
+                <li>
+                  • Absolutely everything, what you can be unsure about!
+                </li>
+              </ul>
+              <p>
+                ATTENTION!!! After the therapy, local bruise may appear when
+                treating bucked muscles for a first time
+              </p>
+            </div>
+            <button class="read-more txt-l">READ MORE</button>
+          </div>
+        </div>
+      </div>
+      <div class="treatments-info bordered demi-column lang lang-ru d-none">
+        <h3 class="treatments-title">Лечение</h3>
+        <div class="treatments-list">
+          <div class="treatments-list-item osteo" data-about="osteo">
+            <h4 class="treatments-subtitle">Остеопатия</h4>
+            <div class="treatments-txt txt faded-txt">
+              <h5>Общие сведения</h5>
+              <p>
+                Методы мануальной манипуляции – это широкий спектр приемов
+                использования «ручных техник», направленных на стимулирование
+                суставов и/или внутренних органов, их поверхностных и
+                окружающих структур. Терапевт проводит точную диагностику и
+                лечит соответственно конкретных симптомов пациента. Знание
+                нервно-мышечных связей и их поведение помогает специалисту
+                сделать лечении максимально эффективным.
+              </p>
+              <h5>Эффект манипуляционных методов лечения:</h5>
+              <ul>
+                <li>1. Выпрямляет позвоночник.</li>
+                <li>
+                  2. Убирает блоки и подвывихи в позвоночнике и суставах.
+                </li>
+                <li>
+                  3. Создают симметричное распределение нагрузок на суставы.
+                </li>
+                <li>4. Возвращает прямую осанку.</li>
+                <li>5. Снимает спазмы и укрепляет мышцы.</li>
+                <li>6. Повышает эластичность мышц и связок.</li>
+                <li>7. Снимает отёки и воспаления.</li>
+                <li>
+                  8. Убирает боли в спине, шее, плечах, между лопатками.
+                </li>
+                <li>9. Освобождает неврологические зажимы.</li>
+                <li>
+                  10. Повышает локальный кровоток и циркуляцию жидкостей.
+                </li>
+                <li>
+                  11. Выводит токсины из тканей и повышает обмен веществ.
+                </li>
+              </ul>
+              <h5>Показания к манипуляционным методам лечения:</h5>
+              <ul>
+                <li>1. Ноющие и суставы и/или боли в суставах.</li>
+                <li>2. Боли в позвоночнике.</li>
+                <li>3. Боли в пояснице и между лопатками.</li>
+                <li>4. Нарушение осанки и/или искривление позвоночника.</li>
+                <li>
+                  5. Негомологические симптомы: покалывание, онемение,
+                  мурашки, острая боль.
+                </li>
+                <li>
+                  6. Нарушение и/или потеря функциональности суставов и/или
+                  внутренних органов.
+                </li>
+                <li>7. Травмы и переломы.</li>
+                <li>8. Подготовка к атлетическим соревнованиям.</li>
+                <li>9. Подготовка к родам.</li>
+                <li>10. Подготовка к операции.</li>
+                <li>11. Упадок сил.</li>
+              </ul>
+              <h5>Виды манипуляционных методов лечения</h5>
+              <p>
+                Мануальная терапия направленна — это воздействие терапевта
+                через «ручные техника» на пациента. Существует много различных
+                видов методов и направлений и у каждого метода от десятка до
+                нескольких сотен техник. Основными методами мануальная терапии
+                являются – классический, кранио-сакральный, висцеральный и
+                структурный.
+              </p>
+              <ul>
+                <li>
+                  — Структурный – это метод воздействия на позвоночник, и
+                  периферические кости, и мягкие ткани. Методика воздействия
+                  основана на ротационных манипуляциях, часто производимых на
+                  грани физиологического барьера сустава. Манипуляции
+                  проводиться путём сочетания закрепленной позиции сустава
+                  совместно с вектором/углом свободного движения, в сторону
+                  которого производиться манипуляция путём «коротких или
+                  длинных рычагов»,. Манипуляции обеспечивает высвобождение
+                  сустава и не редко сопровождается «хлопковым звуком». В
+                  результате сустав приобретает новое положение и происходит
+                  перезагрузка нейро-мышечного сигнала данного сустава.
+                </li>
+                <li>
+                  — Кранио-сакральный — это метод воздействия на череп и
+                  крестец, и любые связи между этими двумя важными
+                  физиологическими центрами (Cranium (Latin) – череп, Sacrum
+                  (Latin)- крестец). Кранио-сакральные методы или
+                  кранио-сакральная терапия это очень мягкие и утонченные
+                  техники основывающиеся на мобильности черепных костей и
+                  крестца. Очень сильный метод при головных болях и усталости
+                  и бессонице.
+                </li>
+                <li>
+                  — Висцеральный – метод на прямую воздействующий на
+                  внутренние органы, путем прямого проникновения через мышцы
+                  брюшины и рефлексивных зон позвоночного столба. Метод широка
+                  применяется при различных заболеваниях желудочно-кишечного
+                  тракта и поражения и/или для ускорения выздоровления и
+                  нормализации работы внутренних органов.
+                </li>
+                <li>
+                  — Классический – метод, к сожалению, почти забыт
+                  современными мануальными терапевтами. Он основан на
+                  минимальном воздействии на организм пациента и философии что
+                  организму нужен лишь маленький толчок что бы начать
+                  нормализировать функциональность. Методика широко использует
+                  вибрационно-колебательные движения без резких осевых
+                  манипуляций суставов.
+                </li>
+              </ul>
+              <h5>
+                Противопоказания и побочные эффекты манипуляционных методов
+                лечения
+              </h5>
+              <ul>
+                <li>
+                  • Инфекционные заболевания (грипп, вирус, кожных покровов)
+                </li>
+                <li>• Открытые порезы, ожоги</li>
+                <li>• Свежая травма или</li>
+                <li>• Разрыв мышц или сухожилий</li>
+                <li>• Недавние травмы</li>
+                <li>• Черепно-мозговая травма</li>
+                <li>• Варикоз вен</li>
+                <li>• Предрасположенность к тромбозу или кровотечению</li>
+                <li>• Острые сердечные патологии</li>
+                <li>• Беременность (в зависимости от сроков)</li>
+                <li>• Опухоли (в том числе раковые)</li>
+                <li>
+                  • Определенные заболевания такие как: бурсит, подагра,
+                  миозит с оссификацией, ревматоидный артрит, воспаление
+                  надкостницы и другие
+                </li>
+                <li>• Абсолютно все в чем вы можете быть не уверены!</li>
+              </ul>
+            </div>
+            <button class="read-more txt-l">ЧИТАТЬ ДАЛЕЕ</button>
+          </div>
+          <div class="treatments-list-item acupuncture d-none" data-about="acupuncture">
+            <h4 class="treatments-subtitle">Акупунктура</h4>
+            <div class="treatments-txt txt faded-txt">
+              <h5>Общие сведения</h5>
+              <p>
+                Иглоукалывание происходит из традиционной китайской медицины
+                (ТКМ). Это метод лечения, история которого насчитывает более
+                5000 лет, и который используется до сих пор. В отличие от
+                внутримышечной мануальной терапии, акупунктура основана на
+                идее «меридианов тела» или потоков энергии и работает на
+                системном уровне, затрагивая местные и указанные точки. Она
+                основана на использовании игл, их длине, направлении и
+                стимуляции.<br />
+                ВНИМАНИЕ!!! Все используемые иглы одноразовые и используются
+                только один раз..
+              </p>
+              <h5>Эффект акупунктуры:</h5>
+              <ul>
+                <li>1. Дезоксидация и укрепление иммунитета.</li>
+                <li>2. Расслабление мягких тканей.</li>
+                <li>3. Снимает отёки и воспаления.</li>
+                <li>4. Улучшение обмена веществ и циркуляции жидкостей.</li>
+                <li>5. Снятие напряжения, отеков и опухолей.</li>
+                <li>
+                  6. Восстановление текстуры и функциональности мышц и связок.
+                </li>
+                <li>
+                  7. Расслабление нервной системы и нейро-мышечного возврата.
+                </li>
+              </ul>
+              <h5>Показания к акупунктуре:</h5>
+              <ul>
+                <li>
+                  1. Свежая травма, чем свежее тем лучше! Если её провести в
+                  течении первых 2 минут то возможно полностью избежать
+                  воспаления мягких тканей.
+                </li>
+                <li>
+                  2. Неврологические симптомы – онемение, покалывания, острая
+                  боль.
+                </li>
+                <li>3. Боли в спине и позвоночнике.</li>
+                <li>4. Потеря функциональности и спазм мышц.</li>
+                <li>
+                  5. Подготовка к атлетическим соревнованиям, операции, родам.
+                </li>
+                <li>6. Упадок сил.</li>
+                <li>7. Головные боли.</li>
+                <li>8. Ломота и боли в мышцах и суставах.</li>
+              </ul>
+              <h5>Виды лечебной акупунктуры</h5>
+              <p>
+                Условно акупунктура может быть разделена на два основных
+                направления в зависимости от места применения: Аурикулярная
+                (ушная) – в данном случае иголки ставиться не посредственно на
+                ушные раковины. Раковины поделены на зоны отвечающие за
+                определенный участок организма или внутренний орган. Этот
+                терапевтический прием очень эффективен, но не долог. Самое
+                лучшее применение аурикулярной акупунктуры это снятие боли и
+                спазмов.
+              </p>
+              <p>
+                Системная акупунктура – это применение метода по всему
+                организму. Она задействует локальные точки (рядом с участком
+                воздействия), периферические (рефлекторные точки пораженной
+                зоны), взаимодействие между меридианами и «нерегулярные токи.
+                Этот вид акупунктуры требует составление действенной и
+                рациональной формулы для применения и достижения хорошего
+                результата. Практика показывает что системная акупунктура
+                действенный терапевтический приём с устойчивым результатом.
+              </p>
+              <p>
+                Термоакупунктура – это прогревание травяными сигаретами или
+                инфра-красной лампой иголок и биологически активных зон.
+                Данный приём усиливает терапевтический эффект и активизирует
+                внутренние телесные силы для скорейшего выздоровления. Так же
+                известна ка цзю-терапия.
+              </p>
+              <p>
+                Для дополнительного эффекта пациенту можно наложить
+                активированные шарики или пластинки прикрепляемые тейпом.
+                Пациенту может быть предложено походить от пары часов до
+                нескольких дней с наклейками. Данный вид терапии порой
+                называют апплиеопресспунктура.
+              </p>
+              <p>
+                Надо отметить что акупунктура и иглоукалывание. Эти два на
+                первый взгляд одинаковых понятия, на самом деле абсолютно
+                разные! Акупунктура это один из основных методов ТКМ и
+                действует по принципу прочищения меридианов. С другой стороны
+                иглоукалывание это адаптированный для современной медицины вид
+                терапевтического воздействия действующего по принципу
+                локальных точек и нейро сигналов.
+              </p>
+              <h5>Противопоказания и побочные эффекты акупунктуры:</h5>
+              <ul>
+                <li>
+                  • Инфекционные заболевания (грипп, вирус, кожных покровов)
+                </li>
+                <li>• Открытые порезы, ожоги</li>
+                <li>• Полный разрыв мышц или сухожилий</li>
+                <li>• Тромбозы или нарушение свёртываемости крови</li>
+                <li>• Острые сердечные патологии</li>
+                <li>• Беременность (в зависимости от сроков)</li>
+                <li>• Опухоли (в том числе раковые)</li>
+                <li>
+                  • Определенные заболевания такие как: бурсит, подагра,
+                  миозит с оссификацией, ревматоидный артрит, воспаление
+                  надкостницы и другие
+                </li>
+                <li>• Абсолютно все в чем вы можете быть не уверены!</li>
+              </ul>
+            </div>
+            <button class="read-more txt-l">ЧИТАТЬ ДАЛЕЕ</button>
+          </div>
+          <div class="treatments-list-item cupping d-none" data-about="cupping">
+            <h4 class="treatments-subtitle">Вакуумно-баночная терапия</h4>
+            <div class="treatments-txt txt faded-txt">
+              <h5>Общие сведения</h5>
+              <p>
+                Терапия банками основана на эффекте вакуума, вызываемом
+                локальным применением медицинских банок. Вакуум создается в
+                банке либо с помощью отсасывания воздуха насосом, либо с
+                использованием горящих палочек, которые применяются к данной
+                области в течение приблизительно 20 минут. Многие спортсмены
+                используют этот метод за его способность к повышению прочности
+                и выносливости тканей или во время программы дезоксидации.
+              </p>
+              <p>
+                ВНИМАНИЕ!!! В конце концов, появляется локальная гематома и
+                остается синяк, поэтому многие люди предпочитают не
+                использовать данный метод всего лишь по этой причине.
+              </p>
+              <h5>Эффект вакуумно-баночной терапии:</h5>
+              <ul>
+                <li>1. Дезоксидация и укрепление иммунитета.</li>
+                <li>2. Увеличение выносливости мягких тканей.</li>
+                <li>3. Улучшение обмена веществ и циркуляции жидкостей.</li>
+                <li>4. Выведение глубоких застоев.</li>
+                <li>
+                  5. Высвобождает закупоренные сальные и потовые железы.
+                </li>
+                <li>
+                  6. Восстановление текстуры и функциональности мышц и связок.
+                </li>
+                <li>7. Снимает отёки и воспаления.</li>
+              </ul>
+              <h5>Показания к вакуумное-баночной терапии:</h5>
+              <ul>
+                <li>1. Глубокие, ноющие мышечные боли.</li>
+                <li>2. Нарушение локального кровообращения (застои).</li>
+                <li>3. Требования повышенного мышечного тонуса.</li>
+                <li>
+                  4. Пост-травматическое и пост-операционное восстановление.
+                </li>
+                <li>5. Простуда и легкие инерционные заболевания.</li>
+                <li>6. Мышечная атрофия.</li>
+              </ul>
+              <h5>Виды вакуумно-баночной терапии</h5>
+              <p>
+                Значительный терапевтический эффект достигаетcя путём того
+                что, с помощью банки разрываются капилляры в ткани, создается
+                первичная гематома, позволяющая вырасти еще большему
+                количеству капилляров. Той же логикой руководствуются, когда,
+                после обрезания одной ветви на дереве, из этого места
+                вырастают несколько.
+              </p>
+              <p>
+                Одна из моделей разделения может быть сухой и с
+                кровопусканием. «Сухой» метод терапии это применение банки на
+                разогретую кожу пациента и окончание процедуры по снятию банки
+                с кожи пациент.
+              </p>
+              <p>
+                Метод кровопускания применяется в два этапа: в начале как
+                «сухой», однако после первичного снятия банки терапевт делает
+                микроскопические надрезы, и возвращает банку на место. Тем
+                самым верхний кровяной застой покидает тело человека. «Сухой»
+                метод более применим для снятия глубоких мышечных застоев,
+                кровопускание же более подходит для детоксикации.
+              </p>
+              <p>
+                Другая модель разделения может быть положение банки после
+                применение: статическое и демоническое. Причем статическое
+                может быть и «сухое» и с кровопусканием. Динамическое может
+                быть произведено в пассивной форме вводе массажа терапевтом
+                или в активной форме когда пациент сам производит серию
+                движений, тем самым задействую мышцы под банками. Статичный
+                метод – чаще всего сопровождается кровопусканием и применяется
+                для детоксикации. Пассивный динамичный применяется для работы
+                с пораженными мягкими ткаными и возврата их функциональности.
+                Активный-динамичный подходит для работы со здоровыми мягкими
+                тканями и усиления их функциональности.
+              </p>
+              <p>
+                Выбор места проставления банки может завесить от состояния
+                ткани или биологических активных рефлекторных зон и может
+                варьироваться в зависимости от случая.
+              </p>
+              <h5>
+                Противопоказания и побочные эффекты вакуумно-баночной терапии:
+              </h5>
+              <ul>
+                <li>• Недавняя травма</li>
+                <li>• Отёки и опухоли (в том числе раковые)</li>
+                <li>• Патологии лимфатической системы</li>
+                <li>• Гормональный дисбаланс</li>
+                <li>• Ослабление внутренних органов</li>
+                <li>
+                  • Инфекционные заболевания (грипп, вирус, кожных покровов)
+                </li>
+                <li>• Открытые порезы, ожоги</li>
+                <li>• Полный разрыв мышц или сухожилий</li>
+                <li>• Тромбозы или нарушение свёртываемости крови</li>
+                <li>• Острые сердечные патологии</li>
+                <li>• Беременность (в зависимости от сроков)</li>
+                <li>• Абсолютно все в чем вы можете быть не уверены!</li>
+              </ul>
+            </div>
+            <button class="read-more txt-l">ЧИТАТЬ ДАЛЕЕ</button>
+          </div>
+        </div>
+      </div>
+      <div class="treatments-info bordered demi-column lang lang-de d-none">
+        <h3 class="treatments-title">Behandlungen</h3>
+        <div class="treatments-list">
+          <div class="treatments-list-item osteo" data-about="osteo">
+            <h4 class="treatments-subtitle">Osteopathie</h4>
+            <div class="treatments-txt txt faded-txt">
+              <h5>Allgemeine Informationen</h5>
+              <p>
+                Techniken von Manualtherapie und Manipulationstherapie stellen
+                eine breite Palette von Handgriffen der sogenannten
+                „Handtechniken“, die zur Stimulierung der Gelenke und/oder
+                innerer Organe, ihrer Oberflächen- und Umgebungsstrukturen
+                verwendet werden. Der Therapeut führt präzise Diagnostik durch
+                und behandelt den Patienten unter Berücksichtigung
+                entsprechender Symptome. Dass sich der Facharzt in
+                neuromuskulären Verbindungen und ihrem Verhalten auskennt,
+                hilft ihm den Patienten maximal wirksam behandeln.
+              </p>
+              <h5>Effekt der Manipulationstechniken:</h5>
+              <ul>
+                <li>1. Streckhaltung der Wirbelsäule</li>
+                <li>
+                  2. Beseitigung von Blöcken und Verrenkungen in der
+                  Wirbelsäule und in Gelenken
+                </li>
+                <li>
+                  3. Symmetrische Gewichtsverteilung zwischen den
+                  Gelenkverbindungen
+                </li>
+                <li>4. Wiederherstellung einer geraden Haltung</li>
+                <li>5. Beseitigung der Krämpfe und Muskelkräftigung</li>
+                <li>6. Erhöhung der Muskel-und Sehnenelastizität</li>
+                <li>7. Auflösung der Ödeme und Schwellungen</li>
+                <li>
+                  8. Beseitigung der Rückenschmerzen, Schmerzen in der Hals-
+                  und Nackenwirbelsäule, sowie zwischen den Schulterblättern
+                </li>
+                <li>9. Befreiung eingeklemmter Nervenendigungen.</li>
+                <li>
+                  10. Aktivierung lokaler Blutströmung und
+                  Flüssigkeitszirkulation
+                </li>
+                <li>
+                  11. Abbau der Giftbelastung und Stimulation des
+                  Stoffwechsels
+                </li>
+              </ul>
+              <h5>Indikationsbereich der Manipukationstechniken:</h5>
+              <ul>
+                <li>1. Ziehende Gelenke und/oder Gelenkschmerzen</li>
+                <li>2. Wirbelsäulenschmerzen</li>
+                <li>
+                  3. Lumbale Schmerzen und Schmerzen zwischen den
+                  Schulterblättern
+                </li>
+                <li>4. Fehlhaltung und/oder Rückgratverkrümmung</li>
+                <li>
+                  5. nichthomologe Symptome: Ameisenlaufen, Taubheitsgefühl an
+                  den Gliedmaßen, Kribbeln auf der Haut, akute Schmerzen
+                </li>
+                <li>
+                  6. Funktionsstörung und/oder – verlust von Gelenken und/oder
+                  inneren Organen
+                </li>
+                <li>7. Verletzungen und Frakturen</li>
+                <li>8. Vorbereitung auf Athletenwettkämpfe</li>
+                <li>9. Vorbereitung auf die Geburt</li>
+                <li>10. Vorbereitung auf die Operation</li>
+              </ul>
+              <h5>Arten der Manipulationstechniken</h5>
+              <p>
+                Manualtherapie ist die Behandlung des Patienten mit Händen und
+                Manipulationen, also mittels verschiedener Handtechniken. Es
+                bestehen viele Arten, Richtungen und Handgriffe davon. Jede
+                Manualtherapieart hat von zehn bis einige Hunderte Techniken.
+                Zu den Haupttechniken der Manualtherapie gehören klassische,
+                cranio-sacrale, viszerale und strukturelle Therapien.
+              </p>
+              <ul>
+                <li>
+                  – Strukturelle Manualtherapie ist Wirkungstechnik für die
+                  Wirbelsäule, sowie periphere Knochen und weiche Gewebe.
+                  Diese Technik basiert auf Rotationsmanipilationen, die oft
+                  an der Grenze physiologischer Barriere des Gelenkes.
+                  Manipulationen werden in Kombination der festen
+                  Gelenkposition mit dem Vektor/Winkel der Freibewegung
+                  eingesetzt, in deren Richtung die Manipulation durch „kurze
+                  und lange Griffhebel“. Die Manipulationen verschaffen die
+                  Befreiung des Gelenkes und werden oft mit einem „Klapp-Laut“
+                  begleitet. Als Resultat erwirbt das Gelenk eine neue
+                  Position und dann geschieht eine Umladung von
+                  neuromuskulärem Signal des zu heilenden Gelenkes.
+                </li>
+                <li>
+                  – Cranio-sacrale Manualtherapie ist Wirkungstechnik für den
+                  Schädel und das Kreuz, sowie auf jegliche Verbindungen
+                  zwischen diesen wichtigen physiologischen Zentren des
+                  Menschen (Cranium Latin). Cranio-sacrale
+                  Manipulationstechniken und Cranio-sacrale Manualtherapie
+                  sind sehr milde und feine Handtechniken, die auf der
+                  Mobilität der Schädel-und Kreuzknochen beruhen. Eine sehr
+                  wirksame Technik gegen Kopfschmerzen, Müdigkeit und
+                  Schlaflosigkeit.
+                </li>
+                <li>
+                  – Viszerale Manualtherapie ist Manipulationstechnik, mit
+                  deren Hilfe direkt auf innere Organe wirken kann, indem man
+                  durch Bauchmuskeln und Reflexzonen des Rückgrates
+                  durchdringt. Die Technik wird bei verschiedenen
+                  Beschädigungen und bei Erkrankungen des Magen-und
+                  Darm-Traktes und/oder zur schnellen Besserung und zur
+                  Wiederherstellung innerer Organe weit und breit verwendet
+                </li>
+                <li>
+                  – Klassische Manualtherapie ist Manipulationstechnik, die
+                  von gegenwärtigen Therapeuten leider beinahe vergessen ist.
+                  Dieses Therapieverfahren übt eine minimale Wirkung auf den
+                  Organismus des Patienten aus und diesem Verfahren zugrunde
+                  liegt die Philosophie, dass man nur einen Anstoß zu geben
+                  braucht, damit der Organismus seine Funktionsstörungen zu
+                  beseitigen beginnt. Bei dieser Technik werden Vibrations-und
+                  Schwingbewegungen ohne scharfe Achsenmanipulationen der
+                  Gelenke.
+                </li>
+              </ul>
+              <h5>
+                Kontraindikationen und Nebenwirkungen der
+                Manipulationstechniken:
+              </h5>
+              <ul>
+                <li>
+                  • Infektionskrankheiten (Grippe, Viruserkrankungen,
+                  Hautinfektion)
+                </li>
+                <li>• Offene Schnitte, Brandwunde</li>
+                <li>• Frische Trauma oder Knochenbruch</li>
+                <li>• Meskel-und Sehnenrisse</li>
+                <li>• Kürzliche Verletzungen</li>
+                <li>• Schädel-Hirn-Trauma</li>
+                <li>• Krampfaderleiden</li>
+                <li>• Neigung zur Thrombose oder Blutung</li>
+                <li>• Akute Herzpathologien</li>
+                <li>• Schwangerschaft (es kommt auf die Frist an)</li>
+                <li>• Tumor (einschließlich Karzinome)</li>
+                <li>
+                  • Manche Erkrankungen wie: Bursitis, Gicht, ossifizierende
+                  Myositis, rheumatoide Arthritis, Beinhautentzündung u.a.
+                </li>
+                <li>• Absolut alles, wogegen Sie Bedenken haben!</li>
+              </ul>
+            </div>
+            <button class="read-more txt-l">WEITERLESEN</button>
+          </div>
+          <div class="treatments-list-item acupuncture d-none" data-about="acupuncture">
+            <h4 class="treatments-subtitle">Akupunctur</h4>
+            <div class="treatments-txt txt faded-txt">
+              <h5>Allgemeine Informationen</h5>
+              <p>
+                Die Akupunktur ist ein Teilgebiet der traditionellen
+                chinesischen Medizin (TCM). Das ist ein Therapieverfahren,
+                dessen Geschichte über 5000 Jahre alt und bis heute anwendbar
+                ist. Im Unterschied zur intramuskulären Manualtherapie geht
+                sie von der Lebensenergie des Körpers aus, die auf definierten
+                Leitbahnen beziehungsweise Meridianen zirkuliert, umfasst das
+                ganze System (Organismus), indem sie lokale Punkte auf den
+                Meridianen berührt. Von Bedeutung sind hier Nadeln, ihre
+                Länge, Stichrichtung und Stiemulierungskraft.<br />
+                ACHTUNG!!! Zu verwenden sind nur Einmalnadeln.
+              </p>
+              <h5>Effekt der Akupunktur</h5>
+              <ul>
+                <li>1. Desoxydation und Immunitätsstärkung</li>
+                <li>2. Entspannung weicher Gewebe</li>
+                <li>3. Auflösung der Ödeme und Schwellungen</li>
+                <li>
+                  4. Aktivierung des Stoffwechsels und der
+                  Flüssigkeitszirkulation
+                </li>
+                <li>
+                  5. Entspannung, Auflösung der Ödeme und Anschwellungen.
+                </li>
+                <li>
+                  6. Wiederherstellung der Textur und Funktionen von Muskeln
+                  und Sehnen
+                </li>
+                <li>
+                  7. Entspannung des Nervensystems und neuromuskulären Signals
+                </li>
+              </ul>
+              <h5>Indikationsbereich der Akupunktur</h5>
+              <ul>
+                <li>
+                  1. Frisches Trauma, je frischer desto besser! Wenn die
+                  Akupunktur in ersten 2 Minuten durchgeführt wird, kann die
+                  Entzündung weicher Gewebe gar vermieden werden.
+                </li>
+                <li>
+                  2. Neurologische Symptome – Taubheitsgefühl an den
+                  Gliedmaßen, Ameisenlaufen, akute Schmerzen
+                </li>
+                <li>3. Rücken- und Wirbelsäulenschmerzen</li>
+                <li>4. Ausfall von Funktionen und Myospasmen</li>
+                <li>
+                  5. Vorbereitung auf Athletenwettkämpfe, die Geburt, auf die
+                  Operation
+                </li>
+                <li>6. Kräfteschwund</li>
+                <li>7. Kopfschmerzen</li>
+                <li>8. Glieder-und Muskelschmerzen</li>
+              </ul>
+              <h5>Arten der Therapie-Akupunktur</h5>
+              <p>
+                Die Akupunktur lässt sich bedingt je Anwendungsstelle in zwei
+                Hauptarten gliedern.
+              </p>
+              <p>
+                Aurikuloakupunktur (Ohrakupunktur ) – in diesem Fall werden
+                Nadeln direkt in der Ohrmuschel gestellt. In der Ohrmuschel
+                sind Punkte und Areale zu finden, die mit allen Organen und
+                Systemen des Körpers verbunden sind. Dieses Therapieverfahren
+                ist sehr effektiv, aber nicht dauernd. Am besten wird diese
+                Akupunktur zur Beseitigung der Schmerzen und Krämpfen
+                eingesetzt.
+              </p>
+              <p>
+                Unter der Systemakupunktur wird die Verwendung des Verfahrens
+                im Bezug auf den ganzen Organismus gemeint. Diese Akupunktur
+                aktiviert lokale Punkte (neben den Wirkungszonen), periphere
+                Punkte (Reflexpunkte der beschädigten Zone), nutzt die
+                Interaktion zwischen den Meridianen und „unregelmäßigen
+                Punkten“ aus. Sie Akupunkturart erfordert die Erstellung einer
+                wirksamen und rationellen Formel zur Verwendung und zum besten
+                Therapie-Effekt. Aus der Praxis geht hervor, dass sich die
+                Systemakupunktur zu einem wirksamen Therapieverfahren mit
+                einem Dauerergebnis etabliert hat.
+              </p>
+              <p>
+                Thermoakupunktur ist Hitzeeinwirkung auf die biologisch aktive
+                Punkte und Zonen durch das Anbrennen der
+                Moxa-Zigarren/Moxibustion oder Erhitzung von Nadeln durch
+                Infrarotstrahler. Dieses Verfahren intensiviert therapeutische
+                Wirkung der Akupunktur und aktiviert innere Körperkräfte zur
+                schnellen Besserung. Das Verfahren ist als jiu-Therapie
+                bekannt.
+              </p>
+              <p>
+                Für zusätzliche Wirkung werden am Körper des Patienten
+                aktivierte Kugeln oder Platten mit Tape befestigt. Es kann dem
+                Patienten empfohlen werden, das Tape von ein paar Stunden bis
+                einigen Tagen zu tragen. Dieses Therapieverfahren wird
+                manchmal Appliopresspunktur genannt.
+              </p>
+              <p>
+                Es sei bemerkt, dass sich die Akupunktur und
+                Nadelreflextherapie, die auf den ersten Blick dasselbe zu
+                bedeuten scheinen, in Wirklichkeit absolut voneinander
+                unterscheiden. Die Akupunktur ist eines der Hauptverfahren der
+                TCM und funktioniert nach dem Prinzip der Reinigung von
+                Meridianen. Die Nadelreflextherapie ist im Gegenteil eine für
+                moderne Medizin adaptierte Variante therapeutischer Wirkung
+                auf lokale Akupunkturpunkte und Neurosignale.
+              </p>
+              <h5>Kontraindikationen und Nebenwirkungen der Akupunktur</h5>
+              <ul>
+                <li>• Infektionskrankheiten (Grippe, Hautvirus)</li>
+                <li>• Offene Schnitte, Brandwunde</li>
+                <li>• Vollständige Muskel-und Sehnenrisse</li>
+                <li>• Thrombosen und Blutgerinnungsfähigkeit</li>
+                <li>• Akute Herzpathologien</li>
+                <li>• Schwangerschaft (es kommt auf die Frist an)</li>
+                <li>• Tumor (einschließlich Karzinome)</li>
+                <li>
+                  • Manche Erkrankungen wie: Bursitis, Gicht, ossifizierende
+                  Myositis, rheumatoide Arthritis, Beinhautentzündung u.a.
+                </li>
+                <li>• Absolut alles, wogegen Sie Bedenken haben!</li>
+              </ul>
+            </div>
+            <button class="read-more txt-l">WEITERLESEN</button>
+          </div>
+          <div class="treatments-list-item cupping d-none" data-about="cupping">
+            <h4 class="treatments-subtitle">Schröpfkopftherapie</h4>
+            <div class="treatments-txt txt faded-txt">
+              <h5>Allgemeine Informationen</h5>
+              <p>
+                Die Schröpfkopftherapie beruht auf dem Vakuum-Effekt,
+                ausgelöst durch örtliche Verwendung von Schröpfköpfen. Ein
+                Vakuum wird im Schröpfkopf entweder durch Luftabsaugung mit
+                Pumpe oder mit brennenden Räucherstäbchen erzeugt, die in
+                diesem Bereich etwa 20 Minuten verwendet werden. Dieses
+                Therapieverfahren ist unter Sportlern beliebt, weil es
+                Haltbarkeit und Belastbarkeit der Gewebe erhöht und im
+                Desoxydationsprogramm zu verwenden ist.
+              </p>
+              <p>
+                Bedeutende Wirkung wird dadurch erreicht, dass Kapillaren in
+                Gewebe mit Hilfe des Schröpfkopfes zerrissen werden und ein
+                Primärhämatom gebildet wird, welches noch eine Menge von
+                Kapillaren wachsen lässt. Die Logik ist gleich der mit dem
+                Abschneiden eines Baumastes, damit mehrere Äste später
+                wachsen.
+              </p>
+              <p>
+                ACHTUNG!!! Nach der Therapie erscheint ein örtliches Hämatom
+                und bleibt ein blauer Fleck erhalten, deshalb nur weigern sich
+                manche Menschen, diese Therapie zu verwenden.
+              </p>
+              <h5>Effekt der Schröpfkopftherapie</h5>
+              <ul>
+                <li>1. Desoxydation und Immunitätsstärkung</li>
+                <li>2. Erhöhung der Halbarkeit weicher Gewebe</li>
+                <li>
+                  3. Aktivierung des Stoffwechsels und der
+                  Flüssigkeitszirkulation
+                </li>
+                <li>4. Beseitigung von Stagnationen</li>
+                <li>5. Befreiung aufgestauter Talg-und Schweißdrüsen</li>
+                <li>
+                  6. Wiederherstellung der Textur und Funktionen von Muskeln
+                  und Sehnen
+                </li>
+                <li>7. Auflösung der Ödeme und Schwellungen</li>
+              </ul>
+              <h5>Indikationsbereich der Schröpfkopftherapie</h5>
+              <ul>
+                <li>1. Tiefe ziehende Muskelschmerzen</li>
+                <li>2. Störung im örtlichen Blutkreislauf (Stauungen)</li>
+                <li>3. Bedarf an erhöhtem Muskeltonus</li>
+                <li>
+                  4. Posttraumatische und postoperative Wiederherstellung
+                </li>
+                <li>5. Erkältung und leichte inaktive Erkrankungen</li>
+                <li>6. Muskelverschmächtigung</li>
+              </ul>
+              <h5>Arten der Schröpfkopftherapie</h5>
+              <p>
+                Die Schröpfkopftherapie schließt 2 Arten ein: „trockene“
+                Therapie und Aderlass- Therapie.
+              </p>
+              <p>
+                Die „trockene“ Schröpfkopftherapie sieht Verwendung von
+                Schröpfköpfen auf der erwärmten Haut des Patienten vor. Mit
+                der Abnahme der Schröpfköpfe endet die Prozedur. Die
+                „trockene“ Therapie wird zur Beseitigung tiefer
+                Muskel-Stagnationen eingesetzt.
+              </p>
+              <p>
+                Die Aderlass-Therapie ist eine 2-Phasen-Therapie. Die erste
+                Phase erfolgt wie bei der „trockenen“ Therapie, in der zweiten
+                Phase macht der Therapeut nach der Primärabnahme des
+                Schröpfkopfes einen mikroskopisch kleinen Schnitt auf der Haut
+                und stellt den Schröpfkopf an dieselbe Stelle zurück. Auf
+                solche Weise verschwindet die obere Blutstauung. Die
+                Aderlass-Therapie passt gut zur Desoxydation.
+              </p>
+              <p>
+                Der weitere Unterschied ist die Stellung des Schröpfkopfes:
+                statisch oder dynamisch. Dabei kann die statische Therapie
+                sowohl „trocken“, als auch mit dem Aderlass-Element sein.
+                Dynamische Therapie erfolgt bei passiver Position des
+                Patienten, wenn die Massage vom Therapeuten durchgeführt wird,
+                oder in aktiver Form, wo der Patient selbst eine Reihe von
+                Bewegungen macht und auf diese Weise auf die Muskeln unter den
+                Schröpfköpfen wirkt. Statische Therapievariante wird meistens
+                mit Aderlass-Therapie kombiniert und für Desoxydation
+                verwendet. Die passiv-dynamische Therapievariante wird zur
+                Arbeit mit verletzten weichen Gewebe zwecks der
+                Wiederherstellung ihrer Funktionen eingesetzt. Die
+                aktiv-dynamische Therapie passt am besten zur Arbeit mit
+                gesunden weichen Geweben und zur Besserung ihrer Funktionen.
+              </p>
+              <p>
+                Die Stellen für Schröpfköpfe sind in Abhängigkeit vom Zustand
+                der Gewebe oder biologisch aktiver Reflexzonen zu bestimmen
+                oder lassen sich vom Fall zum Fall variieren.
+              </p>
+              <h5>
+                Kontraindikationen und Nebenwirkungen der Schröpfkopftherapie
+              </h5>
+              <ul>
+                <li>Kürzliches Trauma</li>
+                <li>Ödeme und Tumor (einschließlich Karzinome)</li>
+                <li>Pathologien des Lymphgefäßsystems</li>
+                <li>Schwächung innerer Organe</li>
+                <li>Infektionskrankheiten (Grippe, Hautvirus)</li>
+                <li>Offene Schnitte, Brandwunde</li>
+                <li>Vollständige Muskel-und Sehnenrisse</li>
+                <li>Thrombosen und Blutgerinnungsfähigkeit</li>
+                <li>Akute Herzpathologien</li>
+                <li>Schwangerschaft (es kommt auf die Frist an)</li>
+                <li>Absolut alles, wogegen Sie Bedenken haben!</li>
+              </ul>
+            </div>
+            <button class="read-more txt-l">WEITERLESEN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="education" id="education">
+    <div class="container" data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="200">
+      <div class="edu-info demi-column lang lang-en">
+        <div class="edu-list txt-l faded-txt">
+          <h4 class="edu-list-subtitle">Higher education</h4>
+          <ul class="edu-list-university">
+            <li class="edu-list-item">
+              2019-2021 UIC (Barcelona) Master of Manual Orthopaedic Physiotherapy
+            </li>
+            <li class="edu-list-item">
+              2014-2018 ICOM (London) Master of Osteopathic Medicine (MOst)
+            </li>
+            <li class="edu-list-item">
+              2013-2015 CCM (London) Chinese Medicine Degree Diploma
+            </li>
+          </ul>
+          <h4 class="edu-list-subtitle">Courses</h4>
+          <ul class="edu-list-courses">
+            <li class="edu-list-item">
+              2017 TapeDock Two KT Taping-Practice (London)
+            </li>
+            <li class="edu-list-item">
+              2016 Gil Hindley Human dissection 10-day Hands on Workshop (Scotland)
+            </li>
+            <li class="edu-list-item">
+              2015 Acupressure Massage Diploma (London)
+            </li>
+            <li class="edu-list-item">
+              2015 Advanced Cupping coourse (London)
+            </li>
+            <li class="edu-list-item">
+              2014 Advanced Meridian Stretch (London)
+            </li>
+            <li class="edu-list-item">
+              2014 Functional Anatomy, Pathology, Aetiology, Diagnosis And Acupuncture Treatment Of Common MSK
+              Conditions
+              (London)
+            </li>
+            <li class="edu-list-item">
+              2014 Auricular acupuncture for MSK Pain (London)
+            </li>
+            <li class="edu-list-item">
+              2014 MSK imaging diagnosis (London)
+            </li>
+            <li class="edu-list-item">
+              2013-2014 1 Jahr Orthopeadic Acupunctur (London)
+            </li>
+            <li class="edu-list-item">
+              2013-2014 SRM BTEC Level 5 Klinische Sport- und Heilmassage (London)
+            </li>
+            <li class="edu-list-item">
+              2013 ITEC Level 3 Sportmassage (London)
+            </li>
+            <li class="edu-list-item">
+              2013-2014 BTEC Level 5 Clinical Sport and Remedial Massage (London)
+            </li>
+            <li class="edu-list-item">
+              2013 ITEC Level 3 Sport Massage (London)
+            </li>
+          </ul>
+        </div>
+        <button class="read-more txt-l">READ MORE</button>
+      </div>
+      <div class="edu-info demi-column lang lang-ru d-none">
+        <div class="edu-list txt-l faded-txt">
+          <h4 class="edu-list-subtitle">Высшее образование</h4>
+          <ul class="edu-list-university">
+            <li class="edu-list-item">
+              2019-2021 UIC (Барселона) Мастер мануальной ортопедической физиотерапии
+            </li>
+            <li class="edu-list-item">
+              2014-2018 ICOM (Лондон) Магистр остеопатической медицины
+            </li>
+            <li class="edu-list-item">
+              2013-2015 CCM (Лондон) Китайская медицина
+            </li>
+          </ul>
+          <h4 class="edu-list-subtitle">Курсы</h4>
+          <ul class="edu-list-courses">
+            <li class="edu-list-item">
+              2017 TapeDock Кинезиологическое тейпирование (Лондон)
+            </li>
+            <li class="edu-list-item">
+              2016 Gil Hindley 10-дневные семинары по аутопсии человека (Шотландия)
+            </li>
+            <li class="edu-list-item">
+              2015 Акупрессурный Массаж Диплом
+            </li>
+            <li class="edu-list-item">
+              2015 Продвинутый курс баночного массажа (Лондон)
+            </li>
+            <li class="edu-list-item">
+              2014 Продвинутый курс растягивания меридианов (Лондон)
+            </li>
+            <li class="edu-list-item">
+              2014 Функциональная анатомия, патология, этиология, диагностика и лечение иглоукалыванием Общие условия
+              MSK
+              (Лондон)
+            </li>
+            <li class="edu-list-item">
+              2014 Аурикулярная акупунктура при травмах и боли (Лондон)
+            </li>
+            <li class="edu-list-item">
+              2014 Диагностикая визуализация (Лондон)
+            </li>
+            <li class="edu-list-item">
+              2013–2014 Ортопедическая акупунктура (Лондон)
+            </li>
+            <li class="edu-list-item">
+              2013-2014 BTEC Level 5 Клинический спортивный и лечебный массаж (Лондон)
+            </li>
+            <li class="edu-list-item">
+              2013 ITEC Спортивный массаж 3-го уровня (Лондон)
+            </li>
+          </ul>
+        </div>
+        <button class="read-more txt-l">ЧИТАТЬ ДАЛЕЕ</button>
+      </div>
+      <div class="edu-info demi-column lang lang-de d-none">
+        <div class="edu-list txt-l faded-txt">
+          <h4 class="edu-list-subtitle">Hochschulbildung</h4>
+          <ul class="edu-list-university">
+            <li class="edu-list-item">
+              Seit 2019 UIC Meister der manuellen orthopädischen Physiotherapie (Barcelona)
+            </li>
+            <li class="edu-list-item">
+              2014-2018 ICOM Master of Osteopathic Medicine (MOst) (London)
+            </li>
+            <li class="edu-list-item">
+              2013-2015 CCM Chinesische Medizin Abschluss Diplom (London)
+            </li>
+          </ul>
+          <h4 class="edu-list-subtitle">Kurse</h4>
+          <ul class="edu-list-courses">
+            <li class="edu-list-item">
+              2017 TapeDock Two KT Taping-Praktikum
+            <li class="edu-list-item">
+              2016 Gil Hindley Human dissection 10-tägige Hände auf Workshop
+            </li>
+            <li class="edu-list-item">
+              2015 Diplom für Akupressurmassage
+            </li>
+            <li class="edu-list-item">
+              2015 Aufbaukurs Schröpfen
+            </li>
+            <li class="edu-list-item">
+              2014 Aufbaukurs Meridian Dehnen
+            </li>
+            <li class="edu-list-item">
+              2014 Ohrakupunktur bei Erkrankungen des Bewegungsapparates und Schmerzbehandlung
+            </li>
+            <li class="edu-list-item">
+              2014 Funktionelle Anatomie Pathologie Ätiologie Diagnose von Erkrankungen des Bewegungsapparates
+            </li>
+            <li class="edu-list-item">
+              2014 Bildgebende Diagnostik des Bewegungsapparates
+            </li>
+            <li class="edu-list-item">
+              2013-2014 1 Jahr Orthopädisches Akupunkturdiplom (London)
+            </li>
+            <li class="edu-list-item">
+              2013-2014 SRM BTEC Level 5 Klinische Sport- und Heilmassage (London)
+            </li>
+            <li class="edu-list-item">
+              2013 ITEC Level 3 Sportmassage (London)
+            </li>
+          </ul>
+        </div>
+        <button class="read-more txt-l">WEITERLESEN</button>
+      </div>
+      <div class="edu-img-holder bordered demi-column">
+        <h3 class="edu-title lang lang-en">Education</h3>
+        <h3 class="edu-title lang lang-ru d-none">Образование</h3>
+        <h3 class="edu-title lang lang-de d-none">Bildungen</h3>
+        <img class="edu-img" src="res/educ.png" alt="education" />
+      </div>
+    </div>
+  </section>
+  <div class="offer">
+    <div class="container" data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="200">
+      <h1 class="offer-title lang lang-en">
+        Book now your FREE 10 minute check-ups or a treatment.
+        <br />+41772121070
+      </h1>
+      <h1 class="offer-title lang lang-ru d-none">
+        Забронируйте сейчас БЕСПЛАТНУЮ 10-минутный осмотр или лечение.
+        <br />
+        +41772121070
+      </h1>
+      <h1 class="offer-title lang lang-de d-none">
+        Jetzt Buchen Sie Ihre GRATIS 10-minütige Untersuchung oder Behandlung.
+        <br />+41772121070
+      </h1>
+    </div>
+  </div>
+  <footer class="contact" id="contact">
+    <div class="container" data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="200">
+      <div class="contact-info bordered demi-column lang lang-en">
+        <h3 class="contact-title">Contacts</h3>
+        <h4 class="contact-subtitle">
+          Book now do not wait when it will be too late
+        </h4>
+        <p class="contact-txt txt">
+          Expert and professional therapist to address your
+          neuromusculoskeletal pains, stiffness or just a regular MOT check)
+        </p>
+        <p class="contact-txt txt">
+          Working hours: <br />
+          Monday - Sunday: 07.00 – 20.00
+        </p>
+        <p class="contact-number">
+          Call now for a free consultation <br />
+          (For emergency cases call anytime): <br />
+          +41772121070
+        </p>
+      </div>
+      <div class="contact-info bordered demi-column lang lang-ru d-none">
+        <h3 class="contact-title">Контакты</h3>
+        <h4 class="contact-subtitle">
+          Бронируйте сейчас, не ждите, когда будет слишком поздно
+        </h4>
+        <p class="contact-txt txt">
+          Опытный и профессиональный терапевт, чтобы решить ваши
+          нервно-мышечные боли, скованность или просто регулярное обследование
+          ТО)
+        </p>
+        <p class="contact-txt txt">
+          Рабочие часы: <br />
+          Понедельник - Воскресенье: с 07:00 до 20:00.
+        </p>
+        <p class="contact-number">
+          Звоните сейчас для бесплатной консультации <br />
+          (В экстренных случаях звоните в любое время): <br />
+          +41772121070
+        </p>
+      </div>
+      <div class="contact-info bordered demi-column lang lang-de d-none">
+        <h3 class="contact-title">Kontakte</h3>
+        <h4 class="contact-subtitle">
+          Buchen Sie jetzt, warten Sie nicht, wenn es zu spät ist
+        </h4>
+        <p class="contact-txt txt">
+          Kompetenter und professioneller Therapeut, um Ihre
+          neuromuskuloskeletalen Schmerzen, Steifheit oder nur einen
+          regelmäßigen MOT-Check zu behandeln)
+        </p>
+        <p class="contact-txt txt">
+          Arbeitszeit: <br />
+          Montag bis Sonntag: 07:00 bis 20:00 Uhr
+        </p>
+        <p class="contact-number">
+          Rufen Sie jetzt für eine kostenlose Beratung<br />
+          (Für Notfälle rufen Sie jederzeit):<br />
+          +41772121070
+        </p>
+      </div>
+      <div class="demi-column">
+        <iframe class="contact-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.377695745593!2d8.52265041562215!3d47.36554637916941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479009f6552b0ad5%3A0x6ce64332aeeb16ba!2sGoogle!5e0!3m2!1sen!2sua!4v1580053642854!5m2!1sen!2sua"
+          width="500" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer>
+    AOS.init({
+    });
+  </script>
+<script type="text/javascript" src="polyfill.1d452ecb42c5a10110d2.js"></script><script type="text/javascript" src="app.1d452ecb42c5a10110d2.js"></script></body>
+
+</html>
