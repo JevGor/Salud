@@ -125,7 +125,7 @@ const onMobMenuBtnClick = () => {
 
 document.body.addEventListener("click", onMobMenuBtnClick);
 
-/*slider*/
+/*Slider*/
 
 const sliderContainer = document.querySelector(".slider-container");
 const sliderControlsContainer = document.querySelector(".slider-controls");
