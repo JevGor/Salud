@@ -494,6 +494,7 @@ section:nth-child(even) {
 	margin-right: 4%;
 	text-align: right;
 	align-items: flex-end;
+	margin-top: 10%;
 }
 
 .edu-list.faded-txt::before {
@@ -517,6 +518,7 @@ section:nth-child(even) {
 	-webkit-transform: translate(-60px);
 	transform: translate(-60px);
 	background-color: #f8f8f8;
+	margin-bottom: 10%;
 }
 
 .edu-img-holder {
@@ -968,10 +970,6 @@ section:nth-child(even) {
 
 	.education .demi-column {
 		height: auto;
-	}
-
-	.edu-title {
-		margin-bottom: 10%;
 	}
 
 	.edu-info {
