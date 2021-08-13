@@ -32,6 +32,18 @@ const langPopup = new Popup(".lang-list");
 const langTxt = document.querySelectorAll(".lang");
 const langSelectItems = document.querySelectorAll(".lang-item");
 
+const initLang = () => {
+  langTxt.forEach(element => {
+    if (element.classList.contains(`lang-de`)) {
+      element.classList.remove("d-none");
+    } else {
+      element.classList.add("d-none");
+    }
+  });
+}
+
+initLang()
+
 const setLang = () => {
   langTxt.forEach(element => {
     if (element.classList.contains(`${event.target.dataset.value}`)) {
