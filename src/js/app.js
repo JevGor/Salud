@@ -152,11 +152,11 @@ class Carousel {
     this.carouselArray = [...items];
   }
 
-  setInitialState() {
-    this.carouselArray[0].classList.add("slider-item-previous");
-    this.carouselArray[1].classList.add("slider-item-selected");
-    this.carouselArray[2].classList.add("slider-item-next");
-  }
+  // setInitialState() {
+  //   this.carouselArray[0].classList.add("slider-item-previous");
+  //   this.carouselArray[1].classList.add("slider-item-selected");
+  //   this.carouselArray[2].classList.add("slider-item-next");
+  // }
 
   setCurrentState(target, selected, previous, next) {
     selected.classList.remove("slider-item-selected");
@@ -176,13 +176,13 @@ class Carousel {
     }
   }
 
-  setControls() {
-    this.carouselControls.forEach(control => {
-      sliderControlsContainer.appendChild(
-        document.createElement("button")
-      ).className = `slider-controls-${control}`;
-    });
-  }
+  // setControls() {
+  //   this.carouselControls.forEach(control => {
+  //     sliderControlsContainer.appendChild(
+  //       document.createElement("button")
+  //     ).className = `slider-controls-${control}`;
+  //   });
+  // }
 
   useControls() {
     const triggers = [...sliderControlsContainer.childNodes];
@@ -213,9 +213,9 @@ const treatmentsCarousel = new Carousel(
   sliderControls
 );
 
-treatmentsCarousel.setControls();
-treatmentsCarousel.setInitialState();
-treatmentsCarousel.useControls();
+// treatmentsCarousel.setControls();
+// treatmentsCarousel.setInitialState();
+// treatmentsCarousel.useControls();
 
 function setTreatmentArticle(dataset) {
   treatmentsArticles.forEach(el => {
